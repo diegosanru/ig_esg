@@ -9,56 +9,47 @@
     }
 </style>
 <footer id="site-footer" class="site-footer pt-2 pb-1 position-relative rs-footer">
-    {#    <a id="denuncia" href="#" class="octf-btn d-flex align-items-center"><i#}
-    {#            role="presentation" role="presentation"#}
-    {#            class="fa fa-commenting-o text-white"></i> {% trans 'Canal de denuncias' %}</a>#}
+
     <div class="container">
         <div class="row">
             <div class="col-md-4 mb-1">
                 <div class="about-widget text-white">
-                    <h3 class="footer-title">Acerca de cydsa</h3>
+                    <h3 class="footer-title">Acerca de Industrial Gate</h3>
                     <div class="ml-1 mb-1 text-justify d-flex flex-column justify-content-between align-items-baseline">
-                        <img src="{% static 'images/logo-blanco.png' %}" alt="Logo"
-                             style="padding-bottom: 0; width: 200px; height: 30%"></a>
+                        <a href="https://www.industrialgate.mx/es" target="_blank" rel="noopener noreferrer">
+                            <img src="{% static 'images/logo-blanco.png' %}" alt="Logo"
+                                 style="padding-bottom: 0; width: 200px; height: 30%">
+                        </a>
                     </div>
                 </div>
             </div>
             <div class="col-md-4 cont mb-1">
                 <h3 class="footer-title">Contacto</h3>
+            
+                <p class="news-note mb-1"><i class="fa fa-phone" aria-hidden="true"></i> Tel: +55 2899 1374</p>
+                <br>
+                <p class="news-note mb-1"><i class="fa fa-map-marker" aria-hidden="true"></i> Monte Pelvoux 120, Oficina 401, CP 11000, Lomas de Chapultepec, Ciudad de México</p>
+                <br>
                 <p class="mb-1">
-
-                    <a target="_blank" class="news-note text-white" href="https://cydsa.com/"
-                       ><i class="fa fa-globe" aria-hidden="true"></i>
-                       www.cydsa.com</a>
-                </p><br>
-                <p class="news-note mb-1"><i class="fa fa-map-marker" aria-hidden="true"></i> Av. Ricardo Margáin Zozaya No. 335 |  Torre 2 Piso 6, Valle del Campestre 66265 San Pedro Garza García, N.L.</p>
-<br>
-                <p class="news-note mb-1"><i class="fa fa-phone" aria-hidden="true"></i> Tel: +52 (81) 8152 4500</p>
-<br>
-                <p class="mb-1">
-                    <a class="news-note text-white" href="mailto:sustentabilidad@cydsa.com "
+                    <a class="news-note text-white" href="mailto:sostenibilidad@industrialgate.com "
                         ><i
                             class="fa fa-envelope" aria-hidden="true"></i>
-                            sustentabilidad@cydsa.com
+                            sostenibilidad@industrialgate.com
                     </a></p><br>
 
 
             </div>
-            <div class="col-md-4 mb-1 fondo">
-                <h3 class="footer-title">Más información</h3>
+            <div class="col-md-4 mb-1">
+                <h3 class="footer-title">Información para inquilinos</h3>
                 <div class="d-flex flex-column justify-content-around align-items-baseline">
                     <p class="mb-1">
-                        Reciba periódicamente información ASG relacionada con nuestra compañía.
+                        Servicio y atención personalizada para nuestros inquilinos. 
                     </p>
-                    <form class="form mb-2 pt-2 text-center was-validated" method="post" id="newsletter-form-footer">
-                        <div class="form-group mb-1">
-                            <input class="col-md-8 col-sm-7 col-8" id="fieldEmail" name="email"
-                                   type="email" placeholder="{% trans 'Correo electrónico' %}" required
-                                   data-msg-required="" data-msg-email=""/>
-                            <button id="newsletter-submit-footer" type="submit" class="btn">Suscribirse</button>
-                        </div>
-                        <div class="alert-message-footer"></div>
-                    </form>
+                    <br>
+                    <a href="comunidades" class="btn btn-outline-light btn-sm mt-2" style="border-radius: 20px;">
+                        Ir a la sección
+                    </a>
+                    
                 </div>
 
             </div>
@@ -66,7 +57,7 @@
         <div class="row">
             <div class="col-lg-12 align-self-center">
                 <p class="copyright text-center my-0">
-                    © {% now 'Y' %} {% trans 'Cydsa - Diseñado y generado por' %}
+                    © {% now 'Y' %} {% trans 'Industrial Gate - Diseñado y generado por' %}
                     <img class="ml-1" src="{% static 'images/ir-design-white.svg' %}" width="90px" alt="">
                 </p>
             </div>

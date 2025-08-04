@@ -247,11 +247,10 @@ def send_mail_contact(request):
     # )
 
     send_mail(
-        'Usuario anónimo desea contactar con admin del sitio Cydsa ESG',
+        'Usuario anónimo desea contactar con admin del sitio Industrial Gate ESG',
         '',
         'it@investorcloud.net',
-        ['sustentabilidad@cydsa.com'],
-        # ['tania.barroso@irstrat.com'],
+        ['it@investorcloud.net'],
         html_message=html_message
     )
     return JsonResponse({"success": "true"}, safe=False)
@@ -273,10 +272,10 @@ def send_cuestionario(request):
     )
 
     send_mail(
-        'Cuestionario Cydsa ESG',
-        'Cuestionario Cydsa ESG',
+        'Cuestionario Industrial Gate ESG',
+        'Cuestionario Industrial Gate ESG',
         'it@investorcloud.net',
-        ['sustentabilidad@cydsa.com'],
+        ['it@investorcloud.net'],
         html_message=html_message
     )
 
@@ -304,10 +303,10 @@ def send_buzon_quejas(request):
     )
 
     send_mail(
-        'Buzón de Quejas Cydsa ESG',
-        'Buzón de Quejas Cydsa ESG',
+        'Buzón de Quejas Industrial Gate ESG',
+        'Buzón de Quejas Industrial Gate ESG',
         'it@investorcloud.net',
-        ['sustentabilidad@cydsa.com'],
+        ['it@investorcloud.net'],
         html_message=html_message
     )
 

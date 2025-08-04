@@ -21,12 +21,12 @@ $(document).ready(function() {
         }, {
             "type": "Temporal",
             "percentage": 1,
-            "color": "#012E81"
+            "color": "#2B2B2B"
         }],
         "titles": [{
             "text": chart1_title,
             "size": 15,
-            "color": "#012E81"
+            "color": "#2B2B2B"
         }],
         "valueField": "percentage",
         "titleField": "type",
@@ -41,9 +41,9 @@ $(document).ready(function() {
         "labelText": "[[title]]: [[percents]]%",
         "labelsEnabled": true,
         "labelColorField": "color",
-        "labelTickColor": "#012E81",
+        "labelTickColor": "#2B2B2B",
         "colors": [
-            '#2792ec', '#012E81'
+            '#2792ec', '#2B2B2B'
         ],
         "legend": {
             "position": "bottom",
@@ -71,12 +71,12 @@ $(document).ready(function() {
         }, {
             "type": "Mujeres",
             "percentage": 32,
-            "color": "#012E81"
+            "color": "#2B2B2B"
         }],
         "titles": [{
             "text": chart2_title,
             "size": 15,
-            "color": "#012E81"
+            "color": "#2B2B2B"
         }],
         "valueField": "percentage",
         "titleField": "type",
@@ -91,9 +91,9 @@ $(document).ready(function() {
         "labelText": "[[title]]: [[percents]]%",
         "labelsEnabled": true,
         "labelColorField": "color",
-        "labelTickColor": "#012E81",
+        "labelTickColor": "#2B2B2B",
         "colors": [
-            '#2792ec', '#012E81'
+            '#2792ec', '#2B2B2B'
         ],
         "legend": {
             "position": "bottom",

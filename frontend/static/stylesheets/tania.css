@@ -883,11 +883,11 @@ a.btn-infoe:hover {
 }
 
 .tc-blue {
-    color: #012E81;
+    color: #2B2B2B;
 }
 
 h1.tc-blue {
-    color: #012E81;
+    color: #2B2B2B;
 }
 
 #consumo .honeycomb-wrapper .tile .honeycomb .honeycomb-path circle {
@@ -1417,20 +1417,20 @@ p {
 
 .btn-outline-info:hover {
     color: #fff;
-    background-color: #012E81;
-    border-color: #012E81;
+    background-color: #2B2B2B;
+    border-color: #2B2B2B;
 }
 
 .btn-primary {
     color: #fff;
-    background-color: #012E81;
-    border-color: #012E81;
+    background-color: #2B2B2B;
+    border-color: #2B2B2B;
 }
 
 .btn-primary:hover {
     color: #fff;
-    background-color: #012E81;
-    border-color: #012E81;
+    background-color: #2B2B2B;
+    border-color: #2B2B2B;
 }
 
 .text-gray {
@@ -1654,7 +1654,7 @@ blockquote {
 }
 
 #header.sticky-header #header-wrap {
-    background: #012E81;
+    background: #2B2B2B;
     color: #ffffff;
 }
 
@@ -1704,7 +1704,7 @@ ul#cadena .nav-item .nav-link {
 
 ul#cadena .nav-item.show .nav-link, ul#cadena .nav-link.active {
     color: #ffffff;
-    background-color: #012E81;
+    background-color: #2B2B2B;
     border-color: transparent;
     height: 100%;
 }
@@ -1726,7 +1726,7 @@ ul#cadena > li > .nav-link.active:before {
     height: 0;
     border-style: solid;
     border-width: 10px 10px 0 10px;
-    border-color: #012E81 transparent transparent;
+    border-color: #2B2B2B transparent transparent;
 }
 
 .vertical-align-center {
@@ -1734,7 +1734,7 @@ ul#cadena > li > .nav-link.active:before {
 }
 
 .figure:hover .texto {
-    background-color: #012E81 !important;
+    background-color: #2B2B2B !important;
     color: #fff !important;
 }
 
@@ -1755,7 +1755,7 @@ ul#cadena > li > .nav-link.active:before {
 }
 
 .card-header.card-link[aria-expanded="true"] {
-    background-color: #012E81;
+    background-color: #2B2B2B;
     color: white;
 }
 
@@ -1768,7 +1768,7 @@ ul#cadena > li > .nav-link.active:before {
 }
 
 .owl-carousel .owl-dots .owl-dot {
-    background-color: #012E81;
+    background-color: #2B2B2B;
 }
 
 .owl-carousel .owl-nav [class*=owl-]:hover {
@@ -1862,7 +1862,7 @@ ul#cadena > li > .nav-link.active:before {
 
 .image_wrapper:hover .overlay_2 {
     display: flex;
-    background: #012E81;
+    background: #2B2B2B;
     align-items: end;
     justify-content: center;
     -webkit-transform: scale(1.3);
@@ -1889,7 +1889,7 @@ ul#cadena > li > .nav-link.active:before {
     max-height: 600px;
     display: flex;
     color: #000;
-    /*background: #012E81;*/
+    /*background: #2B2B2B;*/
     align-items: end;
     text-align: justify;
     justify-content: center;
@@ -1936,7 +1936,7 @@ ul#cadena > li > .nav-link.active:before {
     max-height: 600px;
     display: flex;
     color: #000;
-    /*background: #012E81;*/
+    /*background: #2B2B2B;*/
     align-items: end;
     text-align: justify;
     justify-content: center;
@@ -1975,7 +1975,7 @@ ul#cadena > li > .nav-link.active:before {
     max-height: 600px;
     display: flex;
     color: #000;
-    /*background: #012E81;*/
+    /*background: #2B2B2B;*/
     align-items: end;
     text-align: justify;
     justify-content: center;
@@ -2014,7 +2014,7 @@ ul#cadena > li > .nav-link.active:before {
     max-height: 600px;
     display: flex;
     color: #000;
-    /*background: #012E81;*/
+    /*background: #2B2B2B;*/
     align-items: end;
     text-align: justify;
     justify-content: center;
@@ -2061,7 +2061,7 @@ ul#cadena > li > .nav-link.active:before {
 @media (max-width: 767px) {
     .image_wrapper .overlay_2 {
         display: flex;
-        background: #012E81;
+        background: #2B2B2B;
         align-items: end;
         justify-content: center;
 
@@ -2190,7 +2190,7 @@ section.estrategias {
 }
 
 .cuadrado {
-    border: 2px solid #012E81;
+    border: 2px solid #2B2B2B;
     transition: all .5s;
     width: 152px;
     height: 152px;
@@ -2209,7 +2209,7 @@ section.estrategias {
 }
 
 article:hover .cuadrado {
-    border: 2px solid #012E81;
+    border: 2px solid #2B2B2B;
     width: 100px;
     height: 100px;
     border-radius: 50%;
@@ -2217,7 +2217,7 @@ article:hover .cuadrado {
 
 .card-content h2, .medios h4, .medios i {
     font-weight: 900;
-    color: #012E81;
+    color: #2B2B2B;
 }
 
 .nav-item {
@@ -2226,11 +2226,11 @@ article:hover .cuadrado {
 
 /*  */
 #colaboradores_genero .honeycomb-wrapper .tile .women .honeycomb-path circle, #contrataciones_genero .honeycomb-wrapper .tile .women .honeycomb-path circle {
-    stroke: #012E81 !important;
+    stroke: #2B2B2B !important;
 }
 
 #colaboradores_genero .honeycomb-wrapper .tile .men .honeycomb-path circle, #contrataciones_genero .honeycomb-wrapper .tile .men .honeycomb-path circle {
-    stroke: #012E81 !important;
+    stroke: #2B2B2B !important;
 }
 
 .honeycomb-wrapper .tile .honeycomb .honeycomb-animated circle {

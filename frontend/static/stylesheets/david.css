@@ -4,7 +4,7 @@
 }
 
 .textbluemega{
-    color: #012E81;
+    color: #2B2B2B;
 }
 
 .textgreenmega{
@@ -45,7 +45,7 @@
     background-color: #097CBF;
 }
 .clickESG.darkblue{
-    background-color: #012E81;
+    background-color: #2B2B2B;
 }
 #greenESGTEXT{
     background-color: #2792ec;
@@ -54,7 +54,7 @@
     background-color: #097CBF;
 }
 #darkblueESGTEXT{
-    background-color: #012E81;
+    background-color: #2B2B2B;
 }
 .greenHeader{
     color: #2792ec;
@@ -63,7 +63,7 @@
     color: #097CBF;
 }
 .darkBlueHeader{
-    color: #012E81;
+    color: #2B2B2B;
 }
 
 .yellowUnderline{
@@ -75,7 +75,7 @@
 
 .content-box2 {
     padding: 20px;
-    background-color: #012E81; /* Light grey background */
+    background-color: #2B2B2B; /* Light grey background */
     color: #fff; /* Text color */
     position: relative; /* Position relative to allow absolute positioning inside */
     margin-bottom: 30px;
@@ -97,7 +97,7 @@
     display: inline-block;
     font-weight: bold;
     padding: 20px;
-    background-color: #012E81; /* Light grey background */
+    background-color: #2B2B2B; /* Light grey background */
     color: #fff; /* Text color */
     position: relative; /* Position relative to allow absolute positioning inside */
     margin-bottom: 30px;
@@ -168,7 +168,7 @@
   .card-carousel .card:not(.highlight) {
     transition: 0.5s ease-in background-color;
     color: #fff;
-    background-color: #012E81;
+    background-color: #2B2B2B;
   }
   .card-carousel .card:not(.highlight) h1{
     transition: 0.5s ease-in color;
@@ -303,7 +303,7 @@
 }
 
 .accordion-cadena .card-header.show, .accordion-cadena .card-header:hover{
-    background-color: #012E81;
+    background-color: #2B2B2B;
     color: #fff;
 }
 
@@ -875,7 +875,7 @@ h4.linea:after {
 }
 
 #accordion .card-header .card-link[aria-expanded=true] {
-    background-color:#012E81;
+    background-color:#2B2B2B;
     color:#fff;
 }
 
@@ -1158,7 +1158,7 @@ footer {
         left: 0;
         width: 0;
         height: 100%;
-        background-color: #314597;
+        background-color: #F5BA3D;
         transition: width 1.5s ease-in-out;
         z-index: 0;
     }
@@ -1171,7 +1171,7 @@ footer {
         top: 0;
         left: 0;
         height: 100%;
-        background-color: #314597;
+        background-color: #F5BA3D;
         transition: width 1.5s ease-in-out;
         z-index: 0;
     }
@@ -1339,7 +1339,7 @@ footer {
     }
 
     .image-container:hover {
-        background-color: #314597;
+        background-color: #F5BA3D;
         border-radius: 15px;
     }
 

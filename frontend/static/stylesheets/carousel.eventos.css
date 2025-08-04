@@ -5,7 +5,7 @@
 }
 
 #eventos .pagination .page-item.active a.page-link {
-    background-color: #012E81 !important;
+    background-color: #2B2B2B !important;
     border-radius: 10px;
     color: #ffff !important;
     border-color: transparent !important;
@@ -32,7 +32,7 @@
     margin: 0.2rem;
     border-radius: 50%;
     /*line-height: normal;*/
-    background: #012E81 !important;
+    background: #2B2B2B !important;
     color: white !important;
 }
 
@@ -121,7 +121,7 @@
     display: block;
     height: 2px;
     width: 120px;
-    background: #012E81;
+    background: #2B2B2B;
     /*margin-left: 20px;*/
     margin-top: 1rem;
     /*position: absolute;*/
@@ -208,7 +208,7 @@
 
 #eventos .image_wrapper2:hover .overlay_3 {
     display: flex;
-    /*background: #012E81;*/
+    /*background: #2B2B2B;*/
     opacity: 1;
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);

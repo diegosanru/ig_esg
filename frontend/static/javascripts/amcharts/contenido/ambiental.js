@@ -70,9 +70,9 @@ if (typeof AmCharts !== 'undefined') {
                 "title": "Emisiones directas de GEI (Alcance 1)",
                 "type": "column",
                 "valueField": "alcance1",
-                "color": "#314597",
-                "lineColor": "#314597",
-                "fillColors": "#314597"
+                "color": "#F5BA3D",
+                "lineColor": "#F5BA3D",
+                "fillColors": "#F5BA3D"
             },
             {
                 "balloonText": "Emisiones indirectas de GEI al generar energía (Alcance 2):[[value]]",
@@ -133,7 +133,7 @@ if (typeof AmCharts !== 'undefined') {
                 "marginBottom": 10
             },
         ],
-        "colors": ["#314597", "#79B928"],
+        "colors": ["#F5BA3D", "#79B928"],
         "fontSize": 14,
         "balloonText": "[[activo]] <br> <b>[[value]] toneladas</b>",
         "color": "#000000",
@@ -182,7 +182,7 @@ if (typeof AmCharts !== 'undefined') {
                 "color": "#000000"
             },
         ],
-        "colors": ["#314597", "#79B928"],
+        "colors": ["#F5BA3D", "#79B928"],
         "fontSize": 14,
         "balloonText": "[[activo]] <br> <b>[[value]] toneladas</b>",
         "color": "#000000",
@@ -231,7 +231,7 @@ if (typeof AmCharts !== 'undefined') {
                 "color": "#000000"
             },
         ],
-        "colors": ["#314597", "#79B928"],
+        "colors": ["#F5BA3D", "#79B928"],
         "fontSize": 14,
         "balloonText": "[[activo]] <br> <b>[[value]] toneladas</b>",
         "color": "#000000",
@@ -280,7 +280,7 @@ if (typeof AmCharts !== 'undefined') {
                 "color": "#000000"
             },
         ],
-        "colors": ["#314597", "#79B928"],
+        "colors": ["#F5BA3D", "#79B928"],
         "fontSize": 14,
         "balloonText": "[[activo]] <b>[[value]] toneladas</b>",
         "color": "#000000",
