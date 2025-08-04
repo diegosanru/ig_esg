@@ -1,0 +1,392 @@
+{% extends 'layouts/interior.html' %}
+{% load static %}
+{% block otherstyles %}
+    <link rel="stylesheet" href="{% static 'stylesheets/tania.min.css' %}">
+    <link rel="stylesheet" href="{% static 'stylesheets/david.css' %}">
+    <link rel="stylesheet" href="{% static 'stylesheets/css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'stylesheets/css/owl.theme.default.css' %}">
+    <style>
+        h1{
+           font-weight: bold;
+        }
+    </style>
+{% endblock %}
+
+{% block wrapper %}
+    <div class="content-wrap">
+        <div class="container pt-5 pb-5">
+            <h1 id="gobierno" class="text-center wow fadeInUp" data-wow-duration="2s"
+                style="color: #012E81;">
+                Gobierno Corporativo</h1>
+            <p class="text-justify wow fadeInUp" data-wow-duration="2s">El Gobierno Corporativo de CYDSA <strong>establece
+                un
+                marco normativo que guía la dirección de la Compañía</strong>, con un Consejo de Administración
+                experimentado que
+                asegura la rendición de cuentas, equidad y transparencia. La empresa valora la dirección ética para tomar decisiones que beneficien a todos los Grupos de Interés.</p>
+            <img class="mx-auto d-block" src="/static/images/gobernanza/imagen_gobierno.png">
+        </div>
+    </div>
+    <div class="container pt-5 pb-5">
+        <h1 id="consejo" class="text-center mb-5 wow fadeInUp" data-wow-duration="2s"
+            style="color: #012E81;">
+            Consejo de Administración</h1>
+        <p class="text-justify wow fadeInUp" data-wow-duration="2s">El máximo órgano de gobierno en CYDSA es el
+            Consejo de Administración, el cual se enfoca en dirigir la selección de <strong>objetivos, valores y
+                estrategia
+            </strong>con los cuales se opera el Grupo. Entre sus principales funciones se encuentran las siguientes:</p>
+
+        <div class="container mt-5 mb-5">
+            <div id="icon-carousel" class="carousel slide d-md-none" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="image-container">
+                            <img src="{% static 'images/gobernanza/logo_definir_rumbo.png' %}" alt="Imagen 1"
+                                 class="d-block w-100">
+                            <p>Definir el rumbo estratégico</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="image-container">
+                            <img src="{% static 'images/gobernanza/logo_garantizar_conduccion.png' %}" alt="Imagen 2"
+                                 class="d-block w-100">
+                            <p>Garantizar la conducción honesta y responsable de la Sociedad</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="image-container">
+                            <img src="{% static 'images/gobernanza/logo_asegurar_creacion.png' %}" alt="Imagen 3"
+                                 class="d-block w-100">
+                            <p>Asegurar la creación de valor económico y social para los accionistas</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="image-container">
+                            <img src="{% static 'images/gobernanza/logo_evaluar_aprobar.png' %}" alt="Imagen 4"
+                                 class="d-block w-100">
+                            <p>Evaluar y aprobar la gestión del director general y de los funcionarios de alto nivel de
+                                la sociedad</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="image-container">
+                            <img src="{% static 'images/gobernanza/logo_promover_emision.png' %}" alt="Imagen 5"
+                                 class="d-block w-100">
+                            <p>Promover la emisión responsable de información</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="image-container">
+                            <img src="{% static 'images/gobernanza/logo_asegurar_establecimiento.png' %}" alt="Imagen 6"
+                                 class="d-block w-100">
+                            <p>Asegurar el establecimiento de mecanismos para identificar, analizar, administrar y
+                                controlar riesgos estratégicos</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="image-container">
+                            <img src="{% static 'images/gobernanza/logo_promover_sociedad.png' %}" alt="Imagen 7"
+                                 class="d-block w-100">
+                            <p>Promover que la Sociedad sea socialmente responsable, proteja al entorno natural e
+                                impulse el desarrollo del personal</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="image-container">
+                            <img src="{% static 'images/gobernanza/logo_impulsar_gestion.png' %}" alt="Imagen 8"
+                                 class="d-block w-100">
+                            <p>Impulsar una gestión ética y transparente</p>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#icon-carousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#icon-carousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <div class="row d-none d-md-flex">
+                <div class="col-12 col-md-3 mb-4">
+                    <div class="image-container text-center">
+                        <img src="{% static 'images/gobernanza/logo_definir_rumbo.png' %}" alt="Imagen 1"
+                             class="img-fluid">
+                        <p>Definir el rumbo estratégico</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 mb-4">
+                    <div class="image-container text-center">
+                        <img src="{% static 'images/gobernanza/logo_garantizar_conduccion.png' %}" alt="Imagen 2"
+                             class="img-fluid">
+                        <p>Garantizar la conducción honesta y responsable de la Sociedad</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 mb-4">
+                    <div class="image-container text-center">
+                        <img src="{% static 'images/gobernanza/logo_asegurar_creacion.png' %}" alt="Imagen 3"
+                             class="img-fluid">
+                        <p>Asegurar la creación de valor económico y social para los accionistas</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 mb-4">
+                    <div class="image-container text-center">
+                        <img src="{% static 'images/gobernanza/logo_evaluar_aprobar.png' %}" alt="Imagen 4"
+                             class="img-fluid">
+                        <p>Evaluar y aprobar la gestión del director general y de los funcionarios de alto nivel de la
+                            sociedad</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 mb-4">
+                    <div class="image-container text-center">
+                        <img src="{% static 'images/gobernanza/logo_promover_emision.png' %}" alt="Imagen 5"
+                             class="img-fluid">
+                        <p>Promover la emisión responsable de información</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 mb-4">
+                    <div class="image-container text-center">
+                        <img src="{% static 'images/gobernanza/logo_asegurar_establecimiento.png' %}" alt="Imagen 6"
+                             class="img-fluid">
+                        <p>Asegurar el establecimiento de mecanismos para identificar, analizar, administrar y controlar
+                            riesgos estratégicos</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 mb-4">
+                    <div class="image-container text-center">
+                        <img src="{% static 'images/gobernanza/logo_promover_sociedad.png' %}" alt="Imagen 7"
+                             class="img-fluid">
+                        <p>Promover que la Sociedad sea socialmente responsable, proteja al entorno natural e impulse el
+                            desarrollo del personal</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 mb-4">
+                    <div class="image-container text-center">
+                        <img src="{% static 'images/gobernanza/logo_impulsar_gestion.png' %}" alt="Imagen 8"
+                             class="img-fluid">
+                        <p>Impulsar una gestión ética y transparente</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section id="comite" class="py-5" data-wow-duration="2s" data-wow-delay="2s"
+             style="background-image: url({% static 'images/gobernanza/fondo_comites.png' %}); background-size: cover; background-repeat: no-repeat; background-position: center;">
+        <h1 class="text-center mt-5" style="color: white;">Comités del Consejo de Administración</h1>
+        <div class="col-md-8 offset-md-2 pb-5">
+            <div id="oc-clients"
+                 class="nobgcolor notopmargin owl-carousel owl-carousel-full image-carousel carousel-widget owl-loaded owl-drag"
+                 data-margin="" data-loop="true" data-nav="true" data-autoplay="4000" data-items="1" data-pagi="false"
+                 data-items-xs="1" data-items-sm="1" data-items-md="1" data-items-lg="1" data-items-xl="1">
+                <div class="owl-stage-outer">
+                    <div class="owl-stage"
+                         style="transform: translate3d(-6694px, 0px, 0px); transition: 0.25s; width: 14729px;">
+                        <div class="owl-item cloned" style="width: 1318.99px; margin-right: 20px;">
+                            <div class="oc-item">
+                                <div class="row d-flex flex-row justify-content-center align-items-center">
+                                    <div class="text-align: center">
+                                        <img src="/static/images/gobernanza/comite_practicas_societarias.png"
+                                             style="width:100%; height: 100%;"
+                                             alt="Comité de Prácticas Societarias"
+                                             onclick="openModal('Comité de Prácticas Societarias y de Auditoría', 'Este comité monitorea la función transparente y ética de los comités, ejecutivos y directivos en todo momento. ', '/static/images/gobernanza/imagen_comite_practicas_societarias.png')">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="owl-item cloned" style="width: 1318.99px; margin-right: 20px;">
+                            <div class="oc-item">
+                                <div class="row d-flex flex-row justify-content-center align-items-center">
+                                    <div class="text-align: center">
+                                        <img src="/static/images/gobernanza/comite_politicas_compensaciones.png"
+                                             style="width:100%; height: 100%;"
+                                             alt="Comité de Políticas y Compensaciones"
+                                             onclick="openModal('Comité de Políticas de Compensaciones', 'Este comité toma en cuenta el desempeño de los ejecutivos y directores con respecto a las metas establecidas en el ámbito productivo, económico, y en su caso, al desempeño en temas ambientales y sociales. ', '/static/images/gobernanza/imagen_comite_politicas_compensaciones.png')">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="owl-item" style="width: 1318.99px; margin-right: 20px;">
+                            <div class="oc-item text-align:center">
+                                <div class="row d-flex flex-row justify-content-center align-items-center">
+                                    <div class="text-center">
+                                        <img src="/static/images/gobernanza/comite_planeacion_finanzas.png"
+                                             style="width:100%; height: 100%;"
+                                             alt="Comité de Planeación y Finanzas"
+                                             onclick="openModal('Comité de Planeación y Finanzas', 'Este comité tiene como uno de sus objetivos principales la administración de los recursos de la Empresa para asegurar que se usen de la forma más eficiente y en las áreas que más se necesita.', '/static/images/gobernanza/imagen_comite_planeacion_finanzas.png')">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Modal -->
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="modalTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title text-center w-100" id="modalTitle" style="font-weight: bold;"></h2>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"
+                            style="top: 10px; right: 5px">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <p id="modalText" style="font-size: 18px"></p>
+                    <img id="modalImage" src="" class="img-fluid mt-3" alt="Comité">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container pt-5 pb-5">
+        <h1 id="etica" class="text-center mb-5 wow fadeInUp" data-wow-duration="2s"
+            style="color: #012E81;">
+            Ética Corporativa</h1>
+        <div class="d-flex">
+            <div class="col-md-6 col-lg-6 col-xl-6 d-flex align-items-center">
+                <p class="text-center justify-content-center mb-0">
+                    CYDSA cuenta con un <strong>Código de Conducta</strong> cuyo objetivo es garantizar la implementación
+                    integral de su Filosofía de Creación de Valor, beneficiando a sus clientes, colaboradores,
+                    accionistas, proveedores y comunidades.
+                </p>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-6">
+                <div class="image text-center">
+                    <img class="img-fluid" style="width: 80%"
+                         src="{% static 'images/gobernanza/etica_corporativa.png' %}">
+                </div>
+            </div>
+        </div>
+    </div>
+    <section id="comite" class="pt-5 pb-5">
+        <article id="boxes-2" style="">
+            <div class="card-group">
+                <div class="card p-0">
+                    <div class="card-header2 d-flex flex-column justify-content-between" style="background-color: #e6321f!important;transform: rotateX(0deg);">
+                        <img class="card-img-top" src="/static/images/gobernanza/imagen_mecanismos.png" alt="">
+                        <p class="mostrar w-100 text-center"><strong>Mecanismos de control y reparación</strong></p>
+                    </div>      
+                    <div class="card-body" style="background-color: #012B47 !important; font-size: 20px;">
+                        <p class="text-center d-block">Se implementó una línea de denuncias para fortalecer la comunicación y garantizar el anonimato, la integridad de
+                            la información y un mejor control en la resolución de casos.
+                        </p>
+                    </div>
+                </div>
+                <div class="card p-0">
+                    <div class="card-header2 d-flex flex-column justify-content-between" style="background-color: #e4263b!important;transform: rotateX(0deg);">
+                        <img class="card-img-top" src="/static/images/gobernanza/imagen_conflictos.png" alt="">
+                        <p class="mostrar w-100 text-center"><strong>Conflictos de interés</strong></p>
+                    </div>
+                    <div class="card-body" style="background-color: #00447C !important; font-size: 20px;">
+                        <p class="text-center d-block">CYDSA promueve la honestidad y la transparencia en
+                            todas sus
+                            operaciones. Para mitigar riesgos de fraude y corrupción, cuenta con una Política de
+                            Conflictos de Interés y un programa anual de supervisión.
+                        </p>
+                    </div>
+                </div>
+                    <div class="card p-0">
+                        <div class="card-header2 d-flex flex-column justify-content-between" style="background-color: #e4263b!important;transform: rotateX(0deg);">
+                            <img class="card-img-top" src="/static/images/gobernanza/imagen_cumplimiento.png" alt="">
+                            <p class="mostrar w-100 text-center"><strong>Cumplimiento Regulatorio</strong></p>
+                        </div>
+                        <div class="card-body" style="background-color: #0076C0 !important; font-size: 20px;">
+                            <p class="text-center d-block">CYDSA monitorea constantemente el entorno regulatorio mediante una matriz de cumplimiento y
+                                colabora con asociaciones del sector para anticiparse y adaptarse a nuevas normativas.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card p-0">
+                        <div class="card-header2 d-flex flex-column justify-content-between" style="background-color: #e4263b!important;transform: rotateX(0deg);">
+                            <img class="card-img-top mb-0" src="/static/images/gobernanza/imagen_anticorrupcion.png" alt="Anticorrupción">
+                            <p class="mostrar w-100 text-center"><strong>Anticorrupción</strong></p>
+                        </div>
+                        <div class="card-body" style="background-color: #80A1B6 !important; font-size: 20px;">
+                            <p class="text-center d-block text-black">CYDSA evalúa los
+                                riesgos de corrupción, incluyendo sobornos, conflictos de interés y fraude. Para
+                                prevenir estos riesgos, implementa diversas políticas, procedimientos y estrategias de
+                                comunicación.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section id="riesgos" class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 mb-12 p-5"
+                 style="background-image: url({% static 'images/gobernanza/parallax_gestion.png' %})">
+                <h1 class="text-center">Gestión de riesgos ASG</h1>
+                <p class="text-justify">La <strong>gestión de riesgos ASG</strong> es clave para las empresas del
+                    sector químico,
+                    ya que sus operaciones pueden afectar significativamente el medio ambiente, la sociedad
+                    y la reputación
+                    corporativa. En el proceso de transición hacia la divulgación de información de acuerdo
+                    con las normas
+                    IFRS S1 Y S2, CYDSA se ha enfocado en la <strong>identificación y el análisis de los riesgos de
+                    sustentabilidad
+                    y climáticos que impactan en las operaciones</strong>.
+                </p>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}
+{% block otherscripts %}
+{#    <script src="{% static 'js/bootstrap.min.js' %}"></script>#}
+    <script src="{% static 'javascripts/jquery.waypoints.min.js' %}"></script>
+    <script src="{% static 'javascripts/countTo.js' %}"></script>
+    <script src="{% static 'javascripts/carousel.eventos.js' %}"></script>
+    <script>
+        $(document).ready(function () {
+            var owl = $("#oc-clients");
+            
+            owl.owlCarousel({
+                items: 1, 
+                loop: false, 
+                margin: 10,
+                nav: true, 
+                dots: false,  
+                autoplay: true, 
+                autoplayTimeout: 4000, 
+                autoHeight: true,
+                smartSpeed: 600, 
+                slideTransition: "linear"  
+            });
+            
+            owl.find("img").on("load", function () {
+                owl.trigger("refresh.owl.carousel");
+            });
+            
+            $(window).on("load", function () {
+                owl.trigger("refresh.owl.carousel");
+            });
+            
+            $(".owl-next").on("click", function () {
+                owl.trigger('next.owl.carousel');
+            });
+
+            $(".owl-prev").on("click", function () {
+                owl.trigger('prev.owl.carousel');
+            });
+            
+            owl.on('changed.owl.carousel', function (event) {
+                console.log("Carrusel cambiado", event);
+            });
+        });
+
+        function openModal(title, text, imageSrc) {
+            document.getElementById("modalTitle").innerText = title;
+            document.getElementById("modalText").innerText = text;
+            document.getElementById("modalImage").src = imageSrc;
+            var modal = new bootstrap.Modal(document.getElementById("imageModal"));
+            modal.show();
+        }
+
+    </script>
+{% endblock %}
