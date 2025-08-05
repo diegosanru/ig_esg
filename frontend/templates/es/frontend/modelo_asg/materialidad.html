@@ -152,8 +152,16 @@
             object-fit: contain;
             margin-bottom: 0;
         }
-        
 
+        /* Ocultar puntos de carusel */
+        .owl-dots {
+            display: none !important;
+        }
+
+        /* Ajustar ancho de p en modal */
+        .card-text {
+            margin: 0 40px;
+        }
     </style>
 {% endblock %}
 
@@ -514,15 +522,11 @@
                         <div class="oc-item">
                             <div class="image_wrapper">
                                 <a class="h4 text-white text-center modal-event"
-    
                                     data-toggle="modal"
                                     data-target="#myModal"
                                     data-title="Agua Limpia y Saneamiento"
-                                    data-description="Implementamos medidas para reducir el consumo de agua potable en nuestras operaciones.
-                                    "
-                                >
-                                <img src="{% static 'images/ods_6.png' %}">
-                                    
+                                    data-description="Implementamos medidas para reducir el consumo de agua potable en nuestras operaciones.">
+                                    <img src="{% static 'images/ods_6.png' %}">
                                 </a>
                             </div>
                         </div>
@@ -695,7 +699,7 @@
                         <div class="card-body">
                             <h2 class="event-title card-title mb-0 text-center text-bold tc-blue mb-5">
                             </h2>
-                            <p class="event-description card-text mt-5 text-justify">
+                            <p class="event-description card-text mt-5 text-justify" style="">
                             </p>
                             <div class="row justify-content-center">
                                 <img class="cover event-img col-md-6" src="">
