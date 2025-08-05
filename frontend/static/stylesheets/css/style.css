@@ -151,14 +151,14 @@ dl, dt, dd, ol, ul, li {
 
 /* line 138, D:/begrand/app/assets/stylesheets/css/style.css.scss */
 ::selection {
-    background: #4691ce;
+    background: #3DB7B0;
     color: #FFF;
     text-shadow: none;
 }
 
 /* line 144, D:/begrand/app/assets/stylesheets/css/style.css.scss */
 ::-moz-selection {
-    background: #4691ce;
+    background: #3DB7B0;
     /* Firefox */
     color: #FFF;
     text-shadow: none;

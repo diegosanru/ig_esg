@@ -2,6 +2,25 @@
 {% load static %}
 {% block otherstyles %}
     <style>
+
+.carousel2 .image_wrapper {
+    height: 300px; /* Ajusta según tu diseño */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.carousel2 .image_wrapper img {
+    max-height: 100%;
+    width: auto;
+    object-fit: contain;
+}
+        .active-icon img {
+        border: 3px solid #2B2B2B;
+        border-radius: 10px;
+        padding: 5px;
+    }
         .owl-carousel.for-carousel .item{
             min-height: 200px;
             background-color: #2792ec;
@@ -140,15 +159,13 @@
 
 {% block wrapper %}
     <div class="">
-        
+        <!--<section id="acciones" class="py-1" data-wow-duration="2s" data-wow-delay="2s" style="padding-bottom: 30px!important;">
+
         <div class="content-wrap">
             <div class="container">
-                <p class="text-justify" style="padding-top: 30px">CYDSA ha actualizado su <strong>Estrategia de Sustentabilidad</strong>, que se alinea con
-                    sus objetivos de negocio y se aplica de manera transversal en todas las áreas del Grupo. Esta estrategia
-                    proyecta una visión de sostenibilidad a largo plazo, con el propósito de implementar iniciativas que se
-                    centren en criterios Ambientales, Sociales y de Gobernanza (ESG, por sus siglas en inglés).</p>
+                <p class="text-justify" style="padding-top: 30px">En Industrial Gate realizamos un análisis de materialidad con el objetivo de identificar los temas ambientales, sociales y de gobernanza que son más relevantes tanto para nuestros grupos de interés como para la continuidad y sostenibilidad de nuestro modelo de negocio. Este ejercicio nos permite enfocar nuestros esfuerzos en los asuntos que realmente generan valor para la compañía y la sociedad, así como gestionar de manera proactiva los riesgos y oportunidades que enfrentamos.
+                </p>
             </div>
-            <section id="acciones" class="py-1" data-wow-duration="2s" data-wow-delay="2s" style="padding-bottom: 30px!important;">
                 <div class="container">
                 <h1 class="text-center mt-5 mb-5 tc-blue">
                     Logros principales de sustentabilidad en 2023</h1>
@@ -360,164 +377,260 @@
                    </div>
                </div>
             </div>
-        </div>
+        </div>-->
+
+        <section id="materialidad">
         <div class="container">
-            <div class="wow fadeInUp" data-wow-duration="1s">
+            
+            <div class="wow fadeInUp" data-wow-duration="1s"><br>
+                <h1 class="text-center tc-blue">Materialidad</h1>
                 <p class="text-justify" style="padding-top: 30px">
-                    El núcleo de la Estrategia de Sustentabilidad de CYDSA se expresa en su Modelo de Sustentabilidad,
-                    el cual está basado en tres pilares fundamentales: <strong>Medio Ambiente</strong>, <strong>Gente</strong> y <strong>Comunidad</strong>. Estos pilares
-                    guían todos los procesos del Grupo hacia el cumplimiento de sus metas y objetivos de sostenibilidad,
-                    al mismo tiempo que generan valor para sus Grupos de Interés.
+                    En Industrial Gate realizamos un análisis de materialidad con el objetivo de identificar los temas ambientales, sociales y de gobernanza que son más relevantes tanto para nuestros grupos de interés como para la continuidad y sostenibilidad de nuestro modelo de negocio. Este ejercicio nos permite enfocar nuestros esfuerzos en los asuntos que realmente generan valor para la compañía y la sociedad, así como gestionar de manera proactiva los riesgos y oportunidades que enfrentamos.
+
                 </p>
                 <div class="row justify-content-center">
-                    <img style="width: 10%; height: 10%" src="{% static 'images/asg/circulo_vf.png' %}" class="col-md-6 wow fadeInUp mb-4">
+                    <img style="width: 50%; height: 50%" src="{% static 'images/asg/materialidadig/materialidad.png' %}" class="col-md-6 wow fadeInUp mb-4">
                 </div>
                 <p class="text-justify" style="padding-top: 30px">
-                    En el centro del modelo se encuentran los <strong>principios y valores</strong> que rigen toda actividad de CYDSA. En
-                    la segunda capa aparecen las <strong>tres líneas de acción</strong> identificadas por los grupos de interés, las
-                    cuales se buscarán mejorar continuamente a través de la innovación y la generación de una cultura de
-                    Sustentabilidad apoyada en una buena comunicación y entrenamiento. Finalmente, en el círculo externo
-                    se muestran las <strong>seis prioridades englobadas en las tres líneas de acción</strong>.
+                    Los temas identificados como prioritarios guían el diseño de nuestra estrategia ASG, la gestión de proyectos y la comunicación con las partes interesadas. Esta evaluación se actualiza periódicamente para mantener su vigencia frente a los cambios en el contexto global y local.
                 </p>
             </div>
         </div>
+        </section>
+        
+        <section id="ejes">
         <div class="content-wrap p-2">
-            <section id="ejes">
-                <div class="container">
-                    <h1 class="text-center tc-blue">Ejes de acción 2023</h1>
+                <div class="container"><br>
+                    <h1 class="text-center tc-blue">Estrategia ASG</h1>
+
+                    <p class="text-justify">En Industrial Gate, concebimos la sostenibilidad como una estrategia de negocio que impulsa la creación de valor a largo plazo. Nuestra Estrategia Ambiental, Social y de Gobernanza (ASG) articula los principios que rigen nuestras operaciones y decisiones clave, alineándonos con los marcos internacionales más relevantes y las expectativas de nuestros grupos de interés.
+                    </p>
                     <div class="row text-center mb-2">
                         <!-- Botón 1 -->
                         <div class="col-md-4 icon-container wow fadeInUp">
                             <img src="/static/images/asg/ico_medio_ambiente.png" alt="Medio Ambiente" class="icon img-fluid" data-target="#tab1">
-                            <h3 class="m-0">Medio Ambiente</h3>
+                            <h3 class="m-0">Eje Ambiental</h3>
                         </div>
                         <!-- Botón 2 -->
                         <div class="col-md-4 icon-container wow fadeInUp">
                             <img src="/static/images/asg/ico_gente.png" alt="Gente" class="icon img-fluid" data-target="#tab2" style="height: 100px; width: 105px; padding-top: 10px">
-                            <h3 class="m-0">Gente</h3>
+                            <h3 class="m-0">Eje Social</h3>
                         </div>
                         <!-- Botón 3 -->
                         <div class="col-md-4 icon-container wow fadeInUp">
                             <img src="/static/images/asg/ico_comunidad.png" alt="Comunidad" class="icon img-fluid" data-target="#tab3" style="height: 98px; width: 108px">
-                            <h3 class="m-0">Comunidad</h3>
+                            <h3 class="m-0">Eje de Gobernanza</h3>
                         </div>
                     </div>
                     <!-- Contenido dinámico -->
                     <div id="tab-content">
-                        <div id="tab1" class="tab-pane">
-                            <div class="row d-flex align-items-center">
-                                <div class="col-md-6">
-                                    <ul class="list-styled1 text-justify">
-                                        <li><img src="/static/images/asg/Iconos-30.png" alt="bullet" class="bullet"> Se incluyeron objetivos cuantitativos relacionados con emisiones de gases de efecto invernadero y economía circular en la nueva Estrategia de Sustentabilidad.</li>
-                                        <li><img src="/static/images/asg/Iconos-30.png" alt="bullet" class="bullet"> Se redujo la intensidad de emisiones de gases de efecto invernadero del Grupo en 24% con respecto al 2022.</li>
-                                        <li><img src="/static/images/asg/Iconos-30.png" alt="bullet" class="bullet">Se incrementó el volumen de extracción de aguas negras o tratadas del Grupo en 52% con respecto al 2022.</li>
-                                        <li><img src="/static/images/asg/Iconos-30.png" alt="bullet" class="bullet"> La Planta de Tratamiento de Aguas Negras en IQUISA Santa Clara extrajo el 38% del volumen de extracción de agua requerido para sus operaciones.</li>
-                                    </ul>
-                                </div>
-                                <div class="col-md-6 text-center">
-                                    <img class="img-fluid" src="/static/images/gobernanza/ejes-medio-ambiente.png" alt="Medio Ambiente">
-                                </div>
+                        <div id="tab1" class="tab-pane d-block">
+                            
+                                <div class="row d-flex align-items-center">
+                                    <div class="col-md-6 text-center">
+                                        <img class="img-fluid" src="/static/images/ejes-medio-ambiente.png" alt="Medio Ambiente">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <ul class="list-styled1 text-justify">
+                                            <li><img src="/static/images/asg/Iconos-30.png" alt="bullet" class="bullet"> Diseñamos nuestros inmuebles bajo criterios de eficiencia energética e innovación sustentable.</li>
+                                            <li><img src="/static/images/asg/Iconos-30.png" alt="bullet" class="bullet"> Monitoreamos el consumo de agua y energía, así como nuestras emisiones de CO₂e.</li>
+                                            <li><img src="/static/images/asg/Iconos-30.png" alt="bullet" class="bullet"> Buscamos reducir el impacto ambiental de nuestras operaciones mediante prácticas responsables y procesos de mejora continua.</li>
+                                        </ul>
+                                    </div>
                             </div>
                         </div>
                         <div id="tab2" class="tab-pane d-none">
                             <div class="row d-flex align-items-center">
-                                <div class="col-md-6 text-center">
-                                    <img class="img-fluid" src="/static/images/gobernanza/ejes-gente.png" alt="Gente">
-                                </div>
+                                
                                 <div class="col-md-6">
                                     <ul class="list-styled1 text-justify">
-                                        <li><img src="/static/images/asg/Iconos-28.png" alt="bullet" class="bullet"> Se incluyeron objetivos cuantitativos relacionados con la diversidad, equidad e igualdad, así como con la salud y seguridad industrial, en la nueva Estrategia de Sustentabilidad.</li>
-                                        <li><img src="/static/images/asg/Iconos-28.png" alt="bullet" class="bullet"> Se redujeron las lesiones por accidente laboral registrables un 16.7% en comparación con el 2022.</li>
-                                        <li><img src="/static/images/asg/Iconos-28.png" alt="bullet" class="bullet"> Se mantuvieron certificaciones en ISO 14001, reconocimientos del Chlorine Institute y la Asociación Nacional de la Industria Química por mejores prácticas en responsabilidad integral.</li>
+                                        <li><img src="/static/images/asg/Iconos-30.png" alt="bullet" class="bullet"> Promovemos condiciones laborales justas, seguras y equitativas.</li>
+                                        <li><img src="/static/images/asg/Iconos-30.png" alt="bullet" class="bullet"> Impulsamos el desarrollo profesional de nuestros colaboradores y fomentamos la diversidad en nuestras plantillas.</li>
+                                        <li><img src="/static/images/asg/Iconos-30.png" alt="bullet" class="bullet"> Establecemos vínculos de colaboración con las comunidades y actores locales para contribuir positivamente en los territorios donde operamos.</li>
                                     </ul>
+                                </div>
+                                <div class="col-md-6 text-center">
+                                    <img class="img-fluid" src="/static/images/ejes-gente.png" alt="Gente">
                                 </div>
                             </div>
                         </div>
                         <div id="tab3" class="tab-pane d-none">
                             <div class="row d-flex align-items-center">
+                                <div class="col-md-6 text-center">
+                                    <img class="img-fluid" src="/static/images/ejes-comunidad.png" alt="Comunidad">
+                                </div>
                                 <div class="col-md-6">
                                     <ul class="list-styled1 text-justify">
-                                        <li><img src="/static/images/asg/Iconos-29.png" alt="bullet" class="bullet"> Durante 2023, CYDSA no recibió notificaciones de las comunidades aledañas a las plantas sobre afectaciones ocasionadas por las operaciones.</li>
-                                        <li><img src="/static/images/asg/Iconos-29.png" alt="bullet" class="bullet"> Se aplicaron encuestas de percepción de riesgo social dirigidas a los vecinos para analizar el impacto de los diversos apoyos comunitarios realizados por CYDSA.</li>
+                                        <li><img src="/static/images/asg/Iconos-29.png" alt="bullet" class="bullet"> Contamos con órganos de gobierno eficientes y políticas internas que promueven la rendición de cuentas.</li>
+                                        <li><img src="/static/images/asg/Iconos-29.png" alt="bullet" class="bullet"> Integramos la gestión de riesgos ASG en nuestras decisiones estratégicas y procesos operativos.</li>
+                                        <li><img src="/static/images/asg/Iconos-29.png" alt="bullet" class="bullet"> Nos alineamos con las mejores prácticas del sector en materia de cumplimiento normativo, derechos humanos, integridad corporativa y prevención de conflictos de interés.</li>
                                     </ul>
                                 </div>
-                                <div class="col-md-6 text-center">
-                                    <img class="img-fluid" src="/static/images/gobernanza/ejes-comunidad.png" alt="Comunidad">
-                                </div>
+                                
                             </div>
                         </div>
                     </div>
-                </div>
+                </div><br><br>
             </section>
         </div>
         <div class="container">
             <div id="modelo-sus" class="wow fadeInUp" data-wow-duration="1s">
-                <h1 class="text-center mt-5 mb-5" style="color: #2B2B2B;">Modelo de sustentabilidad</h1>      
+                <h1 class="text-center mt-5 mb-5" style="color: #2B2B2B;">Nuestro Compromiso con los ODS</h1>      
                 <p class="text-justify">
-                    Para desarrollar nuevas estrategias y acciones que promuevan un desarrollo armónico y sostenible, se
-                    consideran los resultados de diversos sistemas de control y el diálogo con los Grupos de Interés.
-                    Con esta visión, <strong>CYDSA reafirma su cultura de mejora continua y fortalece su imagen sustentable</strong>,
-                    logrando un progreso constante mediante objetivos concretos y métricas de seguimiento.
+                    En Industrial Gate entendemos que el desarrollo sostenible requiere acciones concretas que contribuyan a resolver los desafíos globales. Por ello, alineamos nuestra estrategia ASG con los Objetivos de Desarrollo Sostenible (ODS) de las Naciones Unidas, identificando aquellos que están directamente relacionados con nuestro modelo de negocio y áreas de impacto.
                 </p>
+                <p class="text-justify">
+                    A través de nuestras operaciones, políticas y programas, impulsamos iniciativas que favorecen el crecimiento económico inclusivo, la innovación industrial responsable, el acceso a empleos dignos y la protección del medio ambiente.
+                </p>
+                <p class="text-justify">
+                    A continuación, se presentan los ODS con los que contribuimos activamente, junto con una breve explicación de cómo nuestras acciones se alinean con cada uno:                </p>
                
             </div>
+                                
+                    <div
+                            class="owl-carousel owl-carousel-full image-carousel carousel-widget my-3 carousel2"
+                            data-margin="" data-loop="true" data-nav="false" data-autoplay="3000" data-items="6"
+                            data-dots="false" data-items-xs="1"
+                            data-items-sm="2" data-items-md="2" data-items-lg="4" data-items-xl="4"
+                            data-auto-play-hover-pause="true">
+    
+    
+                        <div class="oc-item">
+                            <div class="image_wrapper">
+                                <a class="h4 text-white text-center modal-event"
+    
+                                    data-toggle="modal"
+                                    data-target="#myModal"
+                                    data-title="Igualdad de Género"
+                                    data-description="Establecimos objetivos para fortalecer la equidad de género en nuestras contrataciones y entornos laborales.
+                                    "
+                                >
+                                    <img src="{% static 'images/ods_5.png' %}">
+                                    
+                                </a>
+                            </div>
+                        </div>
+    
+                        <div class="oc-item">
+                            <div class="image_wrapper">
+                                <a class="h4 text-white text-center modal-event"
+    
+                                    data-toggle="modal"
+                                    data-target="#myModal"
+                                    data-title="Agua Limpia y Saneamiento"
+                                    data-description="Implementamos medidas para reducir el consumo de agua potable en nuestras operaciones.
+                                    "
+                                >
+                                <img src="{% static 'images/ods_6.png' %}">
+                                    
+                                </a>
+                            </div>
+                        </div>
+    
+                        <div class="oc-item">
+                            <div class="image_wrapper">
+                                <a class="h4 text-white text-center modal-event"
+                                    data-toggle="modal"
+                                    data-target="#myModal"
+                                    data-title="Trabajo decente y crecimiento económico"
+                                    data-description="Se reforzaron protocolos de seguridad con capacitaciones periódicas y mejoras en las condiciones laborales.
+                                    "
+                                >
+                                <img src="{% static 'images/ods_8.png' %}">
+                                    
+                                </a>
+                            </div>
+                        </div>
+    
+                        <div class="oc-item">
+                            <div class="image_wrapper">
+                                <a class="h4 text-white text-center modal-event"
+    
+                                    data-toggle="modal"
+                                    data-target="#myModal"
+                                    data-title="Industria, innovación e infraestructura"
+                                    data-description="Se integraron criterios de sustentabilidad en el diseño y construcción de naves industriales con tecnologías de última generación.
+                                    "
+                                >
+                                <img src="{% static 'images/ods_9.png' %}">
+                                    
+                                </a>
+                            </div>
+                        </div>
+    
+    
+                        <div class="oc-item">
+                            <div class="image_wrapper">
+                                <a class="h4 text-white text-center modal-event"
+    
+                                    data-toggle="modal"
+                                    data-target="#myModal"
+                                    data-title="Ciudades y comunidades sostenibles"
+                                    data-description="Se promovió la integración urbana de los parques industriales mediante infraestructura incluyente y respeto al entorno.
+                                    "
+                                >
+                                <img src="{% static 'images/ods_11.png' %}">
+                                    
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="oc-item">
+                            <div class="image_wrapper">
+                                <a class="h4 text-white text-center modal-event"
+    
+                                    data-toggle="modal"
+                                    data-target="#myModal"
+                                    data-title="Acción por el clima"
+                                    data-description="Se establecieron metas de reducción de emisiones y se midieron las huellas de carbono de alcance 1 y 2.
+                                    "
+                                >
+                                <img src="{% static 'images/ods_13.png' %}">
+                                    
+                                </a>
+                            </div>
+                        </div>
+    
+                        
+                        
+                        
+                    </div>
         </div>
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-6 col-sm-1 col-lg-6 m-0 p-0">
                     <img src="/static/images/ambiental/generacion-valor-compartido.png" alt="" class="img_fluid">
                 </div>
-                <div class="col-md-6 col-sm-1 col-lg-6 p-5 d-flex flex-column justify-content-center">
-                    <h1 class="tc-blue text-center" style="color: #79B928">
-                        Generación de valor compartido con todos los grupos de interés
+                <div class="col-md-6 col-sm-1 col-lg-6 p-5 d-flex flex-column justify-content-center" style="background-color: #F5BA3D">
+                    <h1 class="tc-blue text-center" style="color: white">
+                        Afiliaciones
                     </h1>
                     <div class="d-flex justify-content-center">
-                        <ul class="list-styled">
+                        <ul class="list-styled" style="color: #fff;">
+                            <p class="text-justify" style="color: white">En Industrial Gate reconocemos el valor de colaborar con organismos y asociaciones que impulsan estándares de excelencia en sostenibilidad, ética empresarial y buenas prácticas en la industria. Estas alianzas nos permiten fortalecer nuestra gestión ASG, compartir conocimiento, y mantenernos a la vanguardia en temas clave para el desarrollo responsable.
+                            </p>
+                            <p class="text-justify" style="color: white">Formamos parte de las siguientes iniciativas y redes:</p>
                             <li>
-                                <p>Accionistas y Tenedores de Bonos</p>
+                                <p style="color: white">Pacto Mundial de las Naciones Unidas (UN Global Compact)</p>
                             </li>
                             <li>
-                                <p>Analistas de Capital y Deuda</p>
+                                <p style="color: white">Consejo Consultivo de Finanzas Verdes (CCFV)</p>
                             </li>
                             <li>
-                                <p>Autoridades</p>
+                                <p style="color: white">Red Mexicana del Pacto Mundial</p>
                             </li>
                             <li>
-                                <p>Clientes</p>
+                                <p style="color: white">Asociación Mexicana de Parques Industriales Privados (AMPIP)</p>
                             </li>
-                            <li>
-                                <p>Colaboradores</p>
-                            </li>
-                            <li>
-                                <p>Comunidad</p>
-                            </li>
+                            
                         </ul>
-                        <ul class="list-styled">
-                            <li>
-                                <p>Gobierno</p>
-                            </li>
-                            <li>
-                                <p>Instituciones financieras</p>
-                            </li>
-                            <li>
-                                <p>Medios de comunicación</p>
-                            </li>
-                            <li>
-                                <p>ONGs</p>
-                            </li>
-                            <li>
-                                <p>Proveedores / Distribuidores</p>
-                            </li>
-                            <li>
-                                <p>Sindicatos</p>
-                            </li>
-                        </ul>
+                        
                     </div>
 
                 </div>
                 <div class="col-md-6 col-sm-1 col-lg-6 p-5 text-white d-flex flex-column justify-content-center"
-                         style="background-color: #79B928">
-                        <h1 class="text-white text-center" style="color: #E3B94A">
+                         style="background-color: #3DB7B0">
+                        <h1 class="text-white text-center" style="color: white">
                             Líneas de acción de CYDSA
                         </h1>
                         <p class="text-justify">
@@ -677,6 +790,37 @@
                 // Mostrar la pestaña seleccionada
                 const target = document.querySelector(this.dataset.target);
                 target.classList.add('active');
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const icons = document.querySelectorAll('.icon');
+            const tabs = document.querySelectorAll('.tab-pane');
+    
+            icons.forEach(function (icon) {
+                icon.addEventListener('click', function () {
+                    const targetId = this.getAttribute('data-target');
+    
+                    // Oculta todos los tabs
+                    tabs.forEach(tab => {
+                        tab.classList.add('d-none');
+                        tab.classList.remove('d-block');
+                    });
+    
+                    // Quita estilo activo de todos los icon-container
+                    document.querySelectorAll('.icon-container').forEach(c => c.classList.remove('active-icon'));
+    
+                    // Muestra el tab seleccionado
+                    const targetTab = document.querySelector(targetId);
+                    if (targetTab) {
+                        targetTab.classList.remove('d-none');
+                        targetTab.classList.add('d-block');
+                    }
+    
+                    // Marca el icono como activo
+                    this.parentElement.classList.add('active-icon');
+                });
             });
         });
     </script>
