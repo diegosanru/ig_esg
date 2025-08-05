@@ -162,6 +162,20 @@
         .card-text {
             margin: 0 40px;
         }
+
+        /* Hover para imagen */
+        .mat-img {
+            border: 1px #dfdfdf solid;
+            box-shadow: #dfdfdf 0px 0px 10px;
+            border-radius: 10px;
+        }
+        .mat-img img {
+            margin-top: 20px;
+            transition: .5s ease;
+        }
+        .mat-img img:hover {
+            scale: 103%;
+        }
     </style>
 {% endblock %}
 
@@ -396,7 +410,7 @@
                     En Industrial Gate realizamos un análisis de materialidad con el objetivo de identificar los temas ambientales, sociales y de gobernanza que son más relevantes tanto para nuestros grupos de interés como para la continuidad y sostenibilidad de nuestro modelo de negocio. Este ejercicio nos permite enfocar nuestros esfuerzos en los asuntos que realmente generan valor para la compañía y la sociedad, así como gestionar de manera proactiva los riesgos y oportunidades que enfrentamos.
 
                 </p>
-                <div class="row justify-content-center">
+                <div class="row justify-content-center mat-img">
                     <img style="width: 50%; height: 50%" src="{% static 'images/asg/materialidadig/materialidad.png' %}" class="col-md-6 wow fadeInUp mb-4">
                 </div>
                 <p class="text-justify" style="padding-top: 30px">
@@ -600,15 +614,18 @@
                         
                     </div>
         </div><br><br>
-        <div class="container-fluid">
 
-            <div id="modelo-sus" class="wow fadeInUp" data-wow-duration="1s">
+
+            <div id="modelo-sus" class=" container wow fadeInUp" data-wow-duration="1s">
                 <h1 class="text-center mb-5" style="color: #2B2B2B;">Afiliaciones y Certificaciones</h1>
                 <p class="text-justify">
                     Como parte de nuestro compromiso con la adopción de prácticas ASG de excelencia, participamos en iniciativas y programas que impulsan la sostenibilidad en nuestras actividades. Además, contamos con certificaciones que respaldan nuestro cumplimiento con estándares reconocidos a nivel nacional e internacional en aspectos ambientales, sociales y de gobernanza corporativa.
                 </p>
                
             </div>
+        <div class="container-fluid">
+
+
 
             
 
