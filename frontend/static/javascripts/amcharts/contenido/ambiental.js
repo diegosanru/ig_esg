@@ -6,47 +6,24 @@ if (typeof AmCharts !== 'undefined') {
         "theme": "none",
         "titles": [
             {
-                "text": "Emisiones CO\u2082 equivalente (miles ton CO\u2082eq)",
+                "text": "Consumo Energético (kWhs)",
                 "size": 15,
                 "useHTML": true
             }
         ],
         "dataProvider": [
-            {
-                "year": "2018",
-                "alcance1": 2378,
-                "alcance2": 377,
-                "alcances1y2": 2755
-            },
-            {
-                "year": "2019",
-                "alcance1": 1813,
-                "alcance2": 424,
-                "alcances1y2": 2237
-            },
-            {
-                "year": "2020",
-                "alcance1": 962,
-                "alcance2": 422,
-                "alcances1y2": 1384
-            },
-            {
-                "year": "2021",
-                "alcance1": 1945,
-                "alcance2": 482,
-                "alcances1y2": 2427
-            },
-            {
-                "year": "2022",
-                "alcance1": 856,
-                "alcance2": 391,
-                "alcances1y2": 1247
-            },
+            
             {
                 "year": "2023",
-                "alcance1": 550,
-                "alcance2": 484,
-                "alcances1y2": 1034
+                "alcance1": 2464830,
+            },
+            {
+                "year": "2024",
+                "alcance1": 2566329,  
+            },
+            {
+                "year": "Entregas 2024",
+                "alcance1": 18105951
             }
         ],
         "valueAxes": [
@@ -64,37 +41,15 @@ if (typeof AmCharts !== 'undefined') {
         ],
         "graphs": [
             {
-                "balloonText": "Emisiones directas de GEI (Alcance 1):[[value]]",
+                "balloonText": "[[value]]",
                 "fillAlphas": 1,
                 "lineAlpha": 0,
-                "title": "Emisiones directas de GEI (Alcance 1)",
+                "title": "",
                 "type": "column",
                 "valueField": "alcance1",
                 "color": "#F5BA3D",
                 "lineColor": "#F5BA3D",
                 "fillColors": "#F5BA3D"
-            },
-            {
-                "balloonText": "Emisiones indirectas de GEI al generar energía (Alcance 2):[[value]]",
-                "fillAlphas": 1,
-                "lineAlpha": 0,
-                "title": "Emisiones indirectas de GEI al generar energía (Alcance 2)",
-                "type": "column",
-                "valueField": "alcance2",
-                "color": "#2892EC",
-                "lineColor": "#2892EC",
-                "fillColors": "#2892EC"
-            },
-            {
-                "balloonText": "Total de emisiones de GEI (Alcances 1 y 2):[[value]]",
-                "fillAlphas": 1,
-                "lineAlpha": 0,
-                "title": "Total de emisiones de GEI (Alcances 1 y 2)",
-                "type": "column",
-                "valueField": "alcances1y2",
-                "color": "#232323",
-                "lineColor": "#232323",
-                "fillColors": "#232323"
             }
         ],
         "categoryField": "year",
