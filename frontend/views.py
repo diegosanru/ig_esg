@@ -76,7 +76,7 @@ def inicio(request):
         'title': _("Ambiental"),
         'page': 'inicio',
     }
-    return render(request, '{0}/frontend/inicio.html'.format(request.LANGUAGE_CODE), context)
+    return render(request, '{0}/frontend/index.html'.format(request.LANGUAGE_CODE), context)
 
 @gzip_page
 def ambiental(request):

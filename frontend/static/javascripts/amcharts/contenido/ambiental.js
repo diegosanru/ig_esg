@@ -16,14 +16,17 @@ if (typeof AmCharts !== 'undefined') {
             {
                 "year": "2023",
                 "alcance1": 2464830,
+                "color": "#F5BA3D",
             },
             {
                 "year": "2024",
-                "alcance1": 2566329,  
+                "alcance1": 2566329,
+                "color": "#F5BA3D",
             },
             {
                 "year": "Entregas 2024",
-                "alcance1": 18105951
+                "alcance1": 18105951,
+                "color": "#2B2B2B",
             }
         ],
         "valueAxes": [
@@ -47,7 +50,7 @@ if (typeof AmCharts !== 'undefined') {
                 "title": "",
                 "type": "column",
                 "valueField": "alcance1",
-                "color": "#F5BA3D",
+                "fillColorsField": "color",
                 "lineColor": "#F5BA3D",
                 "fillColors": "#F5BA3D"
             }
@@ -57,15 +60,208 @@ if (typeof AmCharts !== 'undefined') {
             "axisAlpha": 1,
             "gridAlpha": 0.1
         },
-        "legend": {
-            "position": "bottom",
-            "align": "center"
+        "export": {
+            "enabled": true
+        },
+
+    });
+
+    var chart6 = AmCharts.makeChart("chart6", {
+        "type": "serial",
+        "theme": "none",
+        "titles": [
+            {
+                "text": "Consumo Hídrico (m³)",
+                "size": 15,
+                "useHTML": true
+            }
+        ],
+        "dataProvider": [
+            
+            {
+                "year": "2023",
+                "alcance1": 2942,
+                "color": "#3DB7B0",
+            },
+            {
+                "year": "2024",
+                "alcance1": 3262,
+                "color": "#3DB7B0",
+            },
+            {
+                "year": "Entregas 2024",
+                "alcance1": 14976,
+                "color": "#2B2B2B",
+            }
+        ],
+        "valueAxes": [
+            {
+                "axisAlpha": 1,
+                "gridAlpha": 0.1,
+                "labelsEnabled": true,
+                "labelFunction": function (valueText, date, valueAxis) {
+                    return valueText;
+                },
+                "minimum": "0",
+                "autoGridCount": false,
+                "gridCount": 5
+            }
+        ],
+        "graphs": [
+            {
+                "balloonText": "[[value]]",
+                "fillAlphas": 1,
+                "lineAlpha": 0,
+                "title": "",
+                "type": "column",
+                "valueField": "alcance1",
+                "fillColorsField": "color",
+                "lineColor": "#F5BA3D",
+                "fillColors": "#F5BA3D"
+            }
+        ],
+        "categoryField": "year",
+        "categoryAxis": {
+            "axisAlpha": 1,
+            "gridAlpha": 0.1
         },
         "export": {
             "enabled": true
-        }
+        },
+
     });
 
+    var chart7 = AmCharts.makeChart("chart7", {
+        "type": "serial",
+        "theme": "none",
+        "titles": [
+            {
+                "text": "Alcance 2 (tCO2e)",
+                "size": 15,
+                "textAlign": "center",
+                "useHTML": true
+            }
+        ],
+        "dataProvider": [
+            
+            {
+                "year": "2023",
+                "alcance1": 697,
+                "color": "#13406B",
+            },
+            {
+                "year": "2024",
+                "alcance1": 752,
+                "color": "#13406B",
+            },
+            {
+                "year": "Entregas 2024",
+                "alcance1": 329,
+                "color": "#2B2B2B",
+            }
+        ],
+        "valueAxes": [
+            {
+                "axisAlpha": 1,
+                "gridAlpha": 0.1,
+                "labelsEnabled": true,
+                "labelFunction": function (valueText, date, valueAxis) {
+                    return valueText;
+                },
+                "minimum": "0",
+                "autoGridCount": false,
+                "gridCount": 5
+            }
+        ],
+        "graphs": [
+            {
+                "balloonText": "[[value]]",
+                "fillAlphas": 1,
+                "lineAlpha": 0,
+                "title": "",
+                "type": "column",
+                "valueField": "alcance1",
+                "fillColorsField": "color",
+                "lineColor": "#F5BA3D",
+                "fillColors": "#F5BA3D"
+            }
+        ],
+        "categoryField": "year",
+        "categoryAxis": {
+            "axisAlpha": 1,
+            "gridAlpha": 0.1
+        },
+        "export": {
+            "enabled": true
+        },
+
+    });
+
+    var chart8 = AmCharts.makeChart("chart8", {
+        "type": "serial",
+        "theme": "none",
+        "titles": [
+            {
+                "text": "Alcance 3 (tCO2e)",
+                "textAlign": "center",
+                "size": 15,
+                "useHTML": true
+            }
+        ],
+        "dataProvider": [
+            
+            {
+                "year": "2023",
+                "alcance1": 282,
+                "color": "#13406B",
+            },
+            {
+                "year": "2024",
+                "alcance1": 347,
+                "color": "#13406B",
+            },
+            {
+                "year": "Entregas 2024",
+                "alcance1": 7037,
+                "color": "#2B2B2B",
+            }
+        ],
+        "valueAxes": [
+            {
+                "axisAlpha": 1,
+                "gridAlpha": 0.1,
+                "labelsEnabled": true,
+                "labelFunction": function (valueText, date, valueAxis) {
+                    return valueText;
+                },
+                "minimum": "0",
+                "autoGridCount": false,
+                "gridCount": 5
+            }
+        ],
+        "graphs": [
+            {
+                "balloonText": "[[value]]",
+                "fillAlphas": 1,
+                "lineAlpha": 0,
+                "title": "",
+                "type": "column",
+                "valueField": "alcance1",
+                "fillColorsField": "color",
+                "lineColor": "#F5BA3D",
+                "fillColors": "#F5BA3D"
+            }
+        ],
+        "categoryField": "year",
+        "categoryAxis": {
+            "axisAlpha": 1,
+            "gridAlpha": 0.1
+        },
+        "export": {
+            "enabled": true
+        },
+
+    });
 
     if (locale == "es") {
         var peso_total_de_residuos = ['2022', '2023'];
