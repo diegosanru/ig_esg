@@ -15,81 +15,95 @@
     .owl-carousel1 * {
         pointer-events: auto; /* Reactiva los eventos para los elementos internos */
     }
+    .bienestar-bg {
+    position: relative;
+    background-image: url('/static/images/social/parallax_bienestar.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+}
+
+.bienestar-bg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #13406B;
+    opacity: .9; /* 50% */
+    z-index: 2;
+}
+
+.bienestar-bg h1,
+.bienestar-bg h2 {
+    position: relative;
+    z-index: 3;
+}
     </style>
 
 {% endblock %}
 
 {% block wrapper %}
-    <div class="content-wrap">
-        <div class="container">
-            <div id="ppropiedades" class="">
-                <div class="container-fluid">
-                    <div class="tab-content" id="myTabContent">
-                        <div class="tab-pane fade show active" id="grupos" role="tabpanel" aria-labelledby="grupos-tab">
-                            <div id="acciones">
-                                <div class=" py-5 container">
-                                    <h1 class="text-center" style="color: #23356B;">
-                                        Principales acciones en 2023
-                                    </h1>
-                                    <article id="carousell_book">
-                                        <div class="content-wrap2">
-                                            <div class="container clearfix">
-                                                <div class="gtco-testimonials">
-                                                    <div class="owl-carousel owl-carousel1 owl-theme owl-loaded owl-drag">
-                                                        <div class="owl-stage-outer">
-                                                            <div class="owl-stage"
-                                                                 style="transition: 0.25s; width: 7200px; transform: translate3d(-2880px, 0px, 0px);">
-                                                                <div class="owl-item" style="width: 360px;">
-                                                                    <div class="card text-center ">
-                                                                        <div class=" d-flex flex-column justify-content-around align-items-center">
-                                                                            <img class="img-circle"
-                                                                                 src="/static/images/social/icono_estrategia_sustentabilidad.png">
-                                                                            <h5 class="text-bold" style="font-size: 26px">
-                                                                                Estrategia de Sustentabilidad
-                                                                            </h5>
-                                                                            <p class="card-text">
-                                                                                Se incluyeron objetivos cuantitativos
-                                                                                relacionados con la diversidad, equidad
-                                                                                e igualdad, así como con la salud y
-                                                                                seguridad industrial, en la nueva
-                                                                                Estrategia de Sustentabilidad. 
-                                                                            </p>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="owl-item" style="width: 360px;">
-                                                                    <div class="card text-center">
-                                                                        <div class=" d-flex flex-column justify-content-around align-items-center">
-                                                                            <img class="img-circle"
-                                                                                 src="/static/images/social/icono_reduccion_lesiones.png">
-                                                                            <h5 class="text-bold" style="font-size: 26px">
-                                                                                Reducción </br>de lesiones
-                                                                            </h5>
-                                                                            <p class="card-text">
-                                                                                Se redujeron las lesiones por accidente
-                                                                                laboral registrables un 16.7% en
-                                                                                comparación con el 2022.
-                                                                            </p>
+<div class="content-wrap">
+    <div class="container">
+        <div id="ppropiedades" class="">
+            <div class="container-fluid">
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="grupos" role="tabpanel" aria-labelledby="grupos-tab">
+                        <div id="acciones">
+                            <div class=" py-5 container">
+                                <h1 class="text-center" style="color: #23356B;">
+                                    Nuestra Gente
+                                </h1>
+                                <article id="carousell_book">
+                                    <div class="content-wrap2">
+                                        <div class="container clearfix">
+                                            <div class="gtco-testimonials">
+                                                <div class="owl-carousel owl-carousel1 owl-theme owl-loaded owl-drag">
+                                                    <div class="owl-stage-outer">
+                                                        <div class="owl-stage"
+                                                             style="transition: 0.25s; width: 7200px; transform: translate3d(-2880px, 0px, 0px);">
+                                                            <div class="owl-item" style="width: 360px;">
+                                                                <div class="card text-center ">
+                                                                    <div class=" d-flex flex-column justify-content-around align-items-center">
+                                                                        <img class="img-circle"
+                                                                             src="/static/images/social/icono_talento.png">
+                                                                        <h5 class="text-bold" style="font-size: 26px">
+                                                                            Talento como motor de crecimiento                                                                        </h5>
+                                                                        <p class="card-text">
+                                                                            En Industrial Gate reconocemos que el talento humano es el motor que impulsa nuestro crecimiento y éxito.
 
-                                                                        </div>
+                                                                        </p>
                                                                     </div>
                                                                 </div>
-                                                                <div class="owl-item" style="width: 360px;">
-                                                                    <div class="card text-center">
-                                                                        <div class="d-flex flex-column justify-content-around align-items-center">
-                                                                            <img class="img-circle"
-                                                                                 src="/static/images/social/icono_certificaciones.png">
-                                                                            <h5 class="text-bold" style="font-size: 26px">
-                                                                                Certificaciones y reconocimientos
-                                                                            </h5>
-                                                                            <p class="card-text">
-                                                                                Se mantuvieron certificaciones en ISO
-                                                                                14001, reconocimientos del Chlorine
-                                                                                Institute y la Asociación Nacional de la
-                                                                                Industria Química por mejores prácticas
-                                                                                en responsabilidad integral. 
-                                                                            </p>
-                                                                        </div>
+                                                            </div>
+                                                            <div class="owl-item" style="width: 360px;">
+                                                                <div class="card text-center">
+                                                                    <div class=" d-flex flex-column justify-content-around align-items-center">
+                                                                        <img class="img-circle"
+                                                                             src="/static/images/social/icono_entorno.png">
+                                                                        <h5 class="text-bold" style="font-size: 26px">
+                                                                            Entorno inclusivo y colaborativo                                                                        </h5>
+                                                                        <p class="card-text">
+                                                                            Promovemos un entorno laboral inclusivo y colaborativo que fomenta el sentido de pertenencia y la participación activa de nuestras y nuestros colaboradores.
+
+                                                                        </p>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="owl-item" style="width: 360px;">
+                                                                <div class="card text-center">
+                                                                    <div class="d-flex flex-column justify-content-around align-items-center">
+                                                                        <img class="img-circle"
+                                                                             src="/static/images/social/icono_bienestar.png">
+                                                                        <h5 class="text-bold" style="font-size: 26px">
+                                                                            Compromiso con el bienestar laboral                                                                        </h5>
+                                                                        <p class="card-text">
+                                                                            Nuestro enfoque está en garantizar condiciones laborales justas, ofrecer oportunidades de desarrollo y mantener canales de comunicación abiertos que fortalezcan la relación entre el personal y la Compañía.
+
+                                                                        </p>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -98,29 +112,95 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </article>
-                                </div>
-                            </div>    
-                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>    
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
+<div class="content-wrap">
+    <div class="container" id="diversidad">
+        <div class="py-5 container">
+            <h1 class="text-center" style="color: #23356B;">
+                Diversidad, Equidad e Igualdad
+            </h1>
+            <p class="justify-content-center">Estamos convencidos de que la diversidad fortalece a la organización y enriquece nuestra visión de negocio. Por ello, impulsamos políticas y prácticas que promueven la equidad de oportunidades, el respeto a la identidad y la inclusión de todas las personas, independientemente de su género, edad, origen o creencias. Nuestro enfoque busca generar un entorno libre de discriminación y sesgos, en el que cada individuo pueda desarrollarse plenamente y aportar su máximo potencial.
+
+            </p>
+            <p>Al cierre de 2024, Industrial Gate contaba con <strong>25 colaboradores</strong>, de los cuales el
+                <strong>52%</strong> correspondían al sexo
+                masculino y el <strong>48%</strong> al femenino, distribuidos de la siguiente manera:</p>
+        </div>
+        <section id="sec_consumo" class="py-3">
+            <div class="container-fluid">
+                <div id="consumo" class="finn-counto">
+                    <div class="container">
+                        <div class="row honeycomb-wrapper justify-content-center">
+                            <div class="col-md-6 col-lg-4 tile">
+                                <div class="honeycomb">
+                                    <div class="content">
+                                        <img src="/static/images/social/icono_hombres.png" alt="">
+                                        <h2 class="count" data-speed="1500" data-to="18" data-in-viewport="yes"
+                                            data-decimals="0">13</h2><span class="title-effect "></span>
+                                    </div>
+                                </div>
+                                <h5><b>Hombres</b></h5>
+                            </div>
+                            <div class="col-md-6 col-lg-4 tile">
+                                <div class="honeycomb">
+                                    <div class="content">
+                                        <img src="/static/images/social/icono_mujeres.png" alt="">
+                                        <h2 class="count" data-speed="1500" data-to="12" data-in-viewport="yes"
+                                            data-decimals="0">12</h2><span class="title-effect "></span>
+                                    </div>
+                                </div>
+                                <h5><b>Mujeres</b></h5><br>
+                            </div>
+                            <div class="col-md-6 col-lg-4 tile">
+                                <div class="honeycomb">
+                                    <div class="content">
+                                        <img src="/static/images/social/icono_ambos.png" alt="">
+                                        <h2 class="count" data-speed="1500" data-to="25" data-in-viewport="yes"
+                                            data-decimals="0">25</h2><span class="title-effect "></span>
+                                    </div>
+                                </div>
+                                <h5><b>Total</b><br></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+<section id="bienestar" class="container-fluid">
+    <div class="row">
+        <div class="col-md-12 mb-12 p-5 bienestar-bg">
+            <h1 class="text-center text-white">Capacitación y Desarrollo</h1>
+            <h2 class="text-center text-white">
+                Consideramos que la formación continua es clave para fortalecer las competencias técnicas y personales de nuestro equipo. En Industrial Gate desarrollamos e impulsamos programas de capacitación enfocados en las necesidades específicas de cada área, con el objetivo de potenciar habilidades, mejorar el desempeño y asegurar que nuestro personal cuente con las herramientas necesarias para enfrentar los retos del sector inmobiliario industrial.
+            </h2>
+        </div>
+    </div>
+</section>
     <section class="bg-gray-fmty estrategia" id="cultura">
         <div class="container-fluid container-relative">
             <div class="row align-items-center justify-content-center preguntas-finales">
                 <div class="col-12 col-xl-5 col-lg-6 col-md-10 padding-6-rem-tb lg-padding-5-rem-tb lg-padding-2-half-rem-right md-padding-15px-right md-no-padding-tb md-margin-5-rem-bottom">
-                    <h1 class="mt-5 mt-lg-0 alt-font font-weight-500 texto-cenizo letter-spacing-minus-1px margin-4-half-rem-bottom md-margin-4-rem-bottom lg-margin-2-half-rem-bottom md-w-100" style="color: #23356B;">
-                        Cultura de salud y seguridad
+                    <h1 class="mt-5 mt-lg-0 alt-font font-weight-500 texto-cenizo letter-spacing-minus-1px margin-4-half-rem-bottom md-margin-4-rem-bottom lg-margin-2-half-rem-bottom md-w-100 text-center" style="color: #23356B;">
+                        Salud y Seguridad en Industrial Gate
                     </h1>
-                    <div class="panel-group accordion-event accordion-style-03 margin-4-rem-bottom lg-margin-2-rem-bottom">
+                    <div class="panel-group accordion-event accordion-style-03 margin-4-rem-bottom lg-margin-2-rem-bottom text">
                         <div data-item="primero"
                              class="estra-link panel box-shadow-small border-radius-5px wow animate__fadeInUp animated active"
                              data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s;">
                             <div class="panel-heading">
                                 <div class="boton-info1">
-                                    <span>Sistema de Gestión de Salud y Seguridad</span>
+                                    <span>Entorno Laboral Seguro</span>
                                     <i class="indicator fa fa-angle-right text-tussock icon-extra-small"></i>
                                 </div>
                             </div>
@@ -130,7 +210,7 @@
                              data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s;">
                             <div class="panel-heading">
                                 <div class="boton-info1">
-                                    <span>Sistemas de gestión</span>
+                                    <span>Prevención y Cumplimiento Normativo</span>
                                     <i class="indicator fa fa-angle-right text-tussock icon-extra-small"></i>
                                 </div>
                             </div>
@@ -140,7 +220,7 @@
                              data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s;">
                             <div class="panel-heading">
                                 <div class="boton-info1">
-                                    <span>Políticas de gestión</span>
+                                    <span>Capacitación en Seguridad</span>
                                     <i class="indicator fa fa-angle-right text-tussock icon-extra-small"></i>
                                 </div>
                             </div>
@@ -150,7 +230,7 @@
                              data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s;">
                             <div class="panel-heading">
                                 <div class="boton-info1">
-                                    <span>Mecanismos de gestión</span>
+                                    <span>Promoción de la Salud Integral</span>
                                     <i class="indicator fa fa-angle-right text-tussock icon-extra-small"></i>
                                 </div>
                             </div>
@@ -160,7 +240,7 @@
                              data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s;">
                             <div class="panel-heading">
                                 <div class="boton-info1">
-                                    <span>Certificaciones de gestión</span>
+                                    <span>Promoción de la Salud Integral</span>
                                     <i class="indicator fa fa-angle-right text-tussock icon-extra-small"></i>
                                 </div>
                             </div>
@@ -172,10 +252,8 @@
                     <div class="outside-box-right position-relative">
                         <img src="/static/images/social/sistema_gestion_salud_seguridad.jpg" class="overflow-hidden">
                         <div class="estra-info">
-                            <p class="font">Su objetivo es prevenir accidentes y enfermedades ocupacionales, creando un
-                                entorno laboral seguro. Este sistema abarca la identificación y control de
-                                riesgos, capacitación, cumplimiento de normativas, promoción de la salud y
-                                gestión de incidentes.</p>
+                            <p class="font">En Industrial Gate priorizamos la integridad física y el bienestar de todas y todos nuestros colaboradores. Implementamos protocolos claros de prevención y respuesta ante incidentes, garantizando que nuestras operaciones se desarrollen en un ambiente seguro y controlado.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -184,12 +262,8 @@
                     <div class="outside-box-right position-relative">
                         <img src="/static/images/social/sistemas_gestion.jpg" class="overflow-hidden">
                         <div class="estra-info">
-                            <p class="font">El Sistema de Administración de Seguridad Industrial, Seguridad Operativa y
-                                Protección al Medio Ambiente garantiza la seguridad en alineación con el
-                                Protocolo de Seguridad, Salud Ocupacional y Medio Ambiente del Process
-                                Improvement Institute. El sistema tiene como objetivo la identificación,
-                                reducción y control de los riesgos en materia de salud y seguridad para los
-                                colaboradores.</p>
+                            <p class="font">Nos aseguramos de que todas nuestras prácticas laborales cumplan con la normatividad vigente en materia de seguridad e higiene. Esto incluye la evaluación continua de riesgos y la adopción de medidas preventivas para minimizar cualquier posible incidente.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -198,8 +272,8 @@
                     <div class="outside-box-right position-relative">
                         <img src="/static/images/social/politicas_gestion.jpg" class="overflow-hidden">
                         <div class="estra-info">
-                            <p class="font">La Política de Seguridad y Salud Ocupacional, se encuentra alineada con los
-                                estándares de las certificaciones ISO. </p>
+                            <p class="font">Fomentamos la cultura preventiva a través de programas de capacitación periódicos, donde nuestro personal adquiere conocimientos prácticos para actuar de forma segura en su área de trabajo y responder adecuadamente en situaciones de emergencia.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -208,9 +282,8 @@
                     <div class="outside-box-right position-relative">
                         <img src="/static/images/social/mecanismos_gestion.jpg" class="overflow-hidden">
                         <div class="estra-info">
-                            <p class="font">Todas las plantas y negocios de CYDSA aplican el sistema de Process Safety
-                                Management para garantizar la seguridad laboral. Los trabajos peligrosos siguen
-                                estrictos protocolos y niveles de autorización. </p>
+                            <p class="font">Además de la seguridad física, promovemos el bienestar integral mediante iniciativas que impulsan hábitos saludables, cuidado emocional y balance entre la vida personal y laboral.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -219,17 +292,9 @@
                     <div class="outside-box-right position-relative">
                         <img src="/static/images/social/certificaciones_gestion.png" class="overflow-hidden">
                         <div class="estra-info">
-                            <ul class="font">
-                                <li style="padding-bottom: 5px; font-size:24px">• Sistema de Administración de Responsabilidad Integral (SARI)</li> 
-                               <li style="padding-bottom: 5px; font-size:24px">• Programa de Autogestión de Seguridad y Salud en el Trabajo (PASST)</li>
-                                <li style="padding-bottom: 5px; font-size:24px">• Sistema de Administración de Seguridad Industrial, Seguridad Operativa y de Protección al
-                                Medio Ambiente (SASISOPA)</li>
-                               <li style="padding-bottom: 5px; font-size:24px">• Excelencia Ambiental e Industria Limpia Nivel 2</li>
-                                <li style="padding-bottom: 5px; font-size:24px">• ISO 14001 en gestión ambiental</li>
-                                <li style="padding-bottom: 5px; font-size:24px">• ISO 9001 en gestión de calidad.</li>
-                            </ul>
+                            <p class="font">Además de la seguridad física, promovemos el bienestar integral mediante iniciativas que impulsan hábitos saludables, cuidado emocional y balance entre la vida personal y laboral.
+                            </p>
                         </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -241,18 +306,6 @@
                     Gestión de Riesgos de Salud y Seguridad
                 </h1>
             </div>
-            <div class="row justify-content-center" style="width: 80%; margin: 0 auto;">
-                <div class="row text-center">
-                    <div class="col-md-6">
-                        <h3 style="font-weight: bold; color: #2892EC">4.6 accidentes incapacitantes por cada
-                            1,000 trabajadores en 2023</h3>
-                    </div>
-                    <div class="col-md-6">
-                        <h3 style="font-weight: bold; color: #79B928">-16.7% lesiones por accidentes laborales
-                            registrables en comparación con 2022.</h3>
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
     <section id="integracion" class="container-fluid">
@@ -260,203 +313,27 @@
                 <div class="col-md-4 mb-4 d-flex justify-content-center align-items-center p-5"
                      style="background-image: url({% static 'images/social/estudios_riesgos.png' %});">
                     <div class="layer"></div>
-                    <h2 class="text-center text-white font-weight-bold">Se realizan estudios de riesgos en el 100%
-                        de los productos y plantas.</h2>
+                    <h2 class="text-center text-white font-weight-bold">Impulsamos la economía de las comunidades donde operamos, priorizando la contratación de proveedores y servicios locales, lo que genera empleo y fortalece la actividad económica regional.
+                    </h2>
                 </div>
                 <div class="col-md-4 mb-4 d-flex justify-content-center align-items-center p-5"
                      style="background-image: url({% static 'images/social/colaboradores_posibilidad.png' %});">
                     <div class="layer"></div>
-                    <h2 class="text-center text-white font-weight-bold">Todos los colaboradores tienen la
-                        posibilidad de notificar peligros o situaciones de riesgo.</h2>
+                    <h2 class="text-center text-white font-weight-bold">Mantenemos una comunicación constante con autoridades para identificar necesidades y oportunidades de cooperación que beneficien tanto a la comunidad como a nuestra operación.
+                    </h2>
                 </div>
                 <div class="col-md-4 mb-4 d-flex justify-content-center align-items-center p-5"
                      style="background-image: url({% static 'images/social/cydsa_recibio.png' %});">
                     <div class="layer"></div>
-                    <h2 class="text-center text-white font-weight-bold">En 2023, CYDSA recibió nuevamente el Safety
-                        Excellence Award de The Chlorine Institute por su seguridad y cero emisiones de cloro.</h2>
+                    <h2 class="text-center text-white font-weight-bold">Apoyamos iniciativas enfocadas en el cuidado ambiental, asegurando que nuestro impacto social sea positivo y contribuya al desarrollo sostenible.
+                    </h2>
                 </div>
             </div>
         </section>
-        <div class="container pt-5 pb-5">
-            <div class="col-12 d-flex align-items-center">
-                <div class="col-6 d-flex justify-content-center pr-2">
-                    <img class="img-circle"
-                         src="/static/images/social/salud_operacion.png">
-                </div>
-                <div class="col-6">
-                    <div class="pt-5 container">
-                        <h1 class="text-center salud" style="color: #23356B;">
-                            Salud en la operación
-                        </h1>
-                    </div> 
-                    <li><strong>Detección y observación</strong> de la salud en las áreas de
-                        trabajo.</li>
-                        <li>Calidad de vida óptima para los colaboradores dentro de las
-                        instalaciones.</li>
-                        <li><strong>CYDSA cumplió al 100% con las disposiciones legales</strong>
-                        durante 2023.</li>
-                </div>
-            </div>
-        </div>
-    <div class="content-wrap">
-        <div class="container" id="diversidad">
-            <div class="py-5 container">
-                <h1 class="text-center" style="color: #23356B;">
-                    Diversidad, equidad e igualdad
-                </h1>
-                <p>Al cierre de 2023, CYDSA contaba con <strong>2,083 colaboradores</strong>, de los cuales el
-                    <strong>88%</strong> correspondían al sexo
-                    masculino y el <strong>12%</strong> al femenino, distribuidos de la siguiente manera:</p>
-            </div>
-            <section id="sec_consumo" class="py-3">
-                <div class="container-fluid">
-                    <div id="consumo" class="finn-counto">
-                        <div class="container">
-                            <div class="row honeycomb-wrapper justify-content-center">
-                                <div class="col-md-6 col-lg-4 tile">
-                                    <div class="honeycomb">
-                                        <div class="content">
-                                            <img src="/static/images/social/icono_hombres.png" alt="">
-                                            <h2 class="count" data-speed="2500" data-to="1834" data-in-viewport="yes"
-                                                data-decimals="0">1,834</h2><span class="title-effect "></span>
-                                        </div>
-                                    </div>
-                                    <h5><b>Hombres</b></h5>
-                                </div>
-                                <div class="col-md-6 col-lg-4 tile">
-                                    <div class="honeycomb">
-                                        <div class="content">
-                                            <img src="/static/images/social/icono_mujeres.png" alt="">
-                                            <h2 class="count" data-speed="2500" data-to="249" data-in-viewport="yes"
-                                                data-decimals="0">249</h2><span class="title-effect "></span>
-                                        </div>
-                                    </div>
-                                    <h5><b>Mujeres</b></h5><br>
-                                </div>
-                                <div class="col-md-6 col-lg-4 tile">
-                                    <div class="honeycomb">
-                                        <div class="content">
-                                            <img src="/static/images/social/icono_ambos.png" alt="">
-                                            <h2 class="count" data-speed="2500" data-to="2083" data-in-viewport="yes"
-                                                data-decimals="0">2,083</h2><span class="title-effect "></span>
-                                        </div>
-                                    </div>
-                                    <h5><b>Total</b><br></h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-    </div>
-    <section id="bienestar" class="container-fluid">
-        <div class="row">
-            <div class="col-md-12 mb-12 p-5"
-                 style="background-image: url({% static 'images/social/parallax_bienestar.jpg' %});">
-                <h1 class="text-center text-white">Bienestar laboral</h1>
-                <h2 class="text-center text-white">El Grupo cuenta con una política y distintas
-                    medidas para asegurar el <strong>respeto de los derechos humanos y laborales, el cumplimiento de
-                        leyes y principios éticos, y la promoción de la inclusión y la igualdad de
-                        oportunidades</strong>.
-                    CYDSA tiene prestaciones adecuadas y superiores a las otorgadas por ley para sus
-                    colaboradores.</h2>
-            </div>
-        </div>
-    </section>
-    <div class="content-wrap">
-        <section id="desarrollo" class="container-fluid">
-            <div class=" pt-5 container">
-                <h1 class="text-center" style="color: #23356B;">Desarrollo y retención de talento</h1>
-                <p style="text-align: justify;">Desarrollar las habilidades y aptitudes de los colaboradores a
-                    través de <strong>programas de capacitación</strong> es de suma importancia para asegurar su crecimiento
-                    profesional y personal. Esto no solo tiene un impacto directo en su desarrollo individual,
-                    sino que también ha sido fundamental para permitir a CYDSA consolidarse como líder en la
-                    industria.</p>
-{#                <p class="mb-0">Durante 2023, se proporcionaron capacitaciones, <strong>webinars,#}
-{#                    talleres</strong> y <strong>cursos</strong> para el desarrollo y capacitación de 1,284 colaboradores, siendo los#}
-{#                    principales temas los presentados a continuación:</p>#}
-            </div>
-            <div class="content">
-                <img class="mx-auto d-block pb-5" src="/static/images/social/desarrollo_talento.png" alt="">
-            </div>
-        </section>
-{#        <section id="capacitacion" class="container-fluid">#}
-{#            <article class="intro pb-5 container">#}
-{#                <div class="container-fluid card-container">#}
-{#                    <div class="row justify-content-center mt-5">#}
-{#                        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-xl-2 col-2">#}
-{#                            <article>#}
-{#                                <figure class="cuadrado" style="border: 2px solid #79B928">#}
-{#                                    <img width="80" src="/static/images/social/icono_salud.png"#}
-{#                                     alt="Facturación">#}
-{#                                </figure>#}
-{#                                <div class="card-content text-center">#}
-{#                                    <b style="color:#4E4F51 ;">Salud y seguridad</b>#}
-{#                                </div>#}
-{#                            </article>#}
-{#                        </div>#}
-{#                        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-xl-2 col-2">#}
-{#                            <article>#}
-{#                                <figure class="cuadrado" style="border: 2px solid #79B928">#}
-{#                                    <img width="80" src="/static/images/social/icono_control.png"#}
-{#                                     alt="Inversionistas">#}
-{#                                </figure>#}
-{#                                <div class="card-content text-center">#}
-{#                                    <b style="color:#4E4F51 ;">Control ambiental</b>#}
-{#                                </div>#}
-{#                            </article>#}
-{#                        </div>#}
-{#                        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-xl-2 col-2">#}
-{#                            <article>#}
-{#                                <figure class="cuadrado" style="border: 2px solid #79B928">#}
-{#                                    <img width="80"#}
-{#                                         src="/static/images/social/icono_desarrollo.png"#}
-{#                                         alt="Mapas">#}
-{#                                </figure>#}
-{#                                <div class="card-content text-center">#}
-{#                                    <b style="color:#4E4F51 ;">Desarrollo de liderazgo</b>#}
-{#                                </div>#}
-{#                            </article>#}
-{#                        </div>#}
-{#                        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-xl-2 col-2">#}
-{#                            <article>#}
-{#                                <figure class="cuadrado" style="border: 2px solid #79B928">#}
-{#                                    <img width="80" src="/static/images/social/icono_equidad.png"#}
-{#                                         alt="Mapas">#}
-{#                                </figure>#}
-{#                                <div class="card-content text-center">#}
-{#                                    <b style="color:#4E4F51 ;">Equidad de género</b>#}
-{#                                </div>#}
-{#                            </article>#}
-{#                        </div>#}
-{#                        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-xl-2 col-2">#}
-{#                            <article>#}
-{#                                <figure class="cuadrado" style="border: 2px solid #79B928">#}
-{#                                    <img width="80" src="/static/images/social/icono_proteccion.png"#}
-{#                                         alt="Mapas">#}
-{#                                </figure>#}
-{#                                <div class="card-content text-center">#}
-{#                                    <b style="color:#4E4F51 ;">Protección de las finanzas familiares</b>#}
-{#                                </div>#}
-{#                            </article>#}
-{#                        </div>#}
-{#                        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-xl-2 col-2">#}
-{#                            <article>#}
-{#                                <figure class="cuadrado" style="border: 2px solid #79B928">#}
-{#                                    <img width="80" src="/static/images/social/icono_respuesta.png"#}
-{#                                         alt="Mapas">#}
-{#                                </figure>#}
-{#                                <div class="card-content text-center">#}
-{#                                    <b style="color:#4E4F51 ;">Respuesta a emergencias y primeros auxilios</b>#}
-{#                                </div>#}
-{#                            </article>#}
-{#                        </div>#}
-{#                    </div>#}
-{#                </div>#}
-{#            </article>#}
-{#        </section>#}
-    </div>
+        
+    
+    
+    
     
 
 
