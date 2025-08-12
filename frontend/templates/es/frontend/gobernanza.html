@@ -6,9 +6,76 @@
     <link rel="stylesheet" href="{% static 'stylesheets/css/owl.carousel.min.css' %}">
     <link rel="stylesheet" href="{% static 'stylesheets/css/owl.theme.default.css' %}">
     <style>
+        .bg-comites {
+    position: relative;
+    background-image: url("{% static 'images/gobernanza/fondo_comites.png' %}");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 50px 0; /* Ajusta el espacio vertical */
+}
+
+.bg-comites::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black; /* Puedes cambiar el color si quieres un tono específico */
+    opacity: 0.5; /* 50% */
+    z-index: 1;
+}
+
+.bg-comites h1 {
+    position: relative;
+    z-index: 2;
+}
         h1{
            font-weight: bold;
         }
+        .custom-table {
+        border-collapse: separate;
+        border-spacing: 0;
+        width: 100%;
+        border-radius: 10px;
+        overflow: hidden;
+        font-family: Arial, sans-serif;
+        text-align: left;
+    }
+
+    .custom-table th {
+        background-color: #004B75; /* Azul del encabezado */
+        color: white;
+        padding: 12px;
+        font-weight: bold;
+    }
+
+    .custom-table th:nth-child(2),
+    .custom-table th:nth-child(4) {
+        color: #F5BA3D; /* Color amarillo para "Cargo" y "Otros cargos relevantes" */
+    }
+
+    .custom-table td {
+        padding: 12px;
+        border-top: 1px solid #ddd;
+        vertical-align: middle;
+    }
+
+    .custom-table tr:nth-child(2) {
+        background-color: #f5f5f5; /* Fila gris */
+    }
+
+    /* Colores de nombres y cargos */
+    .name-green {
+        color: #00B8A9; /* Verde azulado */
+        font-weight: bold;
+    }
+
+    .cargo-orange {
+        color: #F5BA3D; /* Amarillo */
+        font-weight: bold;
+    }
     </style>
 {% endblock %}
 
@@ -17,23 +84,51 @@
         <div class="container pt-5 pb-5">
             <h1 id="gobierno" class="text-center wow fadeInUp" data-wow-duration="2s"
                 style="color: #2B2B2B;">
-                Gobierno Corporativo</h1>
-            <p class="text-justify wow fadeInUp" data-wow-duration="2s">El Gobierno Corporativo de CYDSA <strong>establece
-                un
-                marco normativo que guía la dirección de la Compañía</strong>, con un Consejo de Administración
-                experimentado que
-                asegura la rendición de cuentas, equidad y transparencia. La empresa valora la dirección ética para tomar decisiones que beneficien a todos los Grupos de Interés.</p>
-            <img class="mx-auto d-block" src="/static/images/gobernanza/imagen_gobierno.png">
+                Equipo Directivo</h1>
+            <p class="text-justify wow fadeInUp" data-wow-duration="2s">En Industrial Gate contamos con un equipo directivo con amplia experiencia en el sector inmobiliario industrial y en la gestión sostenible de proyectos. Su liderazgo impulsa la implementación de prácticas de excelencia, fomenta la innovación y asegura que las decisiones estratégicas estén alineadas con nuestra visión de largo plazo y con el compromiso de generar valor económico, social y ambiental.
+            </p>
+            <p class="text-justify wow fadeInUp" data-wow-duration="2s">La composición del Equipo Directivo se presenta a continuación:
+            </p>
+            <table class="custom-table">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Cargo</th>
+                        <th>Antigüedad*</th>
+                        <th>Otros cargos relevantes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="name-green">Antonio Báez</td>
+                        <td class="cargo-orange">CEO</td>
+                        <td>4 años</td>
+                        <td>Director Ejecutivo de TC Latin America Partners en México</td>
+                    </tr>
+                    <tr>
+                        <td class="name-green">Raúl Arroyo</td>
+                        <td class="cargo-orange">CIO</td>
+                        <td>4 años</td>
+                        <td>Socio Fundador REi – Real Estate Investments</td>
+                    </tr>
+                    <tr>
+                        <td class="name-green">Miguel Delgado</td>
+                        <td class="cargo-orange">CFO / COO</td>
+                        <td>4 años</td>
+                        <td>Socio Fundador REi – Real Estate Investments</td>
+                    </tr>
+                </tbody>
+            </table>  
+            <sub>*Tomando como referencia la fecha de inicio de operación de la plataforma industrial en México.</sub>      
         </div>
     </div>
-    <div class="container pt-5 pb-5">
+
+    <!--<div class="container pt-5 pb-5">
         <h1 id="consejo" class="text-center mb-5 wow fadeInUp" data-wow-duration="2s"
             style="color: #2B2B2B;">
-            Consejo de Administración</h1>
-        <p class="text-justify wow fadeInUp" data-wow-duration="2s">El máximo órgano de gobierno en CYDSA es el
-            Consejo de Administración, el cual se enfoca en dirigir la selección de <strong>objetivos, valores y
-                estrategia
-            </strong>con los cuales se opera el Grupo. Entre sus principales funciones se encuentran las siguientes:</p>
+            Comités</h1>
+        <p class="text-justify wow fadeInUp" data-wow-duration="2s">Nuestra estructura de gobierno corporativo se apoya en comités especializados que fortalecen la toma de decisiones y el seguimiento de nuestras estrategias. Estos comités supervisan temas clave como la gestión financiera, el cumplimiento normativo, la sostenibilidad y los riesgos, garantizando la transparencia y la rendición de cuentas en todas nuestras operaciones.
+        </p>
 
         <div class="container mt-5 mb-5">
             <div id="icon-carousel" class="carousel slide d-md-none" data-ride="carousel">
@@ -169,10 +264,12 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>-->
     <section id="comite" class="py-5" data-wow-duration="2s" data-wow-delay="2s"
              style="background-image: url({% static 'images/gobernanza/fondo_comites.png' %}); background-size: cover; background-repeat: no-repeat; background-position: center;">
-        <h1 class="text-center mt-5" style="color: white;">Comités del Consejo de Administración</h1>
+        <h1 class="text-center mt-5" style="color: white;">Comités</h1>
+        <p class="text-justify wow fadeInUp" data-wow-duration="2s" style="color: #ddd;">En Industrial Gate contamos con un equipo directivo con amplia experiencia en el sector inmobiliario industrial y en la gestión sostenible de proyectos. Su liderazgo impulsa la implementación de prácticas de excelencia, fomenta la innovación y asegura que las decisiones estratégicas estén alineadas con nuestra visión de largo plazo y con el compromiso de generar valor económico, social y ambiental.
+        </p>
         <div class="col-md-8 offset-md-2 pb-5">
             <div id="oc-clients"
                  class="nobgcolor notopmargin owl-carousel owl-carousel-full image-carousel carousel-widget owl-loaded owl-drag"
@@ -185,22 +282,10 @@
                             <div class="oc-item">
                                 <div class="row d-flex flex-row justify-content-center align-items-center">
                                     <div class="text-align: center">
-                                        <img src="/static/images/gobernanza/comite_practicas_societarias.png"
+                                        <img src="/static/images/gobernanza/comite-inversion.png"
                                              style="width:100%; height: 100%;"
-                                             alt="Comité de Prácticas Societarias"
-                                             onclick="openModal('Comité de Prácticas Societarias y de Auditoría', 'Este comité monitorea la función transparente y ética de los comités, ejecutivos y directivos en todo momento. ', '/static/images/gobernanza/imagen_comite_practicas_societarias.png')">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="owl-item cloned" style="width: 1318.99px; margin-right: 20px;">
-                            <div class="oc-item">
-                                <div class="row d-flex flex-row justify-content-center align-items-center">
-                                    <div class="text-align: center">
-                                        <img src="/static/images/gobernanza/comite_politicas_compensaciones.png"
-                                             style="width:100%; height: 100%;"
-                                             alt="Comité de Políticas y Compensaciones"
-                                             onclick="openModal('Comité de Políticas de Compensaciones', 'Este comité toma en cuenta el desempeño de los ejecutivos y directores con respecto a las metas establecidas en el ámbito productivo, económico, y en su caso, al desempeño en temas ambientales y sociales. ', '/static/images/gobernanza/imagen_comite_politicas_compensaciones.png')">
+                                             alt="Comité de Inversión"
+                                             onclick="openModal('Comité de Inversión', 'Aprueba nuevas transacciones y ajustes clave en el plan de negocios de nuestras inversiones. Integrado por expertos inmobiliarios en América Latina, aporta una visión estratégica independiente para evaluar oportunidades y riesgos, velando siempre por los intereses de los inversionistas y el cumplimiento de nuestro deber fiduciario.', '/static/images/gobernanza/imagen_comite_politicas_compensaciones.png')">
                                     </div>
                                 </div>
                             </div>
@@ -209,10 +294,10 @@
                             <div class="oc-item text-align:center">
                                 <div class="row d-flex flex-row justify-content-center align-items-center">
                                     <div class="text-center">
-                                        <img src="/static/images/gobernanza/comite_planeacion_finanzas.png"
+                                        <img src="/static/images/gobernanza/comite-asg.png"
                                              style="width:100%; height: 100%;"
-                                             alt="Comité de Planeación y Finanzas"
-                                             onclick="openModal('Comité de Planeación y Finanzas', 'Este comité tiene como uno de sus objetivos principales la administración de los recursos de la Empresa para asegurar que se usen de la forma más eficiente y en las áreas que más se necesita.', '/static/images/gobernanza/imagen_comite_planeacion_finanzas.png')">
+                                             alt="Comité ASG"
+                                             onclick="openModal('Comité ASG', 'Supervisa la implementación de nuestra estrategia de sostenibilidad, asegurando su alineación con los objetivos estratégicos. Conformado por representantes de áreas clave, coordina decisiones sobre políticas internas, riesgos emergentes, iniciativas prioritarias y validación de información para reportes y rendición de cuentas.', '/static/images/gobernanza/imagen_comite_planeacion_finanzas.png')">
                                     </div>
                                 </div>
                             </div>
@@ -244,13 +329,12 @@
     <div class="container pt-5 pb-5">
         <h1 id="etica" class="text-center mb-5 wow fadeInUp" data-wow-duration="2s"
             style="color: #2B2B2B;">
-            Ética Corporativa</h1>
+            Ética de Negocios</h1>
         <div class="d-flex">
             <div class="col-md-6 col-lg-6 col-xl-6 d-flex align-items-center">
                 <p class="text-center justify-content-center mb-0">
-                    CYDSA cuenta con un <strong>Código de Conducta</strong> cuyo objetivo es garantizar la implementación
-                    integral de su Filosofía de Creación de Valor, beneficiando a sus clientes, colaboradores,
-                    accionistas, proveedores y comunidades.
+                    En Industrial Gate actuamos con integridad y transparencia, guiando nuestras decisiones y operaciones bajo los más altos estándares éticos. Contamos con políticas internas que promueven la conducta responsable y el cumplimiento normativo, fomentando relaciones basadas en la confianza con nuestros colaboradores, clientes, proveedores e inversionistas. Nuestra cultura corporativa rechaza cualquier práctica que comprometa la ética y el buen gobierno, y refuerza la responsabilidad en el manejo de recursos y la rendición de cuentas.
+
                 </p>
             </div>
             <div class="col-md-6 col-lg-6 col-xl-6">
@@ -261,7 +345,7 @@
             </div>
         </div>
     </div>
-    <section id="comite" class="pt-5 pb-5">
+    <!--<section id="comite" class="pt-5 pb-5">
         <article id="boxes-2" style="">
             <div class="card-group">
                 <div class="card p-0">
@@ -315,23 +399,34 @@
                 </div>
             </article>
         </div>
-    </section>
+    </section>-->
 
     <section id="riesgos" class="container-fluid">
         <div class="row">
-            <div class="col-md-12 mb-12 p-5"
-                 style="background-image: url({% static 'images/gobernanza/parallax_gestion.png' %})">
-                <h1 class="text-center">Gestión de riesgos ASG</h1>
-                <p class="text-justify">La <strong>gestión de riesgos ASG</strong> es clave para las empresas del
-                    sector químico,
-                    ya que sus operaciones pueden afectar significativamente el medio ambiente, la sociedad
-                    y la reputación
-                    corporativa. En el proceso de transición hacia la divulgación de información de acuerdo
-                    con las normas
-                    IFRS S1 Y S2, CYDSA se ha enfocado en la <strong>identificación y el análisis de los riesgos de
-                    sustentabilidad
-                    y climáticos que impactan en las operaciones</strong>.
-                </p>
+            <div class="col-md-12 mb-12 p-5 position-relative" 
+                 style="background-image: url({% static 'images/gobernanza/parallax_gestion.jpg' %});
+                        background-size: cover;
+                        background-position: center;
+                        color: white;">
+                
+                <!-- Capa semitransparente -->
+                <div style="position: absolute; 
+                            top: 0; 
+                            left: 0; 
+                            width: 100%; 
+                            height: 100%; 
+                            background-color: rgba(0, 0, 0, 0.4); 
+                            z-index: 1; 
+                            border-radius: 10px;">
+                </div>
+    
+                <!-- Contenido -->
+                <div style="position: relative; z-index: 2;">
+                    <h1 class="text-center" style="color: #f5f5f5;">Ciberseguridad</h1>
+                    <p class="text-justify">
+                        La protección de la información es una prioridad estratégica para Industrial Gate. Implementamos protocolos y herramientas tecnológicas que garantizan la confidencialidad, integridad y disponibilidad de nuestros datos y sistemas. Nuestra estrategia de ciberseguridad incluye monitoreo constante, controles de acceso, copias de seguridad y capacitación a nuestro personal para prevenir incidentes y responder de forma eficaz ante amenazas digitales.
+                    </p>
+                </div>
             </div>
         </div>
     </section>
