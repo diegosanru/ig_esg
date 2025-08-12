@@ -32,7 +32,7 @@ if (typeof AmCharts !== 'undefined') {
         "valueAxes": [
             {
                 "axisAlpha": 1,
-                "gridAlpha": 0.1,
+                "gridAlpha": 0,
                 "labelsEnabled": true,
                 "labelFunction": function (valueText, date, valueAxis) {
                     return valueText;
@@ -58,7 +58,7 @@ if (typeof AmCharts !== 'undefined') {
         "categoryField": "year",
         "categoryAxis": {
             "axisAlpha": 1,
-            "gridAlpha": 0.1
+            "gridAlpha": 0
         },
         "export": {
             "enabled": true
@@ -97,7 +97,7 @@ if (typeof AmCharts !== 'undefined') {
         "valueAxes": [
             {
                 "axisAlpha": 1,
-                "gridAlpha": 0.1,
+                "gridAlpha": 0,
                 "labelsEnabled": true,
                 "labelFunction": function (valueText, date, valueAxis) {
                     return valueText;
@@ -123,7 +123,7 @@ if (typeof AmCharts !== 'undefined') {
         "categoryField": "year",
         "categoryAxis": {
             "axisAlpha": 1,
-            "gridAlpha": 0.1
+            "gridAlpha": 0
         },
         "export": {
             "enabled": true
@@ -163,7 +163,7 @@ if (typeof AmCharts !== 'undefined') {
         "valueAxes": [
             {
                 "axisAlpha": 1,
-                "gridAlpha": 0.1,
+                "gridAlpha": 0,
                 "labelsEnabled": true,
                 "labelFunction": function (valueText, date, valueAxis) {
                     return valueText;
@@ -189,7 +189,7 @@ if (typeof AmCharts !== 'undefined') {
         "categoryField": "year",
         "categoryAxis": {
             "axisAlpha": 1,
-            "gridAlpha": 0.1
+            "gridAlpha": 0
         },
         "export": {
             "enabled": true
@@ -229,7 +229,7 @@ if (typeof AmCharts !== 'undefined') {
         "valueAxes": [
             {
                 "axisAlpha": 1,
-                "gridAlpha": 0.1,
+                "gridAlpha": 0,
                 "labelsEnabled": true,
                 "labelFunction": function (valueText, date, valueAxis) {
                     return valueText;
@@ -255,7 +255,7 @@ if (typeof AmCharts !== 'undefined') {
         "categoryField": "year",
         "categoryAxis": {
             "axisAlpha": 1,
-            "gridAlpha": 0.1
+            "gridAlpha": 0
         },
         "export": {
             "enabled": true
