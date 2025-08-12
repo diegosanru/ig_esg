@@ -134,7 +134,7 @@ def gobernanza(request):
     eventos_cor = EventosView.get_event_cor_es_data()
 
     context = {
-        'title': _("Gobernanza"),
+        'title': _("Gobierno Corporativo"),
         'page': 'gobernanza',
         'eventos': eventos_cor,
         'imagen': staticfiles_storage.url('images/headers/Gobernanza.png'),
@@ -161,7 +161,7 @@ def responsabilidad_social(request):
     eventos_soc = EventosView.get_event_soc_es_data()
 
     context = {
-        'title': _("Gente"),
+        'title': _("Social"),
         'page': 'responsabilidad-social',
         'eventos': eventos_soc,
         'imagen': staticfiles_storage.url('images/headers/Social.png'),
