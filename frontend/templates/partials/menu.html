@@ -158,12 +158,14 @@
                 <!-- Modificaciones para poder cambiar de idioma con urls con query parameters -->
                 <a href="{% change_lang 'es' %}">
                 <!-- <a href="/es{{ request.path|slice:'3:' }}{{ request.META.QUERY_STRING|yesno:'?%s,' }}"> -->
-                    <img src="{% static 'images/icons/flags/flag-mexico.png' %}" alt="Español" style="height: 20px;" />
+                    <!-- <img src="{% static 'images/icons/flags/flag-mexico.png' %}" alt="Español" style="height: 20px;" /> -->
+                    ES
                 </a>
                 <!-- <a href="{% change_lang 'en' %}"> -->
                 <a href="#"></a>
                 <!-- <a href="/en{{ request.path|slice:'3:' }}{{ request.META.QUERY_STRING|yesno:'?%s,' }}" > -->
-                    <img src="{% static 'images/icons/flags/flag-usa.png' %}" alt="English" style="height: 20px;" />
+                    <!-- <img src="{% static 'images/icons/flags/flag-usa.png' %}" alt="English" style="height: 20px;" /> -->
+                    EN
                 </a>
                 </li>
             </div>
