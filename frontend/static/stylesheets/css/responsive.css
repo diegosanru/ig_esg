@@ -1,4 +1,5 @@
 @media (max-width: 1199.98px) {
+
     /* line 9, D:/begrand/app/assets/stylesheets/css/responsive.css.scss */
     canvas {
         max-width: 100%;
@@ -11,8 +12,8 @@
     }
 
     /* line 16, D:/begrand/app/assets/stylesheets/css/responsive.css.scss */
-    .promo > span,
-    .promo > .container > span {
+    .promo>span,
+    .promo>.container>span {
         font-size: 15px;
     }
 
@@ -22,8 +23,8 @@
     }
 
     /* line 21, D:/begrand/app/assets/stylesheets/css/responsive.css.scss */
-    .promo-uppercase > span,
-    .promo-uppercase > .container > span {
+    .promo-uppercase>span,
+    .promo-uppercase>.container>span {
         font-size: 14px;
     }
 
@@ -31,7 +32,7 @@
         width: 50%;
     }
 
-    #primary-menu ul li > a {
+    #primary-menu ul li>a {
         font-size: 12px;
         padding: 10px 5px;
     }
@@ -57,11 +58,16 @@
 }
 
 @media (min-width: 992px) {
-    #primary-menu, #header.transparent-header.full-header #primary-menu > ul, #header.sticky-header:not(.static-sticky), #header.sticky-header:not(.static-sticky) #header-wrap, #header.sticky-header:not(.static-sticky):not(.sticky-style-2):not(.sticky-style-3) #logo img {
+
+    #primary-menu,
+    #header.transparent-header.full-header #primary-menu>ul,
+    #header.sticky-header:not(.static-sticky),
+    #header.sticky-header:not(.static-sticky) #header-wrap,
+    #header.sticky-header:not(.static-sticky):not(.sticky-style-2):not(.sticky-style-3) #logo img {
         height: 80px;
     }
 
-    #primary-menu ul.sf-js-enabled > li {
+    #primary-menu ul.sf-js-enabled>li {
         margin-top: 0;
         height: 80px;
         display: flex;
@@ -70,7 +76,7 @@
 }
 
 @media (min-width: 992px) and (max-width: 1250px) {
-    #header.full-header #primary-menu > ul {
+    #header.full-header #primary-menu>ul {
         margin-right: -60px !important;
         font-size: 11px;
     }
@@ -93,7 +99,7 @@
     }
 
     /* line 41, D:/begrand/app/assets/stylesheets/css/responsive.css.scss */
-    #primary-menu.sub-title ul > li > a {
+    #primary-menu.sub-title ul>li>a {
         padding-left: 15px;
         padding-right: 15px;
     }
@@ -297,7 +303,7 @@
     }
 
     /* line 172, D:/begrand/app/assets/stylesheets/css/responsive.css.scss */
-    .vertical-middle + .video-wrap {
+    .vertical-middle+.video-wrap {
         position: absolute;
         width: 100%;
         height: 100%;
@@ -383,11 +389,11 @@
     }
 
     /* line 231, D:/begrand/app/assets/stylesheets/css/responsive.css.scss */
-    #header.transparent-header + #slider,
-    #header.transparent-header + #page-title.page-title-parallax,
-    #slider + #header.transparent-header,
-    #header.transparent-header.floating-header + #slider,
-    #header.transparent-header + #google-map {
+    #header.transparent-header+#slider,
+    #header.transparent-header+#page-title.page-title-parallax,
+    #slider+#header.transparent-header,
+    #header.transparent-header.floating-header+#slider,
+    #header.transparent-header+#google-map {
         top: 0;
         margin-bottom: 0;
     }
@@ -398,7 +404,7 @@
     }
 
     /* line 242, D:/begrand/app/assets/stylesheets/css/responsive.css.scss */
-    #header.transparent-header + #page-title.page-title-parallax .container {
+    #header.transparent-header+#page-title.page-title-parallax .container {
         padding-top: 0;
     }
 
@@ -416,11 +422,11 @@
     }
 
     /* line 255, D:/begrand/app/assets/stylesheets/css/responsive.css.scss */
-    body:not(.primary-menu-open) #header.transparent-header-responsive + #slider,
-    body:not(.primary-menu-open) #header.transparent-header-responsive + #page-title.page-title-parallax,
-    body:not(.primary-menu-open) #slider + #header.transparent-header-responsive,
-    body:not(.primary-menu-open) #header.transparent-header-responsive.floating-header + #slider,
-    body:not(.primary-menu-open) #header.transparent-header-responsive + #google-map {
+    body:not(.primary-menu-open) #header.transparent-header-responsive+#slider,
+    body:not(.primary-menu-open) #header.transparent-header-responsive+#page-title.page-title-parallax,
+    body:not(.primary-menu-open) #slider+#header.transparent-header-responsive,
+    body:not(.primary-menu-open) #header.transparent-header-responsive.floating-header+#slider,
+    body:not(.primary-menu-open) #header.transparent-header-responsive+#google-map {
         top: -101px;
         margin-bottom: -101px;
     }
@@ -445,7 +451,7 @@
         width: 142px;
     }
 
-    #primary-menu ul li > a {
+    #primary-menu ul li>a {
         color: #111135;
     }
 
@@ -481,8 +487,8 @@
     }
 
     /* line 300, D:/begrand/app/assets/stylesheets/css/responsive.css.scss */
-    #primary-menu > ul,
-    #primary-menu > div > ul {
+    #primary-menu>ul,
+    #primary-menu>div>ul {
         display: none;
         float: none !important;
         border: 0 !important;
@@ -494,7 +500,7 @@
     }
 
     /* line 312, D:/begrand/app/assets/stylesheets/css/responsive.css.scss */
-    #primary-menu > div > ul {
+    #primary-menu>div>ul {
         padding-top: 60px !important;
     }
 
@@ -530,7 +536,7 @@
     }
 
     /* line 340, D:/begrand/app/assets/stylesheets/css/responsive.css.scss */
-    #primary-menu.style-5 > ul {
+    #primary-menu.style-5>ul {
         padding-right: 0;
         margin-right: 0;
         border-right: 0;
@@ -545,7 +551,7 @@
     }
 
     /* line 353, D:/begrand/app/assets/stylesheets/css/responsive.css.scss */
-    #header.split-menu #primary-menu:not(.mobile-menu-off-canvas) > ul:not(:first-child) > li:first-child {
+    #header.split-menu #primary-menu:not(.mobile-menu-off-canvas)>ul:not(:first-child)>li:first-child {
         border-top: 1px solid #EEE;
     }
 
@@ -555,20 +561,20 @@
     }
 
     /* line 357, D:/begrand/app/assets/stylesheets/css/responsive.css.scss */
-    #primary-menu ul > li > a,
-    #primary-menu.style-2 > div > ul > li > a {
+    #primary-menu ul>li>a,
+    #primary-menu.style-2>div>ul>li>a {
         padding: 10px 5px !important;
         border: none !important;
         margin: 0 !important;
     }
 
     /* line 364, D:/begrand/app/assets/stylesheets/css/responsive.css.scss */
-    #primary-menu.style-5 > ul > li > a > div {
+    #primary-menu.style-5>ul>li>a>div {
         line-height: 22px;
     }
 
     /* line 366, D:/begrand/app/assets/stylesheets/css/responsive.css.scss */
-    #primary-menu.style-5 > ul > li > a > div i {
+    #primary-menu.style-5>ul>li>a>div i {
         display: inline-block;
         margin: 0 6px 0 0;
         top: -1px;
@@ -578,51 +584,51 @@
     }
 
     /* line 375, D:/begrand/app/assets/stylesheets/css/responsive.css.scss */
-    #primary-menu.style-6 > ul > li > a:after,
-    #primary-menu.style-6 > ul > li.current > a:after {
+    #primary-menu.style-6>ul>li>a:after,
+    #primary-menu.style-6>ul>li.current>a:after {
         display: none;
     }
 
     /* line 378, D:/begrand/app/assets/stylesheets/css/responsive.css.scss */
-    #primary-menu.sub-title > ul > li,
-    #primary-menu.sub-title.style-2 > div > ul > li {
+    #primary-menu.sub-title>ul>li,
+    #primary-menu.sub-title.style-2>div>ul>li {
         background: none !important;
         margin-left: 0;
     }
 
     /* line 384, D:/begrand/app/assets/stylesheets/css/responsive.css.scss */
-    #primary-menu.sub-title > ul > li > a,
-    #primary-menu.sub-title > div > ul > li > a {
+    #primary-menu.sub-title>ul>li>a,
+    #primary-menu.sub-title>div>ul>li>a {
         line-height: 22px;
         font-size: 13px;
         border-top: none;
     }
 
     /* line 391, D:/begrand/app/assets/stylesheets/css/responsive.css.scss */
-    #primary-menu.sub-title ul li > a span {
+    #primary-menu.sub-title ul li>a span {
         display: none !important;
     }
 
     /* line 393, D:/begrand/app/assets/stylesheets/css/responsive.css.scss */
-    #primary-menu.sub-title ul li:hover > a,
-    #primary-menu.sub-title ul li.current > a,
-    #primary-menu.sub-title div ul > li:hover > a,
-    #primary-menu.sub-title div ul > li.current > a,
-    #primary-menu.style-3 ul li:hover > a,
-    #primary-menu.style-3 ul li.current > a {
+    #primary-menu.sub-title ul li:hover>a,
+    #primary-menu.sub-title ul li.current>a,
+    #primary-menu.sub-title div ul>li:hover>a,
+    #primary-menu.sub-title div ul>li.current>a,
+    #primary-menu.style-3 ul li:hover>a,
+    #primary-menu.style-3 ul li.current>a {
         background-color: transparent !important;
         color: #444;
         text-shadow: none;
     }
 
     /* line 404, D:/begrand/app/assets/stylesheets/css/responsive.css.scss */
-    #primary-menu ul:not(.windows-mobile-menu) li > a i.icon-angle-down:last-child {
+    #primary-menu ul:not(.windows-mobile-menu) li>a i.icon-angle-down:last-child {
         display: none;
     }
 
     /* line 406, D:/begrand/app/assets/stylesheets/css/responsive.css.scss */
-    #primary-menu > ul > li.sub-menu > a,
-    #primary-menu > .container > ul > li.sub-menu > a {
+    #primary-menu>ul>li.sub-menu>a,
+    #primary-menu>.container>ul>li.sub-menu>a {
         background-position: right center;
         background-repeat: no-repeat;
     }
@@ -678,7 +684,7 @@
     }
 
     /* line 450, D:/begrand/app/assets/stylesheets/css/responsive.css.scss */
-    #primary-menu ul ul li > a {
+    #primary-menu ul ul li>a {
         padding: 11px 5px !important;
         font-size: 13px;
         text-transform: none;
@@ -686,7 +692,7 @@
     }
 
     /* line 457, D:/begrand/app/assets/stylesheets/css/responsive.css.scss */
-    #primary-menu ul ul li:hover > a {
+    #primary-menu ul ul li:hover>a {
         background-color: transparent !important;
         font-weight: 700;
         padding-left: 5px;
@@ -760,12 +766,12 @@
     }
 
     /* line 511, D:/begrand/app/assets/stylesheets/css/responsive.css.scss */
-    #primary-menu ul li .mega-menu-content.style-2 ul.mega-menu-column > li.mega-menu-title {
+    #primary-menu ul li .mega-menu-content.style-2 ul.mega-menu-column>li.mega-menu-title {
         margin: 0;
     }
 
     /* line 513, D:/begrand/app/assets/stylesheets/css/responsive.css.scss */
-    #primary-menu ul li .mega-menu-content.style-2 ul.mega-menu-column > li.mega-menu-title > a {
+    #primary-menu ul li .mega-menu-content.style-2 ul.mega-menu-column>li.mega-menu-title>a {
         font-size: 13px;
         font-weight: 700;
         text-transform: none !important;
@@ -775,13 +781,13 @@
     }
 
     /* line 522, D:/begrand/app/assets/stylesheets/css/responsive.css.scss */
-    #primary-menu ul li .mega-menu-content.style-2 ul.mega-menu-column > li.mega-menu-title:hover > a {
+    #primary-menu ul li .mega-menu-content.style-2 ul.mega-menu-column>li.mega-menu-title:hover>a {
         background-color: transparent;
         color: #1ABC9C !important;
     }
 
     /* line 527, D:/begrand/app/assets/stylesheets/css/responsive.css.scss */
-    #primary-menu ul li .mega-menu-content.style-2 ul.mega-menu-column > li.mega-menu-title > a:hover {
+    #primary-menu ul li .mega-menu-content.style-2 ul.mega-menu-column>li.mega-menu-title>a:hover {
         color: #1ABC9C !important;
     }
 
@@ -796,7 +802,7 @@
     }
 
     /* line 533, D:/begrand/app/assets/stylesheets/css/responsive.css.scss */
-    #primary-menu ul li .mega-menu-content.style-2 ul > li > a:hover {
+    #primary-menu ul li .mega-menu-content.style-2 ul>li>a:hover {
         padding-left: 5px;
     }
 
@@ -827,9 +833,9 @@
     }
 
     /* line 556, D:/begrand/app/assets/stylesheets/css/responsive.css.scss */
-    #primary-menu > div > #top-search a,
-    #primary-menu > div > #top-cart,
-    #primary-menu > div > #side-panel-trigger {
+    #primary-menu>div>#top-search a,
+    #primary-menu>div>#top-cart,
+    #primary-menu>div>#side-panel-trigger {
         margin: 20px 0 !important;
     }
 
@@ -896,7 +902,7 @@
     }
 
     /* line 598, D:/begrand/app/assets/stylesheets/css/responsive.css.scss */
-    #primary-menu > div > #top-search form {
+    #primary-menu>div>#top-search form {
         height: 60px !important;
     }
 
@@ -1057,15 +1063,15 @@
     }
 
     /* line 714, D:/begrand/app/assets/stylesheets/css/responsive.css.scss */
-    .responsive-sticky-header #primary-menu > ul,
-    .responsive-sticky-header #primary-menu > .container > ul {
+    .responsive-sticky-header #primary-menu>ul,
+    .responsive-sticky-header #primary-menu>.container>ul {
         max-height: 300px;
         overflow-y: scroll;
     }
 
     /* line 720, D:/begrand/app/assets/stylesheets/css/responsive.css.scss */
-    .responsive-sticky-header #primary-menu > ul,
-    .responsive-sticky-header #primary-menu > .container > ul {
+    .responsive-sticky-header #primary-menu>ul,
+    .responsive-sticky-header #primary-menu>.container>ul {
         margin-bottom: 20px !important;
     }
 
@@ -1087,15 +1093,15 @@
     }
 
     /* line 731, D:/begrand/app/assets/stylesheets/css/responsive.css.scss */
-    .responsive-sticky-header:not(.static-sticky) ~ #page-menu.sticky-page-menu #page-menu-wrap {
+    .responsive-sticky-header:not(.static-sticky)~#page-menu.sticky-page-menu #page-menu-wrap {
         top: 60px;
     }
 
     /* Off Canvas Menu
     -----------------------------------------------------------------*/
     /* line 737, D:/begrand/app/assets/stylesheets/css/responsive.css.scss */
-    body:not(.sticky-responsive-menu) #primary-menu.mobile-menu-off-canvas > ul,
-    body:not(.sticky-responsive-menu) #primary-menu.mobile-menu-off-canvas > div > ul {
+    body:not(.sticky-responsive-menu) #primary-menu.mobile-menu-off-canvas>ul,
+    body:not(.sticky-responsive-menu) #primary-menu.mobile-menu-off-canvas>div>ul {
         position: fixed;
         display: block;
         z-index: 499;
@@ -1119,8 +1125,8 @@
     }
 
     /* line 761, D:/begrand/app/assets/stylesheets/css/responsive.css.scss */
-    body:not(.sticky-responsive-menu) #primary-menu.mobile-menu-off-canvas.from-right > ul,
-    body:not(.sticky-responsive-menu) #primary-menu.mobile-menu-off-canvas.from-right > div > ul {
+    body:not(.sticky-responsive-menu) #primary-menu.mobile-menu-off-canvas.from-right>ul,
+    body:not(.sticky-responsive-menu) #primary-menu.mobile-menu-off-canvas.from-right>div>ul {
         left: auto !important;
         right: 0;
         border-right: 0 !important;
@@ -1131,16 +1137,16 @@
     }
 
     /* line 772, D:/begrand/app/assets/stylesheets/css/responsive.css.scss */
-    body:not(.sticky-responsive-menu) #primary-menu.mobile-menu-off-canvas > ul,
-    body:not(.sticky-responsive-menu) #primary-menu.mobile-menu-off-canvas > div > ul {
+    body:not(.sticky-responsive-menu) #primary-menu.mobile-menu-off-canvas>ul,
+    body:not(.sticky-responsive-menu) #primary-menu.mobile-menu-off-canvas>div>ul {
         -webkit-transition: -webkit-transform .3s ease-in-out, opacity .2s ease !important;
         -o-transition: -o-transform .3s ease-in-out, opacity .2s ease !important;
         transition: transform .3s ease-in-out, opacity .2s ease !important;
     }
 
     /* line 779, D:/begrand/app/assets/stylesheets/css/responsive.css.scss */
-    body:not(.sticky-responsive-menu) #primary-menu.mobile-menu-off-canvas > ul.d-block,
-    body:not(.sticky-responsive-menu) #primary-menu.mobile-menu-off-canvas > div > ul.d-block {
+    body:not(.sticky-responsive-menu) #primary-menu.mobile-menu-off-canvas>ul.d-block,
+    body:not(.sticky-responsive-menu) #primary-menu.mobile-menu-off-canvas>div>ul.d-block {
         -webkit-transform: translate3d(0, 0, 0);
         -o-transform: translate3d(0, 0, 0);
         transform: translate3d(0, 0, 0);
@@ -1399,7 +1405,7 @@
     }
 
     /* line 960, D:/begrand/app/assets/stylesheets/css/responsive.css.scss */
-    .section > .testimonial {
+    .section>.testimonial {
         padding: 0 40px !important;
         max-width: none;
     }
@@ -1487,7 +1493,11 @@
     }
 
     /* NEW */
-    #primary-menu, #header.transparent-header.full-header #primary-menu > ul, #header.sticky-header:not(.static-sticky), #header.sticky-header:not(.static-sticky) #header-wrap, #header.sticky-header:not(.static-sticky):not(.sticky-style-2):not(.sticky-style-3) #logo img {
+    #primary-menu,
+    #header.transparent-header.full-header #primary-menu>ul,
+    #header.sticky-header:not(.static-sticky),
+    #header.sticky-header:not(.static-sticky) #header-wrap,
+    #header.sticky-header:not(.static-sticky):not(.sticky-style-2):not(.sticky-style-3) #logo img {
         height: auto;
     }
 
@@ -1505,6 +1515,7 @@
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
+
     /* line 1023, D:/begrand/app/assets/stylesheets/css/responsive.css.scss */
     .swiper_wrapper:not(.full-screen):not(.canvas-slider-grid),
     .swiper_wrapper:not(.full-screen):not(.canvas-slider-grid) .swiper-slide {
@@ -1599,22 +1610,22 @@
 
     /* line 1080, D:/begrand/app/assets/stylesheets/css/responsive.css.scss */
     .top-links,
-    .top-links > ul > li {
+    .top-links>ul>li {
         float: none !important;
     }
 
     /* line 1083, D:/begrand/app/assets/stylesheets/css/responsive.css.scss */
-    .top-links > ul {
+    .top-links>ul {
         text-align: center;
     }
 
     /* line 1085, D:/begrand/app/assets/stylesheets/css/responsive.css.scss */
-    .top-links > ul > li {
+    .top-links>ul>li {
         display: inline-block;
     }
 
     /* line 1087, D:/begrand/app/assets/stylesheets/css/responsive.css.scss */
-    .top-links > ul > li {
+    .top-links>ul>li {
         margin-right: -4px;
     }
 
@@ -1996,22 +2007,22 @@
     }
 
     /* line 1354, D:/begrand/app/assets/stylesheets/css/responsive.css.scss */
-    .title-block h1 + span {
+    .title-block h1+span {
         font-size: 18px;
     }
 
     /* line 1356, D:/begrand/app/assets/stylesheets/css/responsive.css.scss */
-    .title-block h2 + span {
+    .title-block h2+span {
         font-size: 17px;
     }
 
     /* line 1358, D:/begrand/app/assets/stylesheets/css/responsive.css.scss */
-    .title-block h3 + span {
+    .title-block h3+span {
         font-size: 15px;
     }
 
     /* line 1360, D:/begrand/app/assets/stylesheets/css/responsive.css.scss */
-    .title-block h4 + span {
+    .title-block h4+span {
         font-size: 13px;
     }
 
@@ -2036,23 +2047,23 @@
     }
 
     /* line 1370, D:/begrand/app/assets/stylesheets/css/responsive.css.scss */
-    .heading-block h1 + span {
+    .heading-block h1+span {
         font-size: 20px;
     }
 
     /* line 1372, D:/begrand/app/assets/stylesheets/css/responsive.css.scss */
-    .heading-block h2 + span {
+    .heading-block h2+span {
         font-size: 18px;
     }
 
     /* line 1374, D:/begrand/app/assets/stylesheets/css/responsive.css.scss */
-    .heading-block h3 + span,
-    .heading-block h4 + span {
+    .heading-block h3+span,
+    .heading-block h4+span {
         font-size: 17px;
     }
 
     /* line 1377, D:/begrand/app/assets/stylesheets/css/responsive.css.scss */
-    .heading-block ~ p:not(.lead) {
+    .heading-block~p:not(.lead) {
         font-size: 15px;
     }
 
@@ -2135,7 +2146,7 @@
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
-    .tabs-style-lg .nav-tabs > li {
+    .tabs-style-lg .nav-tabs>li {
         width: 33% !important;
         border: 1px #e9e9e9 solid;
         margin-left: -1px;
@@ -2147,7 +2158,7 @@
         padding-right: 0px !important;
     }
 
-    .tabs-style-lg.style-1 .nav-tabs > li > a.active:before {
+    .tabs-style-lg.style-1 .nav-tabs>li>a.active:before {
         border-color: transparent !important;
     }
 
@@ -2255,12 +2266,12 @@
     }
 
     /* line 1489, D:/begrand/app/assets/stylesheets/css/responsive.css.scss */
-    .portfolio:not(.portfolio-1) .portfolio-item:hover .portfolio-overlay .portfolio-desc ~ a {
+    .portfolio:not(.portfolio-1) .portfolio-item:hover .portfolio-overlay .portfolio-desc~a {
         margin: 20px 0 0 !important;
     }
 
     /* line 1491, D:/begrand/app/assets/stylesheets/css/responsive.css.scss */
-    .portfolio:not(.portfolio-1) .portfolio-item:hover .portfolio-overlay .portfolio-desc ~ a.right-icon {
+    .portfolio:not(.portfolio-1) .portfolio-item:hover .portfolio-overlay .portfolio-desc~a.right-icon {
         margin-left: 5px !important;
         margin-right: 0 !important;
     }
@@ -2328,9 +2339,10 @@
 
 @media (max-width: 575.98px) {
 
-    #boxes-index .card-group .card{
+    #boxes-index .card-group .card {
         max-width: 100%;
     }
+
     .button.button-large {
         font-size: 13px;
         padding: 0 10px;
@@ -2354,7 +2366,7 @@
         padding-right: 40px;
     }
 
-    .tabs-style-lg .nav-tabs > li {
+    .tabs-style-lg .nav-tabs>li {
         width: 50% !important;
         border: 1px #e9e9e9 solid;
         margin-left: -1px;
@@ -2367,7 +2379,7 @@
         padding-right: 0px !important;
     }
 
-    .tabs-style-lg.style-1 .nav-tabs > li > a.active:before {
+    .tabs-style-lg.style-1 .nav-tabs>li>a.active:before {
         border-color: transparent !important;
     }
 
@@ -2624,7 +2636,7 @@
         font-size: 11px;
     }
 
-    .amChartsPeriodSelector > div:last-child {
+    .amChartsPeriodSelector>div:last-child {
         float: left !important;
         margin-top: 10px !important;
     }
@@ -2682,7 +2694,13 @@
 /* ----------------------------------------------------------------
 	Retina CSS
 -----------------------------------------------------------------*/
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2 / 1),
+only screen and (min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi),
+only screen and (min-resolution: 2dppx) {
+
     /* line 1719, D:/begrand/app/assets/stylesheets/css/responsive.css.scss */
     #logo a.standard-logo,
     #header.split-menu #logo a.standard-logo {
@@ -2740,7 +2758,13 @@
     }
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 991.98px), only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 991.98px), only screen and (-o-min-device-pixel-ratio: 2 / 1) and (max-width: 991.98px), only screen and (min-device-pixel-ratio: 2) and (max-width: 991.98px), only screen and (min-resolution: 192dpi) and (max-width: 991.98px), only screen and (min-resolution: 2dppx) and (max-width: 991.98px) {
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 991.98px),
+only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 991.98px),
+only screen and (-o-min-device-pixel-ratio: 2 / 1) and (max-width: 991.98px),
+only screen and (min-device-pixel-ratio: 2) and (max-width: 991.98px),
+only screen and (min-resolution: 192dpi) and (max-width: 991.98px),
+only screen and (min-resolution: 2dppx) and (max-width: 991.98px) {
+
     /* line 1778, D:/begrand/app/assets/stylesheets/css/responsive.css.scss */
     #logo a.standard-logo {
         display: none;
@@ -2749,5 +2773,84 @@
     /* line 1779, D:/begrand/app/assets/stylesheets/css/responsive.css.scss */
     #logo a.retina-logo {
         display: inline-block;
+    }
+}
+
+/* FORCE HAMBURGER MENU ON ALL DEVICES (User Request) */
+@media (min-width: 992px) {
+
+    /* Show Hamburger Trigger - Position Absolute to Left */
+    #primary-menu-trigger {
+        opacity: 1 !important;
+        pointer-events: auto !important;
+        display: block !important;
+        position: absolute !important;
+        top: 25px !important;
+        left: 0 !important;
+        z-index: 100 !important;
+        margin-top: 0 !important;
+    }
+
+    /* Reset Menu Container */
+    #primary-menu {
+        display: block;
+        float: none !important;
+        height: auto !important;
+        /* Prevent fixed height showing empty box */
+        border: 0 !important;
+        background: transparent !important;
+        /* Ensure invisible when closed */
+    }
+
+    /* Hide Desktop Menu List */
+    #primary-menu>ul,
+    #primary-menu>div>ul {
+        display: none;
+        float: none !important;
+        border: 0 !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        transition: none !important;
+    }
+
+    /* Style Menu Items for Mobile layout */
+    #primary-menu ul li {
+        float: none !important;
+        margin: 0 !important;
+        text-align: left !important;
+        border-top: 1px solid #EEE;
+        display: block !important;
+        width: 100% !important;
+    }
+
+    #primary-menu ul li>a {
+        padding: 5px 5px !important;
+        /* Reduced padding to fit more items */
+        font-size: 13px !important;
+    }
+
+    /* Center Logo (match mobile style) and Clear Floats */
+    #logo {
+        display: block !important;
+        float: none !important;
+        margin: 0 auto !important;
+        max-width: none !important;
+        text-align: center !important;
+        border: 0 !important;
+        padding: 0 !important;
+        width: 142px !important;
+        /* Ensure specific width for centering */
+        position: relative !important;
+        z-index: 1 !important;
+    }
+
+    #logo a.standard-logo {
+        display: inline-block !important;
+    }
+
+    /* Adjust Header Height */
+    #header,
+    #header-wrap {
+        height: auto !important;
     }
 }
