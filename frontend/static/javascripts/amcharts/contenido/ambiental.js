@@ -19,7 +19,7 @@ if (typeof AmCharts !== 'undefined') {
             
             {
                 "year": "2023",
-                "alcance1": 2464,
+                "alcance1": 2465,
                 "color": "#F5BA3D"
             },
             {
@@ -29,7 +29,7 @@ if (typeof AmCharts !== 'undefined') {
             },
             {
                 "year": "Entregas 2024",
-                "alcance1": 18105,
+                "alcance1": 18106,
                 "color": "#2B2B2B"
             }
         ],
@@ -88,7 +88,7 @@ if (typeof AmCharts !== 'undefined') {
             
             {
                 "year": "2023",
-                "alcance1": 2,
+                "alcance1": 3,
                 "color": "#3DB7B0"
             },
             {
