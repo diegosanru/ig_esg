@@ -145,30 +145,4 @@
             <div>{% trans 'Contacto' %}</div>
         </a>
     </li>
-
-    <li class="language-switcher">
-        {% load i18n %}
-        <div id="menu-right" class="d-flex align-items-center">
-            <div class="position-relative change-languages">
-
-                {% get_current_language as LANGUAGE_CODE %}
-                {% get_current_language_bidi as LANGUAGE_BIDI %}
-
-                <div class="language-links" style="margin-left: 10px;">
-                <!-- Modificaciones para poder cambiar de idioma con urls con query parameters -->
-                <a href="{% change_lang 'es' %}">
-                <!-- <a href="/es{{ request.path|slice:'3:' }}{{ request.META.QUERY_STRING|yesno:'?%s,' }}"> -->
-                    <!-- <img src="{% static 'images/icons/flags/flag-mexico.png' %}" alt="Español" style="height: 20px;" /> -->
-                    ES
-                </a>
-                <!-- <a href="{% change_lang 'en' %}"> -->
-                <a href="#">
-                <!-- <a href="/en{{ request.path|slice:'3:' }}{{ request.META.QUERY_STRING|yesno:'?%s,' }}" > -->
-                    <!-- <img src="{% static 'images/icons/flags/flag-usa.png' %}" alt="English" style="height: 20px;" /> -->
-                    EN
-                </a>
-                </div>
-            </div>
-        </div>
-    </li>
 </ul>

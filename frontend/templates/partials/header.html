@@ -1,9 +1,32 @@
-{% load static %}
+{% load static i18n change_languaje %}
 
 <header id="header" class="transparent-header sticky-header">
     <div id="header-wrap" class="not-dark">
         <div class="container clearfix">
-            <div id="primary-menu-trigger" style="margin-left: 30px; top: 15px !important"><i role="presentation" class="icon-reorder" style="scale: 2; "></i></div>
+            <div id="primary-menu-trigger" style="margin-left: 30px; top: 15px !important; display: flex;"><i role="presentation" class="icon-reorder" style="scale: 2; "></i>
+            </div>
+            <div id="menu-right" class="d-flex align-items-center">
+                <div class="position-relative change-languages">
+
+                    {% get_current_language as LANGUAGE_CODE %}
+                    {% get_current_language_bidi as LANGUAGE_BIDI %}
+
+                    <div class="language-links" style="margin-left: 10px; display: flex; margin-top: 15px; margin-left: 15px; gap: 15px;">
+                    <!-- Modificaciones para poder cambiar de idioma con urls con query parameters -->
+                    <a href="{% change_lang 'es' %}">
+                    <!-- <a href="/es{{ request.path|slice:'3:' }}{{ request.META.QUERY_STRING|yesno:'?%s,' }}"> -->
+                        <!-- <img src="{% static 'images/icons/flags/flag-mexico.png' %}" alt="Español" style="height: 20px;" /> -->
+                        ES
+                    </a>
+                    <!-- <a href="{% change_lang 'en' %}"> -->
+                    <a href="#">
+                    <!-- <a href="/en{{ request.path|slice:'3:' }}{{ request.META.QUERY_STRING|yesno:'?%s,' }}" > -->
+                        <!-- <img src="{% static 'images/icons/flags/flag-usa.png' %}" alt="English" style="height: 20px;" /> -->
+                        EN
+                    </a>
+                    </div>
+                </div>
+            </div>
             <div class="top-header" style="z-index: 9999;">
                 {% include 'partials/top-header.html' %}
             </div>
