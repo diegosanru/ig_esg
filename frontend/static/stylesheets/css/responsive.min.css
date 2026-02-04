@@ -399,14 +399,9 @@
         pointer-events: auto;
         top: 25px;
         margin-top: 0;
-        right: 0;
         z-index: 1
     }
 
-    #primary-menu .container #primary-menu-trigger {
-        top: 5px;
-        right: 0
-    }
 
     #primary-menu>div>ul,
     #primary-menu>ul {
@@ -1262,9 +1257,6 @@
         height: auto
     }
 
-    #primary-menu-trigger {
-        top: 0
-    }
 
     .display-banner-home {
         top: 80px
@@ -1998,10 +1990,6 @@
         border-color: transparent !important
     }
 
-    #primary-menu-trigger {
-        left: 20px
-    }
-
     #top-cart {
         display: none
     }
@@ -2341,7 +2329,6 @@ only screen and (min-resolution:2dppx) and (max-width:991.98px) {
     #primary-menu-trigger {
         opacity: 1 !important;
         pointer-events: auto !important;
-        /* display: block !important; */
         position: absolute !important;
         top: 25px !important;
         right: 0 !important;
@@ -2407,7 +2394,6 @@ only screen and (min-resolution:2dppx) and (max-width:991.98px) {
     #logo {
         display: block !important;
         float: none !important;
-        /* margin: 0 auto !important; */
         max-width: none !important;
         text-align: center !important;
         border: 0 !important;
