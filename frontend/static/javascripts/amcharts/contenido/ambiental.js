@@ -9,24 +9,28 @@ if (typeof AmCharts !== 'undefined') {
                 "text": "Consumo Energético (kWhs)",
                 "size": 15,
                 "useHTML": true
+            },
+            {
+                "text": "(miles)",
+                "size": 13
             }
         ],
         "dataProvider": [
             
             {
                 "year": "2023",
-                "alcance1": 2464830,
-                "color": "#F5BA3D",
+                "alcance1": 2464,
+                "color": "#F5BA3D"
             },
             {
                 "year": "2024",
-                "alcance1": 2566329,
-                "color": "#F5BA3D",
+                "alcance1": 2566,
+                "color": "#F5BA3D"
             },
             {
                 "year": "Entregas 2024",
-                "alcance1": 18105951,
-                "color": "#2B2B2B",
+                "alcance1": 18105,
+                "color": "#2B2B2B"
             }
         ],
         "valueAxes": [
@@ -74,24 +78,28 @@ if (typeof AmCharts !== 'undefined') {
                 "text": "Consumo Hídrico (m³)",
                 "size": 15,
                 "useHTML": true
+            },
+            {
+                "text": "(miles)",
+                "size": 13
             }
         ],
         "dataProvider": [
             
             {
                 "year": "2023",
-                "alcance1": 2942,
-                "color": "#3DB7B0",
+                "alcance1": 2,
+                "color": "#3DB7B0"
             },
             {
                 "year": "2024",
-                "alcance1": 3262,
-                "color": "#3DB7B0",
+                "alcance1": 3,
+                "color": "#3DB7B0"
             },
             {
                 "year": "Entregas 2024",
-                "alcance1": 14976,
-                "color": "#2B2B2B",
+                "alcance1": 15,
+                "color": "#2B2B2B"
             }
         ],
         "valueAxes": [
