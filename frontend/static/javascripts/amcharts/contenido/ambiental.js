@@ -88,17 +88,17 @@ if (typeof AmCharts !== 'undefined') {
             
             {
                 "year": "2023",
-                "alcance1": 3,
+                "alcance1": 3000,
                 "color": "#3DB7B0"
             },
             {
                 "year": "2024",
-                "alcance1": 3,
+                "alcance1": 3000,
                 "color": "#3DB7B0"
             },
             {
                 "year": "Entregas 2024",
-                "alcance1": 15,
+                "alcance1": 15000,
                 "color": "#2B2B2B"
             }
         ],
