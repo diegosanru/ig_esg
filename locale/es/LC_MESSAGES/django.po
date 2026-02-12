@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-12 10:55-0600\n"
+"POT-Creation-Date: 2026-02-12 12:10-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,6 +17,10 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\cydsa\settings.py:157
+msgid "English"
+msgstr ""
 
 #: .\cydsa\settings.py:158
 msgid "Spanish"
@@ -1215,10 +1219,6 @@ msgstr ""
 msgid "Connect, get help, or contribute"
 msgstr ""
 
-#: .\frontend\templates\en\frontend\index.html:350
-msgid "Quiero conocer más"
-msgstr ""
-
 #: .\frontend\templates\layouts\base.html:229
 msgid "Gracias por subscribirse"
 msgstr ""
@@ -1233,6 +1233,35 @@ msgstr ""
 
 #: .\frontend\templates\partials\banner_index.html:10
 msgid "Portafolio_t"
+msgstr ""
+
+#: .\frontend\templates\partials\footer.html:17
+msgid "Acerca de Industrial Gate"
+msgstr ""
+
+#: .\frontend\templates\partials\footer.html:27
+#: .\frontend\templates\partials\menu.html:145 .\frontend\views.py:182
+#: .\frontend\views.py:184
+msgid "Contacto"
+msgstr ""
+
+#: .\frontend\templates\partials\footer.html:40
+msgid ""
+"Monte Pelvoux 120, Oficina 401, CP 11000, Lomas de Chapultepec, Ciudad de "
+"México"
+msgstr ""
+
+#: .\frontend\templates\partials\footer.html:53
+#: .\frontend\templates\partials\menu.html:138
+msgid "Quejas y sugerencias"
+msgstr ""
+
+#: .\frontend\templates\partials\footer.html:56
+msgid "Servicio y atención personalizada para nuestros inquilinos."
+msgstr ""
+
+#: .\frontend\templates\partials\footer.html:60
+msgid "Ir a la sección"
 msgstr ""
 
 #: .\frontend\templates\partials\footer.html:70
@@ -1334,15 +1363,6 @@ msgstr ""
 
 #: .\frontend\templates\partials\menu.html:130
 msgid "Políticas que Rigen Nuestra Operación"
-msgstr ""
-
-#: .\frontend\templates\partials\menu.html:138
-msgid "Quejas y sugerencias"
-msgstr ""
-
-#: .\frontend\templates\partials\menu.html:145 .\frontend\views.py:182
-#: .\frontend\views.py:184
-msgid "Contacto"
 msgstr ""
 
 #: .\frontend\templates\partials\slider_index.html:37
