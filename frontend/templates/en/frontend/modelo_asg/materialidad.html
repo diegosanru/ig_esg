@@ -1,31 +1,920 @@
 {% extends 'layouts/interior.html' %}
 {% load static %}
 {% block otherstyles %}
+    <style>
 
+.carousel2 .image_wrapper {
+    height: 300px; /* Ajusta según tu diseño */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.carousel2 .image_wrapper img {
+    max-height: 100%;
+    width: auto;
+    object-fit: contain;
+}
+        .active-icon img {
+        border: 3px solid #2B2B2B;
+        border-radius: 10px;
+        padding: 5px;
+    }
+        .owl-carousel.for-carousel .item{
+            min-height: 200px;
+            background-color: #2792ec;
+        }
+
+        .owl-carousel.for-carousel .item h1{
+            line-height: 1;
+        }
+        .owl-carousel.for-carousel .owl-stage{
+            padding: 0;
+        }
+        
+        .owl-carousel .owl-stage {
+            display: flex;
+            align-items: center;
+          }
+
+        .ulcard > li:before{
+            content: "•";
+        }
+        .modal-event{
+            cursor: pointer;
+        }
+        .btn-modal-close {
+            background-color: #4A88E6;
+            transition: background-color 1s ease;
+            color: #fff;
+        }
+        .btn-modal-close:hover {
+            background-color: #4A88E6;
+            color: #fff;
+        }
+        .image_wrapper {
+            position: relative;
+            overflow: hidden;
+            height: 200px; /* Altura fija del contenedor de la imagen */
+            width: 280px;
+        }
+
+        .image_wrapper img {
+            display: block;
+            object-fit: cover; /* Esto asegura que la imagen cubra completamente el contenedor sin distorsionarse */
+            width: 100%; /* La imagen ocupará todo el ancho del contenedor */
+            height: 100%; /* La imagen ocupará toda la altura del contenedor */
+        }
+
+        .image_wrapper .overlay {
+            position: absolute;
+            display: flex;
+            align-items: end;
+            justify-content: center;
+
+            overflow: hidden;
+        }
+
+        .image_wrapper .overlay_2 {
+            height: 100px;
+            width: 100%;
+            text-align: center;
+            padding-top:20px;
+            /*display: none;*/
+            opacity: 0;
+            -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+            transition: all .23s ease;
+        }
+
+        .image_wrapper:hover img {
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+            opacity: 0.7;
+            transition: all .23s ease;
+        }
+
+        .image_wrapper:hover .overlay_2 {
+            display: flex;
+            background: #98979A;
+            align-items: center;
+            justify-content: center;
+            opacity: 1;
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+        }
+
+        .icon {
+            width: 100px;
+            cursor: pointer;
+        }
+    
+        .bullet {
+            width: 50px;
+            margin-right: 10px;
+        }
+    
+        .list-styled1 li {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+    
+        .tab-pane {
+            display: none;
+        }
+    
+        .tab-pane.active {
+            display: block;
+        }
+
+        .icon-container {
+            display: inline-block;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+          }
+          
+        .icon-container:hover {
+            transform: scale(1.1); /* Aumenta el tamaño al 110% */
+        }
+
+        #ejes .icon-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #ejes .icon {
+            width: 100px;
+            height: 100px;
+            object-fit: contain;
+            margin-bottom: 0;
+        }
+
+        /* Ocultar puntos de carusel */
+        .owl-dots {
+            display: none !important;
+        }
+
+        /* Ajustar ancho de p en modal */
+        .card-text {
+            margin: 0 40px;
+        }
+
+        /* Hover para imagen */
+        .mat-img {
+            border: 1px #dfdfdf solid;
+            box-shadow: #dfdfdf 0px 0px 10px;
+            border-radius: 10px;
+        }
+        .mat-img img {
+            margin-top: 20px;
+            transition: .5s ease;
+        }
+        .mat-img img:hover {
+            scale: 103%;
+        }
+    </style>
 {% endblock %}
 
 {% block wrapper %}
-    <div class="content-wrap">
+    <div class="">
+        <!--<section id="acciones" class="py-1" data-wow-duration="2s" data-wow-delay="2s" style="padding-bottom: 30px!important;">
+
+        <div class="content-wrap">
+            <div class="container">
+                <p class="text-justify" style="padding-top: 30px">En Industrial Gate realizamos un análisis de materialidad con el objetivo de identificar los temas ambientales, sociales y de gobernanza que son más relevantes tanto para nuestros grupos de interés como para la continuidad y sostenibilidad de nuestro modelo de negocio. Este ejercicio nos permite enfocar nuestros esfuerzos en los asuntos que realmente generan valor para la compañía y la sociedad, así como gestionar de manera proactiva los riesgos y oportunidades que enfrentamos.
+                </p>
+            </div>
+                <div class="container">
+                <h1 class="text-center mt-5 mb-5 tc-blue">
+                    Logros principales de sustentabilidad en 2023</h1>
+
+                <div
+                        class="owl-carousel owl-carousel-full image-carousel carousel-widget my-3 carousel2"
+                        data-margin="" data-loop="true" data-nav="true" data-autoplay="3000" data-items="8"
+                        data-pagi="true" data-items-xs="1"
+                        data-items-sm="2" data-items-md="2" data-items-lg="4" data-items-xl="4"
+                        data-auto-play-hover-pause="true">
+
+
+                    <div class="oc-item">
+                        <div class="image_wrapper">
+                            <a class="h4 text-white text-center modal-event"
+
+                                data-toggle="modal"
+                                data-target="#myModal"
+                                data-title="Estrategia de sustentabilidad"
+                                data-img="{% static 'images/modelo_asg/sus1.jpg' %}"
+                                data-description="Se fortaleció la estrategia de Sustentabilidad de CYDSA a partir de la actualización de su materialidad, junto con la identificación de las áreas de enfoque, indicadores y establecimiento de objetivos de la empresa."
+                            >
+                                <img src="{% static 'images/modelo_asg/sus2.jpg' %}">
+                                <div class="overlay">
+                                    <div class=" overlay_2">
+                                        <h3 class="text-white">Estrategia de sustentabilidad</h3>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="oc-item">
+                        <div class="image_wrapper">
+                            <a class="h4 text-white text-center modal-event"
+
+                                data-toggle="modal"
+                                data-target="#myModal"
+                                data-title="Inversiones en pro del desarrollo sustentable"
+                                data-img="{% static 'images/modelo_asg/inver2.jpg' %}"
+                                data-description="+590 mdd destinados a inversiones que han contribuido al desarrollo sustentable de CYDSA a partir de octubre del 2010."
+                            >
+                                <img src="{% static 'images/modelo_asg/inver1.jpg' %}">
+                                <div class="overlay">
+                                    <div class=" overlay_2">
+                                        <h3 class="text-white">Inversiones en pro del desarrollo sustentable</h3>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="oc-item">
+                        <div class="image_wrapper">
+                            <a class="h4 text-white text-center modal-event"
+                                data-toggle="modal"
+                                data-target="#myModal"
+                                data-title="Lesiones por accidente laboral"
+                                data-img="{% static 'images/modelo_asg/lesion2.jpg' %}"
+                                data-description="-16.7% en lesiones por accidente laboral registrables en comparación con el 2022."
+                            >
+                                <img src="{% static 'images/modelo_asg/lesion1.jpg' %}">
+                                <div class="overlay">
+                                    <div class=" overlay_2">
+                                        <h3 class="text-white">Lesiones por accidente laboral</h3>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="oc-item">
+                        <div class="image_wrapper">
+                            <a class="h4 text-white text-center modal-event"
+
+                                data-toggle="modal"
+                                data-target="#myModal"
+                                data-title="Producción de botes de plástico"
+                                data-img="{% static 'images/modelo_asg/botellas2.jpg' %}"
+                                data-description="Producción de botes de plástico para el empaque de productos del negocio de sal en presentaciones de 1 kg y 750 gramos, elaborados con materiales oxodegradables."
+                            >
+                                <img src="{% static 'images/modelo_asg/botellas1.jpg' %}">
+                                <div class="overlay">
+                                    <div class=" overlay_2">
+                                        <h3 class="text-white">Producción de botes de plástico</h3>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <div class="oc-item">
+                        <div class="image_wrapper">
+                            <a class="h4 text-white text-center modal-event"
+
+                                data-toggle="modal"
+                                data-target="#myModal"
+                                data-title="Emisiones directas a la atmósfera"
+                                data-img="{% static 'images/modelo_asg/emisiones_directas2.png' %}"
+                                data-description="-36% en las emisiones directas a la atmósfera durante 2023 en comparación con el año base (2018)."
+                            >
+                                <img src="{% static 'images/modelo_asg/emisiones_directas1.png' %}">
+                                <div class="overlay">
+                                    <div class=" overlay_2">
+                                        <h3 class="text-white">Emisiones directas a la atmósfera</h3>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="oc-item">
+                        <div class="image_wrapper">
+                            <a class="h4 text-white text-center modal-event"
+
+                                data-toggle="modal"
+                                data-target="#myModal"
+                                data-title="Consumo de agua"
+                                data-img="{% static 'images/modelo_asg/agua2.jpg' %}"
+                                data-description="-9% en el consumo de agua durante 2023 en comparación con el año base (2018)."
+                            >
+                                <img src="{% static 'images/modelo_asg/agua1.jpg' %}">
+                                <div class="overlay">
+                                    <div class=" overlay_2">
+                                        <h3 class="text-white">Consumo de agua</h3>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="oc-item">
+                        <div class="image_wrapper">
+                            <a class="h4 text-white text-center modal-event"
+
+                                data-toggle="modal"
+                                data-target="#myModal"
+                                data-title="Agua recirculada"
+                                data-img="{% static 'images/modelo_asg/aguareci2.jpg' %}"
+                                data-description="El 44.2% del agua consumida en los procesos operativos de CYDSA fue recirculada, un incremento del 58.9% en comparación con el año base (2018)."
+                            >
+                                <img src="{% static 'images/modelo_asg/aguareci1.jpg' %}">
+                                <div class="overlay">
+                                    <div class=" overlay_2">
+                                        <h3 class="text-white">Agua recirculada</h3>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="oc-item">
+                        <div class="image_wrapper">
+                            <a class="h4 text-white text-center modal-event"
+
+                                data-toggle="modal"
+                                data-target="#myModal"
+                                data-title="Residuos reciclados"
+                                data-img="{% static 'images/modelo_asg/residuos2.jpg' %}"
+                                data-description="+20% en el volumen total en toneladas de residuos reciclados durante su disposición en comparación con el 2022."
+                            >
+                                <img src="{% static 'images/modelo_asg/residuos1.jpg' %}">
+                                <div class="overlay">
+                                    <div class=" overlay_2">
+                                        <h3 class="text-white">Residuos reciclados</h3>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="oc-item">
+                        <div class="image_wrapper">
+                            <a class="h4 text-white text-center modal-event"
+
+                                data-toggle="modal"
+                                data-target="#myModal"
+                                data-title="Certificaciones"
+                                data-img="{% static 'images/modelo_asg/certi2.jpg' %}"
+                                data-description="Se mantienen certificaciones en ISO 14001, reconocimientos del Chlorine Institute y la Asociación Nacional de la Industria Química por mejores prácticas en responsabilidad integral."
+                            >
+                                <img src="{% static 'images/modelo_asg/certi1.jpg' %}">
+                                <div class="overlay">
+                                    <div class=" overlay_2">
+                                        <h3 class="text-white">Certificaciones</h3>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </section>
+        </div>
+        <div class="modal fade popup" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+               <div class="modal-content">
+                   <div class="card">
+                       <div class="card-body">
+                           <h1 class="event-title card-title mb-0 text-center text-bold tc-blue mt-2 mb-2">
+                           </h1>
+                           <p class="event-description card-text mt-4 text-justify" style="font-size: 22px">
+                           </p>
+                           <img class="cover event-img" src="">
+                       </div>
+                   </div>
+                   <div class="text-center py-3">
+                       <button type="button" class="btn btn-secondary close-btn card-link" data-mdb-dismiss="modal">
+                           Cerrar
+                       </button>
+                   </div>
+               </div>
+            </div>
+        </div>-->
+
+        <section id="materialidad">
         <div class="container">
+            
+            <div class="wow fadeInUp" data-wow-duration="1s"><br>
+                <h1 class="text-center tc-blue">Materialidad</h1>
+                <p class="text-justify">
+                    En Industrial Gate realizamos nuestro primer análisis de materialidad con el objetivo de identificar y priorizar los temas ambientales, sociales y de gobernanza (ASG) que son más relevantes tanto para nuestros grupos de interés como para la sostenibilidad de nuestro modelo de negocio. Este ejercicio forma parte de nuestro compromiso por fortalecer la estrategia de sostenibilidad y alinear nuestras acciones con las expectativas del entorno en el que operamos.
+
+                </p>
+                <p class="text-justify">
+                    El proceso se llevó a cabo mediante una metodología estructurada que incluyó la identificación de temas clave, la recopilación de opiniones de partes interesadas y la evaluación del impacto de cada tema en la Compañía. Gracias a este enfoque, enfocamos nuestros esfuerzos en los asuntos que generan mayor valor a largo plazo, al tiempo que gestionamos de forma proactiva los riesgos y oportunidades que enfrenta nuestra operación.
+
+                </p>
+                <div class="row justify-content-center mat-img">
+                    <img src="{% static 'images/asg/materialidadig/materialidad.png' %}" 
+                         class="col-md-8 wow fadeInUp mb-4" 
+                         style="max-width: 80%; height: auto;">
+                </div>
+               
+                <p class="text-justify" style="padding-top: 30px">
+                    Los temas identificados como prioritarios guían el diseño de nuestra estrategia ASG, la gestión de proyectos y la comunicación con las partes interesadas. Esta evaluación se actualiza periódicamente para mantener su vigencia frente a los cambios en el contexto global y local.
+                </p>
+                
+                <div class="row justify-content-center mat-img">
+                    <!-- Imagen izquierda -->
+                    <div class="col-md-6 text-center">
+                        <img src="{% static 'images/asg/materialidadig/temas1.png' %}" 
+                             class="wow fadeInUp mb-4" 
+                             style="width: 80%; height: auto;">
+                    </div>
+                
+                    <!-- Imagen derecha -->
+                    <div class="col-md-6 text-center">
+                        <img src="{% static 'images/asg/materialidadig/temas2.png' %}" 
+                             class="wow fadeInUp mb-4" 
+                             style="width: 80%; height: auto;">
+                    </div>
+                </div>
+            </div>
+        </div><br><br>
+        </section>
+        
+        <section id="ejes">
+        <div class="content-wrap p-2">
+                <div class="container"><br>
+                    <h1 class="text-center tc-blue">Estrategia ASG</h1>
+
+                    <p class="text-justify">En Industrial Gate, concebimos la sostenibilidad como una estrategia de negocio que impulsa la creación de valor a largo plazo. Nuestra Estrategia Ambiental, Social y de Gobernanza (ASG) articula los principios que rigen nuestras operaciones y decisiones clave, alineándonos con los marcos internacionales más relevantes y las expectativas de nuestros grupos de interés.
+                    </p>
+                    <div class="row text-center mb-2">
+                        <!-- Botón 1 -->
+                        <div class="col-md-4 icon-container wow fadeInUp">
+                            <img src="/static/images/asg/ico_medio_ambiente.png" alt="Medio Ambiente" class="icon img-fluid" data-target="#tab1">
+                            <h3 class="m-0">Eje Ambiental</h3>
+                        </div>
+                        <!-- Botón 2 -->
+                        <div class="col-md-4 icon-container wow fadeInUp">
+                            <img src="/static/images/asg/ico_gente.png" alt="Gente" class="icon img-fluid" data-target="#tab2" style="height: 100px; width: 105px; padding-top: 10px">
+                            <h3 class="m-0">Eje Social</h3>
+                        </div>
+                        <!-- Botón 3 -->
+                        <div class="col-md-4 icon-container wow fadeInUp">
+                            <img src="/static/images/asg/ico_comunidad.png" alt="Comunidad" class="icon img-fluid" data-target="#tab3" style="height: 98px; width: 108px">
+                            <h3 class="m-0">Eje de Gobernanza</h3>
+                        </div>
+                    </div>
+                    <!-- Contenido dinámico -->
+                    <div id="tab-content">
+                        <div id="tab1" class="tab-pane d-block">
+                            
+                                <div class="row d-flex align-items-center">
+                                    <div class="col-md-6 text-center">
+                                        <img class="img-fluid" src="/static/images/ejes-medio-ambiente.png" alt="Medio Ambiente">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <ul class="list-styled1 text-justify">
+                                            <li><img src="/static/images/asg/Iconos-30.png" alt="bullet" class="bullet"> Diseñamos nuestros inmuebles bajo criterios de eficiencia energética e innovación sustentable.</li>
+                                            <li><img src="/static/images/asg/Iconos-30.png" alt="bullet" class="bullet"> Monitoreamos el consumo de agua y energía, así como nuestras emisiones de CO₂e.</li>
+                                            <li><img src="/static/images/asg/Iconos-30.png" alt="bullet" class="bullet"> Buscamos reducir el impacto ambiental de nuestras operaciones mediante prácticas responsables y procesos de mejora continua.</li>
+                                        </ul>
+                                    </div>
+                            </div>
+                        </div>
+                        <div id="tab2" class="tab-pane d-none">
+                            <div class="row d-flex align-items-center">
+                                
+                                <div class="col-md-6">
+                                    <ul class="list-styled1 text-justify">
+                                        <li><img src="/static/images/asg/Iconos-28.png" alt="bullet" class="bullet"> Promovemos condiciones laborales justas, seguras y equitativas.</li>
+                                        <li><img src="/static/images/asg/Iconos-28.png" alt="bullet" class="bullet"> Impulsamos el desarrollo profesional de nuestros colaboradores y fomentamos la diversidad en nuestras plantillas.</li>
+                                        <li><img src="/static/images/asg/Iconos-28.png" alt="bullet" class="bullet"> Establecemos vínculos de colaboración con las comunidades y actores locales para contribuir positivamente en los territorios donde operamos.</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6 text-center">
+                                    <img class="img-fluid" src="/static/images/ejes-gente.png" alt="Gente">
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab3" class="tab-pane d-none">
+                            <div class="row d-flex align-items-center">
+                                <div class="col-md-6 text-center">
+                                    <img class="img-fluid" src="/static/images/ejes-comunidad.png" alt="Comunidad">
+                                </div>
+                                <div class="col-md-6">
+                                    <ul class="list-styled1 text-justify">
+                                        <li><img src="/static/images/asg/Iconos-29.png" alt="bullet" class="bullet"> Contamos con órganos de gobierno eficientes y políticas internas que promueven la rendición de cuentas.</li>
+                                        <li><img src="/static/images/asg/Iconos-29.png" alt="bullet" class="bullet"> Integramos la gestión de riesgos ASG en nuestras decisiones estratégicas y procesos operativos.</li>
+                                        <li><img src="/static/images/asg/Iconos-29.png" alt="bullet" class="bullet"> Nos alineamos con las mejores prácticas del sector en materia de cumplimiento normativo, derechos humanos, integridad corporativa y prevención de conflictos de interés.</li>
+                                    </ul>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div><br><br>
+            </section>
+        </div>
+        <div class="container">
+            <div id="modelo-sus" class="wow fadeInUp" data-wow-duration="1s">
+                <h1 class="text-center mt-5 mb-5" style="color: #2B2B2B;">Nuestro Compromiso con los ODS</h1>      
+                <p class="text-justify">
+                    En Industrial Gate entendemos que el desarrollo sostenible requiere acciones concretas que contribuyan a resolver los desafíos globales. Por ello, alineamos nuestra estrategia ASG con los Objetivos de Desarrollo Sostenible (ODS) de las Naciones Unidas, identificando aquellos que están directamente relacionados con nuestro modelo de negocio y áreas de impacto.
+                </p>
+                <p class="text-justify">
+                    A través de nuestras operaciones, políticas y programas, impulsamos iniciativas que favorecen el crecimiento económico inclusivo, la innovación industrial responsable, el acceso a empleos dignos y la protección del medio ambiente.
+                </p>
+                <p class="text-justify">
+                    A continuación, se presentan los ODS con los que contribuimos activamente, junto con una breve explicación de cómo nuestras acciones se alinean con cada uno:                </p>
+               
+            </div>
+                                
+                    <div
+                            class="owl-carousel owl-carousel-full image-carousel carousel-widget my-3 carousel2"
+                            data-margin="" data-loop="true" data-nav="false" data-autoplay="3000" data-items="6"
+                            data-dots="false" data-items-xs="1"
+                            data-items-sm="2" data-items-md="2" data-items-lg="4" data-items-xl="4"
+                            data-auto-play-hover-pause="true">
+    
+    
+                        <div class="oc-item">
+                            <div class="image_wrapper">
+                                <a class="h4 text-white text-center modal-event"
+    
+                                    data-toggle="modal"
+                                    data-target="#myModal"
+                                    data-title="Igualdad de Género"
+                                    data-description="Establecimos objetivos para fortalecer la equidad de género en nuestras contrataciones y entornos laborales.
+                                    "
+                                >
+                                    <img src="{% static 'images/ods_5.png' %}">
+                                    
+                                </a>
+                            </div>
+                        </div>
+    
+                        <div class="oc-item">
+                            <div class="image_wrapper">
+                                <a class="h4 text-white text-center modal-event"
+                                    data-toggle="modal"
+                                    data-target="#myModal"
+                                    data-title="Agua Limpia y Saneamiento"
+                                    data-description="Implementamos medidas para reducir el consumo de agua potable en nuestras operaciones.">
+                                    <img src="{% static 'images/ods_6.png' %}">
+                                </a>
+                            </div>
+                        </div>
+    
+                        <div class="oc-item">
+                            <div class="image_wrapper">
+                                <a class="h4 text-white text-center modal-event"
+                                    data-toggle="modal"
+                                    data-target="#myModal"
+                                    data-title="Trabajo decente y crecimiento económico"
+                                    data-description="Se reforzaron protocolos de seguridad con capacitaciones periódicas y mejoras en las condiciones laborales.
+                                    "
+                                >
+                                <img src="{% static 'images/ods_8.png' %}">
+                                    
+                                </a>
+                            </div>
+                        </div>
+    
+                        <div class="oc-item">
+                            <div class="image_wrapper">
+                                <a class="h4 text-white text-center modal-event"
+    
+                                    data-toggle="modal"
+                                    data-target="#myModal"
+                                    data-title="Industria, innovación e infraestructura"
+                                    data-description="Se integraron criterios de sustentabilidad en el diseño y construcción de naves industriales con tecnologías de última generación.
+                                    "
+                                >
+                                <img src="{% static 'images/ods_9.png' %}">
+                                    
+                                </a>
+                            </div>
+                        </div>
+    
+    
+                        <div class="oc-item">
+                            <div class="image_wrapper">
+                                <a class="h4 text-white text-center modal-event"
+    
+                                    data-toggle="modal"
+                                    data-target="#myModal"
+                                    data-title="Ciudades y comunidades sostenibles"
+                                    data-description="Se promovió la integración urbana de los parques industriales mediante infraestructura incluyente y respeto al entorno.
+                                    "
+                                >
+                                <img src="{% static 'images/ods_11.png' %}">
+                                    
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="oc-item">
+                            <div class="image_wrapper">
+                                <a class="h4 text-white text-center modal-event"
+    
+                                    data-toggle="modal"
+                                    data-target="#myModal"
+                                    data-title="Acción por el clima"
+                                    data-description="Se establecieron metas de reducción de emisiones y se midieron las huellas de carbono de alcance 1 y 2.
+                                    "
+                                >
+                                <img src="{% static 'images/ods_13.png' %}">
+                                    
+                                </a>
+                            </div>
+                        </div>
+    
+                        
+                        
+                        
+                    </div>
+        </div><br><br>
+
+
+            <div id="modelo-sus" class=" container wow fadeInUp" data-wow-duration="1s">
+                <h1 class="text-center mb-5" style="color: #2B2B2B;">Afiliaciones y Certificaciones</h1>
+                <p class="text-justify">
+                    Como parte de nuestro compromiso con la adopción de prácticas ASG de excelencia, participamos en iniciativas y programas que impulsan la sostenibilidad en nuestras actividades. Además, contamos con certificaciones que respaldan nuestro cumplimiento con estándares reconocidos a nivel nacional e internacional en aspectos ambientales, sociales y de gobernanza corporativa.
+                </p>
+               
+            </div>
+        <div class="container-fluid">
+
+
+
+            
+
             <div class="row">
-                <div class="col-12">
-                    <p class="text-justify">Para el desarrollo de una estrategia fundamentada y alineada a
-                        las necesidades y requerimientos de nuestros grupos de interés se llevó a cabo un estudio de
-                        materialidad en 2020, el cual es la base de nuestra estrategia ASG para identificar y gestionar
-                        los riesgos y oportunidades más relevantes para la organización.</p>
 
-                    <p class="text-justify">Con el fin de plasmar los temas de mayor relevancia tanto al interior como
-                        al exterior de la organización en nuestra matriz de materialidad se llevó
-                        a cabo la siguiente metodología:</p>
-                    <img class="img-fluid" src="{% static 'images/Metodologia.png' %}" alt="">
-
-                    <img class="img-fluid" src="{% static 'images/Matriz_ASG.png' %}" alt="">
-                    <img class="img-fluid" src="{% static 'images/Matriz_ASG1.png' %}" alt="">
+                
+                <div class="col-md-6 col-sm-1 col-lg-6 m-0 p-0">
+                    <img src="/static/images/ambiental/generacion-valor-compartido.jpg" alt="" class="img_fluid">
+                </div>
+                <div class="col-md-6 col-sm-1 col-lg-6 p-5 d-flex flex-column justify-content-center" style="background-color: #F5BA3D">
+                    <h1 class="tc-blue text-center" style="color: white">
+                        Afiliaciones
+                    </h1>
+                    <div class="d-flex justify-content-center">
+                        <ul class="list-styled" style="color: #fff;">
+                            <p class="text-justify" style="color: white">
+                                En Industrial Gate, fortalecemos nuestro compromiso con la sostenibilidad al integrarnos a iniciativas de evaluación y responsabilidad corporativa que promueven las mejores prácticas en el sector inmobiliario e industrial.
+                            </p>
+                            <p class="text-justify" style="color: white">
+                                Actualmente participamos en las siguientes plataformas y organismos:
+                            </p>
+                            <li>
+                                <p style="color: white">
+                                    GRESB (Global Real Estate Sustainability Benchmark), donde reportamos desde 2023 nuestro desempeño ASG para compararnos con los más altos estándares internacionales.
+                                </p>
+                            </li>
+                            <!-- <li>
+                                <p style="color: white">
+                                    Distintivo Empresa Socialmente Responsable (ESR), otorgado por nuestras buenas prácticas éticas, sociales y ambientales.
+                                </p>
+                            </li> -->
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-1 col-lg-6 p-5 text-white d-flex flex-column justify-content-center"
+     style="background-color: #3DB7B0">
+    <h1 class="text-white text-center" style="color: white">
+        Certificaciones
+    </h1>
+    <p class="text-justify">
+        En Industrial Gate, desarrollamos y operamos inmuebles industriales bajo los más altos estándares de sostenibilidad. Como parte de este compromiso, hemos obtenido certificaciones EDGE (Excellence in Design for Greater Efficiencies), promovidas por la International Finance Corporation (IFC), y certificaciones LEED (Leadership in Energy and Environmental Design), otorgadas por el U.S. Green Building Council (USGBC).
+    </p>
+    <p class="text-justify">
+        Estos reconocimientos validan el alto desempeño de nuestros proyectos en eficiencia energética, manejo responsable de recursos, calidad ambiental y reducción de impactos, consolidando nuestro enfoque hacia una construcción y operación sostenible.
+    </p>
+</div>
+                <div class="col-md-6 col-sm-1 col-lg-6 m-0 p-0">
+                        <img src="/static/images/ambiental/certificaciones.jpg" alt="" class="img_fluid">
+                    </div>
+            </div>
+        </div>
+        <!--<div class="content-wrap">
+            <div class="container">
+                <div id="objetivos" class="wow fadeInUp" data-wow-duration="1s">
+                    <br>
+                    <h1 class="text-center mb-5" style="color: #2B2B2B;">Objetivos cuantitativos</h1>
+                    <p class="text-justify">
+                        CYDSA ha definido los siguientes objetivos iniciales con metas establecidas para alcanzarse en 2030.
+                        Para su medición y gestión, se han desarrollado herramientas específicas para su monitoreo continuo.
+                        Estos objetivos se actualizarán conforme a nuestro
+                        proceso interno de mejora continua e innovación.
+                    </p>
+                    <div class="text-center">
+                        <img src="{% static 'images/asg/indicadores_vf.png' %}" class="wow fadeInUp mb-4" style="width:100%; height: 750px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div id="actualizacion-sus" class="wow fadeInUp" data-wow-duration="1s">
+                <h1 class="text-center mt-5 mb-5" style="color: #2B2B2B;">Proceso de actualización del Modelo de Sustentabilidad y el estudio de materialidad hacia las líneas de acción</h1>
+                <p class="text-justify" >
+                    Para la actualización del modelo, se llevó a cabo un nuevo análisis de materialidad con la finalidad de
+                    identificar temas prioritarios actualizados que responden a los intereses y necesidades de CYDSA y sus
+                    grupos de interés. Se mapearon las perspectivas de todas las audiencias del Grupo y se determinaron <strong>diecisiete
+                    temas materiales</strong>. Conforme a su importancia para el desarrollo sustentable de la empresa, se
+                    identificaron <strong>once temas críticos y prioritarios</strong> alineados con las estrategias corporativas de CYDSA.
+                    Estos temas se agruparon en <strong>seis prioridades</strong> y <strong>tres líneas de acción</strong>.
+                </p>
+            </div>
+            <div class="container">
+                <div id="actualizacion-estudio">
+                    
+                    
+                    <div class=" wow fadeInLeft text-center" >
+                        <img src="{% static 'images/asg/materiales_vf.png' %}">
+                    </div>
+                    <div class=" wow fadeInRight text-center" >
+                        <img src="{% static 'images/asg/matriz_vf.png' %}" style="width:600px">
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </div>-->
+        <div class="modal fade popup" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content d-flex justify-content-center align-items-center">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 class="event-title card-title mb-0 text-center text-bold tc-blue mb-5">
+                            </h2>
+                            <p class="event-description card-text mt-5 text-justify" style="">
+                            </p>
+                            <div class="row justify-content-center">
+                                <img class="cover event-img col-md-6" src="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center py-3">
+                        <button type="button" class="btn btn-modal-close close-btn card-link" data-mdb-dismiss="modal">
+                            Cerrar
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
+
+    <div class="modal fade popup" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="event-title card-title mb-0 text-center text-bold tc-gray mt-5 mb-5">
+                        </h2>
+                        <p class="event-description card-text mt-5 text-justify">
+                        </p>
+                        <img class="cover event-img" src="">
+                    </div>
+                </div>
+                <div class="text-center py-3">
+                    <button type="button" class="btn btn-secondary close-btn card-link" data-mdb-dismiss="modal">
+                        Cerrar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content-wrap">
+        <div class="container">
+            <div id="descargable" class="wow fadeInUp pt-5 pb-5" data-wow-duration="1s"
+                 style="visibility: visible; animation-duration: 1s; animation-name: fadeInUp;">
+                <div id="menu1_6"></div>
+                <h1 class="text-center mb-5" style="color: #2B2B2B;">Contenido Descargable</h1>
+                <div class="row justify-content-center wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+                    <div class="col-md-3 mb-4">
+                        <a class="d-flex flex-column"
+                           href="https://investorcloud.s3.amazonaws.com/IndustrialGate/InformesAnuales/IAS_2024_IG_VF_SN.pdf"
+                           target="_blank">
+                            <img class="mb-3" src="/static/images/modelo_asg/imagen_2024.png" alt="">
+                            <button class="btn btn-default btn-primary">Informe Anual de Sostenibilidad 2024</button>
+                        </a>
+                    </div>
+                    <!--<div class="col-md-3 mb-4">
+                        <a class="d-flex flex-column"
+                           href="https://investorcloud.s3.amazonaws.com/Cydsa/2022-Sustentabilidad1.pdf"
+                           target="_blank">
+                            <img class="mb-3" src="/static/images/modelo_asg/imagen_2022.png" alt="">
+                            <button class="btn btn-default btn-primary">Informe de Sustentabilidad 2022</button>
+                        </a>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <a class="d-flex flex-column"
+                           href="https://investorcloud.s3.amazonaws.com/Cydsa/2021-sustentabilidad.pdf"
+                           target="_blank">
+                            <img class="mb-3" src="/static/images/modelo_asg/imagen_2021.png" alt="">
+                            <button class="btn btn-default btn-primary">Reporte de Sustentabilidad 2021</button>
+                        </a>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <a class="d-flex flex-column"
+                           href="https://investorcloud.s3.amazonaws.com/Cydsa/2020-sustentabilidad.pdf"
+                           target="_blank">
+                            <img class="mb-3" src="/static/images/modelo_asg/imagen_2020.png" alt="">
+                            <button class="btn btn-default btn-primary">Informe de Sustentabilidad 2020</button>
+                        </a>
+                    </div>-->
+                </div>
+            </div>
+        </div>
+    </div>
+
 {% endblock %}
 
 {% block otherscripts %}
+    <script>
+        // Lógica de sección comites
+        document.querySelectorAll('.icon').forEach(icon => {
+            icon.addEventListener('click', function () {
+                // Ocultar todas las pestañas
+                document.querySelectorAll('.tab-pane').forEach(tab => tab.classList.remove('active', 'd-none'));
+                // Mostrar la pestaña seleccionada
+                const target = document.querySelector(this.dataset.target);
+                target.classList.add('active');
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const icons = document.querySelectorAll('.icon');
+            const tabs = document.querySelectorAll('.tab-pane');
+    
+            icons.forEach(function (icon) {
+                icon.addEventListener('click', function () {
+                    const targetId = this.getAttribute('data-target');
+    
+                    // Oculta todos los tabs
+                    tabs.forEach(tab => {
+                        tab.classList.add('d-none');
+                        tab.classList.remove('d-block');
+                    });
+    
+                    // Quita estilo activo de todos los icon-container
+                    document.querySelectorAll('.icon-container').forEach(c => c.classList.remove('active-icon'));
+    
+                    // Muestra el tab seleccionado
+                    const targetTab = document.querySelector(targetId);
+                    if (targetTab) {
+                        targetTab.classList.remove('d-none');
+                        targetTab.classList.add('d-block');
+                    }
+    
+                    // Marca el icono como activo
+                    this.parentElement.classList.add('active-icon');
+                });
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            $(".modal-event").click(function (e) {
+                e.preventDefault();
+                console.log('entro');
+                let target = $(e.currentTarget);
+                {#console.log(target);#}
+
+                $("#myModal .event-title").text(target.data('title'));
+                $("#myModal .event-description").text(target.data('description'));
+                $("#myModal .event-img").attr('src', target.data('img'));
+
+                $("#myModal").modal('show');
+            });
+            $("#myModal .close-btn").click(function (e) {
+                $("#myModal").modal('hide');
+            });
+            $('.up-arrow, .down-arrow').click(function(){
+                var $this = $(this);
+                var direction = $this.data('direction');
+                var $contentContainer = $this.closest('.elementEsquema').find('.content-container');
+                var $currentContent = $contentContainer.find('.content.active');
+                var $nextContent = (direction === 'up') ? $currentContent.prev('.content') : $currentContent.next('.content');
+        
+                if($nextContent.length){
+                    $currentContent.removeClass('active').css('left', (direction === 'up') ? '100%' : '-100%');
+                    $nextContent.addClass('active').css('left', '0');
+        
+                    // Set a timeout to reset the left position of the current content
+                    setTimeout(function() {
+                        $currentContent.css('left', '100%'); // Reset to original off-screen position
+                    }, 500); // This should match the duration of the transition
+                }
+            });
+        });
+
+    </script>
 {% endblock %}

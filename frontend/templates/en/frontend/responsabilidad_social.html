@@ -1,227 +1,515 @@
 {% extends 'layouts/interior.html' %}
 {% load static %}
 {% block otherstyles %}
-{#    <link rel="stylesheet" href="{% static 'stylesheets/css/owl.carousel.min.css' %}">#}
-{#    <link rel="stylesheet" href="{% static 'stylesheets/css/owl.theme.default.css' %}">#}
+    <link rel="stylesheet" href="/static/stylesheets/tania.css">
+    <link rel="stylesheet" href="/static/stylesheets/david.css">
+    <link rel="stylesheet" href="/static/stylesheets/carrousel.css">
+
     <style>
-        .text-grande {
-            justify-content: center;
-            align-content: center;
-            align-items: center;
-            display: flex;
-            font-size: 24px;
-        }
-        .owl-carousel .owl-dots .owl-dot{
-            background: black;
-            {#height: 0px;#}
-        }
+    h1{
+        font-weight: bold;
+    }
+    .owl-carousel1 {
+        pointer-events: none; /* Desactiva todos los eventos de mouse y touch */
+    }
+    .owl-carousel1 * {
+        pointer-events: auto; /* Reactiva los eventos para los elementos internos */
+    }
+    .bienestar-bg {
+    position: relative;
+    background-image: url('/static/images/social/parallax_bienestar.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+}
+
+.bienestar-bg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #13406B;
+    opacity: .9; /* 50% */
+    z-index: 2;
+}
+
+.bienestar-bg h1,
+.bienestar-bg h2 {
+    position: relative;
+    z-index: 3;
+}
+
+    .outside-box-right {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .outside-box-right img {
+        width: 100%;
+        height: auto;
+        display: block;
+        filter: brightness(50%); /* Esto aplica el efecto opaco */
+    }
+
+    .estra-info {
+        text-align: right;
+    }
+</style>
     </style>
+
 {% endblock %}
 
 {% block wrapper %}
-    <div class="content-wrap">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <p>En plani cumplimos a cabalidad con las regulaciones y normativas en materia laboral, al tiempo
-                        que brindamos prestaciones y beneficios por encima de lo establecido por la ley.</p>
-                    <p>Al cierre del 2021, nuestra organización está formada por un equipo de 3,038 colaboradores
-                        integrado como se muestra a continuación:</p>
-                </div>
-                <div class="col-md-6 mb-4">
-                    <div id="chart1" style="width: 100%;height: 600px;"></div>
-                </div>
-                <div class="col-md-6 mb-4">
-                    <div id="chart2" style="width: 100%;height: 600px;"></div>
-                </div>
-                <div class="col-12">
-                    <p>Históricamente, nuestras relaciones con los sindicatos de los cuales forman parte nuestros
-                        colaboradores
-                        han sido de mutuo respeto y bajo una comunicación bidireccional constante, en pleno respeto a la
-                        libertad de asociación, libertad sindical y el derecho a la negociación colectiva.</p>
+<div class="content-wrap">
+    <div class="container">
+        <div id="ppropiedades" class="">
+            <div class="container-fluid">
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="grupos" role="tabpanel" aria-labelledby="grupos-tab">
+                        <div id="acciones">
+                            <div class=" py-5 container">
+                                <h1 class="text-center" style="color: #23356B;">
+                                    Nuestra Gente
+                                </h1>
+                                <article id="carousell_book">
+                                    <div class="content-wrap2">
+                                        <div class="container clearfix">
+                                            <div class="gtco-testimonials">
+                                                <div class="owl-carousel owl-carousel1 owl-theme owl-loaded owl-drag">
+                                                    <div class="owl-stage-outer">
+                                                        <div class="owl-stage"
+                                                             style="transition: 0.25s; width: 7200px; transform: translate3d(-2880px, 0px, 0px);">
+                                                            <div class="owl-item" style="width: 360px;">
+                                                                <div class="card text-center ">
+                                                                    <div class=" d-flex flex-column justify-content-around align-items-center">
+                                                                        <img class="img-circle"
+                                                                             src="/static/images/social/icono_talento.png">
+                                                                        <h5 class="text-bold" style="font-size: 26px">
+                                                                            Talento como motor de crecimiento                                                                        </h5>
+                                                                        <p class="card-text">
+                                                                            En Industrial Gate reconocemos que el talento humano es el motor que impulsa nuestro crecimiento y éxito.
 
-                    <p>Al cierre del 2021, aproximadamente el 59% de nuestros colaboradores estaban afiliados a los
-                        siguientes
-                        sindicatos: </p>
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="owl-item" style="width: 360px;">
+                                                                <div class="card text-center">
+                                                                    <div class=" d-flex flex-column justify-content-around align-items-center">
+                                                                        <img class="img-circle"
+                                                                             src="/static/images/social/icono_entorno.png">
+                                                                        <h5 class="text-bold" style="font-size: 26px">
+                                                                            Entorno inclusivo y colaborativo                                                                        </h5>
+                                                                        <p class="card-text">
+                                                                            Promovemos un entorno laboral inclusivo y colaborativo que fomenta el sentido de pertenencia y la participación activa de nuestras y nuestros colaboradores.
 
+                                                                        </p>
 
-                    <section class="s-block pb-0">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-12 invers">
-                                    <div class="owl-carousel owl-theme h-100">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="owl-item" style="width: 360px;">
+                                                                <div class="card text-center">
+                                                                    <div class="d-flex flex-column justify-content-around align-items-center">
+                                                                        <img class="img-circle"
+                                                                             src="/static/images/social/icono_bienestar.png">
+                                                                        <h5 class="text-bold" style="font-size: 26px">
+                                                                            Compromiso con el bienestar laboral                                                                        </h5>
+                                                                        <p class="card-text">
+                                                                            Nuestro enfoque está en garantizar condiciones laborales justas, ofrecer oportunidades de desarrollo y mantener canales de comunicación abiertos que fortalezcan la relación entre el personal y la Compañía.
 
-                                        <div class="item d-flex flex-column h-100 align-items-center justify-content-center p-5"
-                                             style="background-image: url({% static 'images/slider_quienessomos_mision.png' %});
-                                                     background-size: cover;">
-                                            <div class="row">
-                                                <div class="col-6 text-grande">
-                                                    <div class="item"><p class="text-justify"> Sindicato de Trabajadores de la Industria del
-                                                        Cemento, Cal, Asbesto,
-                                                        Yeso, Envases y sus Productos Similares y Conexos de la
-                                                        República Mexicana</p>
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                                <div class="col-6">
-                                                    <img src="{% static 'images/Icono_1.png' %}" alt="">
                                                 </div>
                                             </div>
                                         </div>
-
-                                        <div class="item d-flex flex-column h-100 align-items-center justify-content-center p-5"
-                                             style="background-image: url({% static 'images/slider_quienessomos_mision.png' %});
-                                                     background-size: cover;">
-                                            <div class="row">
-                                                <div class="col-6 text-grande">
-                                                    <div class="item">
-                                                        <p class="text-justify">Sindicato Mexicano de Trabajadores de la Construcción con Maquinaria, Similares y Conexos
-                                                        de la República Mexicana, Confederación de Trabajadores Campesinos</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-6">
-                                                    <img src="{% static 'images/Icono_2.png' %}" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="item d-flex flex-column h-100 align-items-center justify-content-center p-5"
-                                             style="background-image: url({% static 'images/slider_quienessomos_mision.png' %});
-                                                     background-size: cover;">
-                                            <div class="row">
-                                                <div class="col-6 text-grande">
-                                                    <div class="item">
-                                                        <p class="text-justify">Sindicato Nacional de Trabajadores de la Actividad Comercial y sus Derivados, Agentes de
-                                                        Comercio, Vendedores Viajeros, Propagandistas e Impulsores de Ventas de la República
-                                                        Mexicana</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-6">
-                                                    <img src="{% static 'images/Icono_3.png' %}" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="item d-flex flex-column h-100 align-items-center justify-content-center p-5"
-                                             style="background-image: url({% static 'images/slider_quienessomos_mision.png' %});
-                                                     background-size: cover;">
-                                            <div class="row">
-                                                <div class="col-6 text-grande">
-                                                    <div class="item">
-                                                        <p class="text-justify">Sindicato Progresista de Trabajadores de la Industria Portuaria Mexicana</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-6">
-                                                    <img src="{% static 'images/Icono_4.png' %}" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="item d-flex flex-column h-100 align-items-center justify-content-center p-5"
-                                             style="background-image: url({% static 'images/slider_quienessomos_mision.png' %});
-                                                     background-size: cover;">
-                                            <div class="row">
-                                                <div class="col-6 text-grande">
-                                                    <div class="item">
-                                                        <p class="text-justify">Sindicato de Trabajadores y Empleados de Almacenes y Comercio de la República Mexicana</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-6">
-                                                    <img src="{% static 'images/Icono_5.png' %}" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="item d-flex flex-column h-100 align-items-center justify-content-center p-5"
-                                             style="background-image: url({% static 'images/slider_quienessomos_mision.png' %});
-                                                     background-size: cover;">
-                                            <div class="row">
-                                                <div class="col-6 text-grande">
-                                                    <div class="item">
-                                                      <p class="text-justify">  Sindicato de Trabajadores del Montaje, Construcción de Estructuras, Maquinaria, La
-                                                        Transformación del Metal y Energía de la República Mexicana</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-6">
-                                                    <img src="{% static 'images/Icono_6.png' %}" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="item d-flex flex-column h-100 align-items-center justify-content-center p-5"
-                                             style="background-image: url({% static 'images/slider_quienessomos_mision.png' %});
-                                                     background-size: cover;">
-                                            <div class="row">
-                                                <div class="col-6 text-grande">
-                                                    <div class="item">
-                                                        <p class="text-justify">Sindicato de Trabajadores y Empleados de Centros Educativos, Recreativos y Prestadoras de
-                                                        Servicios en el Estado de México</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-6">
-                                                    <img src="{% static 'images/Icono_7.png' %}" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="item d-flex flex-column h-100 align-items-center justify-content-center p-5"
-                                             style="background-image: url({% static 'images/slider_quienessomos_mision.png' %});
-                                                     background-size: cover;">
-                                            <div class="row">
-                                                <div class="col-6 text-grande">
-                                                    <div class="item">
-                                                        <p class="text-justify">Sindicato de Trabajadores de la Construcción, Excavación, Operación, Similares, y Conexos
-                                                        de la República Mexicana</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-6">
-                                                    <img src="{% static 'images/Icono_8.png' %}" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-
                                     </div>
-                                </div>
+                                </article>
                             </div>
-                        </div>
-                    </section>
-                    {#                    <div class="text-center">#}
-                    {#                        <img class="img-fluid" src="{% static 'images/Leyes1.png' %}" width="1000" height="1000">#}
-                    {#                    </div>#}
-                    <br><br>
-                  <p class="text-justify">A los esfuerzos por integrar la sustentabilidad dentro de nuestra
-                        estrategia,
-                        operaciones y procesos,
-                        se le suman las acciones y programas sociales continuos que hemos emprendido en favor de las
-                        comunidades
-                        donde se ubican nuestros proyectos, los cuales han coadyuvado a la generación de empleos y a
-                        impulsar
-                        las actividades económicas locales.</p>
-
-                    <div class="text-center">
-                        <img class="img-fluid" src="{% static 'images/empleo_temporal.png' %}" width="1000"
-                             height="1000"
-                             alt="">
+                        </div>    
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
+<div class="content-wrap">
+    <div class="container" id="diversidad">
+        <div class="py-5 container">
+            <h1 class="text-center" style="color: #23356B;">
+                Diversidad, Equidad e Igualdad
+            </h1>
+            <p class="text-justify">Estamos convencidos de que la diversidad fortalece a la organización y enriquece nuestra visión de negocio. Por ello, impulsamos políticas y prácticas que promueven la equidad de oportunidades, el respeto a la identidad y la inclusión de todas las personas, independientemente de su género, edad, origen o creencias. Nuestro enfoque busca generar un entorno libre de discriminación y sesgos, en el que cada individuo pueda desarrollarse plenamente y aportar su máximo potencial.
+
+            </p>
+            <p class="text-justify">Al cierre de 2024, Industrial Gate contaba con <strong>25 colaboradores</strong>, de los cuales el
+                <strong>52%</strong> correspondían al sexo
+                masculino y el <strong>48%</strong> al femenino, distribuidos de la siguiente manera:</p>
+        </div>
+        <section id="sec_consumo" class="py-3">
+            <div class="container-fluid">
+                <div id="consumo" class="finn-counto">
+                    <div class="container">
+                        <div class="row honeycomb-wrapper justify-content-center">
+                            <div class="col-md-6 col-lg-4 tile">
+                                <div class="honeycomb">
+                                    <div class="content">
+                                        <img src="/static/images/social/icono_hombres.png" alt="" style="width: 90px;">
+                                        <h2 class="count" data-speed="1500" data-to="18" data-in-viewport="yes"
+                                            data-decimals="0">13</h2><span class="title-effect "></span>
+                                    </div>
+                                </div>
+                                <h5><b>Hombres</b></h5>
+                            </div>
+                            <div class="col-md-6 col-lg-4 tile">
+                                <div class="honeycomb">
+                                    <div class="content">
+                                        <img src="/static/images/social/icono_mujeres.png" alt="" style="width: 90px;">
+                                        <h2 class="count" data-speed="1500" data-to="12" data-in-viewport="yes"
+                                            data-decimals="0">12</h2><span class="title-effect "></span>
+                                    </div>
+                                </div>
+                                <h5><b>Mujeres</b></h5><br>
+                            </div>
+                            <div class="col-md-6 col-lg-4 tile">
+                                <div class="honeycomb">
+                                    <div class="content">
+                                        <img src="/static/images/social/icono_ambos.png" alt="">
+                                        <h2 class="count" data-speed="1500" data-to="30" data-in-viewport="yes"
+                                            data-decimals="0">30</h2><span class="title-effect "></span>
+                                    </div>
+                                </div>
+                                <h5><b>Total</b><br></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+<section id="bienestar" class="container-fluid">
+    <div class="row">
+        <div class="col-md-12 mb-12 p-5 bienestar-bg">
+            <h1 class="text-center text-white">Capacitación y Desarrollo</h1>
+            <h2 class="text-center text-white">
+                Consideramos que la formación continua es clave para fortalecer las competencias técnicas y personales de nuestro equipo. En Industrial Gate desarrollamos e impulsamos programas de capacitación enfocados en las necesidades específicas de cada área, con el objetivo de potenciar habilidades, mejorar el desempeño y asegurar que nuestro personal cuente con las herramientas necesarias para enfrentar los retos del sector inmobiliario industrial.
+            </h2>
+        </div>
+    </div>
+</section>
+    <section class="bg-gray-fmty estrategia" id="cultura">
+        <div class="container-fluid container-relative">
+            <div class="row align-items-center justify-content-center preguntas-finales">
+                <div class="col-12 col-xl-5 col-lg-6 col-md-10 padding-6-rem-tb lg-padding-5-rem-tb lg-padding-2-half-rem-right md-padding-15px-right md-no-padding-tb md-margin-5-rem-bottom" style="margin: auto;">
+                    <h1 class="mt-5 mt-lg-0 alt-font font-weight-500 texto-cenizo letter-spacing-minus-1px margin-4-half-rem-bottom md-margin-4-rem-bottom lg-margin-2-half-rem-bottom md-w-100 text-center" style="color: #23356B;">
+                        Salud y Seguridad en Industrial Gate
+                    </h1>
+                    <div class="panel-group accordion-event accordion-style-03 margin-4-rem-bottom lg-margin-2-rem-bottom text">
+                        <div data-item="primero"
+                             class="estra-link panel box-shadow-small border-radius-5px wow animate__fadeInUp animated active"
+                             data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s;">
+                            <div class="panel-heading">
+                                <div class="boton-info1">
+                                    <span>Entorno Laboral Seguro</span>
+                                    <i class="indicator fa fa-angle-right text-tussock icon-extra-small"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-item="segundo"
+                             class="estra-link panel box-shadow-small border-radius-5px wow animate__fadeInUp animated"
+                             data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s;">
+                            <div class="panel-heading">
+                                <div class="boton-info1">
+                                    <span>Prevención y Cumplimiento Normativo</span>
+                                    <i class="indicator fa fa-angle-right text-tussock icon-extra-small"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-item="tercero"
+                             class="estra-link panel box-shadow-small border-radius-5px wow animate__fadeInUp animated"
+                             data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s;">
+                            <div class="panel-heading">
+                                <div class="boton-info1">
+                                    <span>Capacitación en Seguridad</span>
+                                    <i class="indicator fa fa-angle-right text-tussock icon-extra-small"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-item="cuarto"
+                             class="estra-link panel box-shadow-small border-radius-5px wow animate__fadeInUp animated"
+                             data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s;">
+                            <div class="panel-heading">
+                                <div class="boton-info1">
+                                    <span>Promoción de la Salud Integral</span>
+                                    <i class="indicator fa fa-angle-right text-tussock icon-extra-small"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-item="quinto"
+                             class="estra-link panel box-shadow-small border-radius-5px wow animate__fadeInUp animated"
+                             data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s;">
+                            <div class="panel-heading">
+                                <div class="boton-info1">
+                                    <span>Evaluación y Mejora Continua</span>
+                                    <i class="indicator fa fa-angle-right text-tussock icon-extra-small"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 col-md-10 estra-item primero"
+                     style="visibility: visible; animation-name: fadeInRight; padding: 0;">
+                    <div class="outside-box-right position-relative">
+                        <img src="/static/images/social/entorno-seguro.jpg" class="overflow-hidden">
+                        <div class="estra-info">
+                            <p class="font">En Industrial Gate priorizamos la integridad física y el bienestar de todas y todos nuestros colaboradores. Implementamos protocolos claros de prevención y respuesta ante incidentes, garantizando que nuestras operaciones se desarrollen en un ambiente seguro y controlado.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 col-md-10 estra-item segundo d-none"
+                     style="visibility: visible; animation-name: fadeInRight; padding: 0;">
+                    <div class="outside-box-right position-relative">
+                        <img src="/static/images/social/cumplimiento-normativo.jpg" class="overflow-hidden">
+                        <div class="estra-info">
+                            <p class="font">Nos aseguramos de que todas nuestras prácticas laborales cumplan con la normatividad vigente en materia de seguridad e higiene. Esto incluye la evaluación continua de riesgos y la adopción de medidas preventivas para minimizar cualquier posible incidente.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 col-md-10 estra-item tercero d-none"
+                     style="visibility: visible; animation-name: fadeInRight; padding: 0;">
+                    <div class="outside-box-right position-relative">
+                        <img src="/static/images/social/capacitacion-seguridad.jpg" class="overflow-hidden">
+                        <div class="estra-info">
+                            <p class="font">Fomentamos la cultura preventiva a través de programas de capacitación periódicos, donde nuestro personal adquiere conocimientos prácticos para actuar de forma segura en su área de trabajo y responder adecuadamente en situaciones de emergencia.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 col-md-10 estra-item cuarto d-none"
+                     style="visibility: visible; animation-name: fadeInRight; padding: 0;">
+                    <div class="outside-box-right position-relative">
+                        <img src="/static/images/social/promocion-salud.jpg" class="overflow-hidden">
+                        <div class="estra-info">
+                            <p class="font">Además de la seguridad física, promovemos el bienestar integral mediante iniciativas que impulsan hábitos saludables, cuidado emocional y balance entre la vida personal y laboral.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 col-md-10 estra-item quinto d-none"
+                     style="visibility: visible; animation-name: fadeInRight; padding: 0;">
+                    <div class="outside-box-right position-relative">
+                        <img src="/static/images/social/mejora-continua.jpg" class="overflow-hidden">
+                        <div class="estra-info">
+                            <p class="font">Mantenemos un sistema de monitoreo y evaluación que nos permite identificar oportunidades de mejora en nuestras políticas y prácticas de salud y seguridad, asegurando su efectividad y actualización constante.
+                            </p>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-gray-fmty gestion pb-4" id="n-gestion">
+        <div class="container-fluid container-relative">
+            <div class=" py-5 container">
+                <h1 class="text-center" style="color: #23356B;">
+                    Gestión de Riesgos de Salud y Seguridad
+                </h1>
+            </div>
+        </div>
+    </section>
+    <section id="integracion" class="container-fluid">
+            <div class="row" >
+                <div class="col-md-4 d-flex justify-content-center align-items-center "
+                     style="background-image: url({% static 'images/social/estudios_riesgos.png' %});">
+                    <div class="layer"></div>
+                    <h2 class="text-center text-white font-weight-bold">Impulsamos la economía de las comunidades donde operamos, priorizando la contratación de proveedores y servicios locales, lo que genera empleo y fortalece la actividad económica regional.
+                    </h2>
+                </div>
+                <div class="col-md-4  d-flex justify-content-center align-items-center "
+                     style="background-image: url({% static 'images/social/colaboradores_posibilidad.png' %});">
+                    <div class="layer"></div>
+                    <h2 class="text-center text-white font-weight-bold">Apoyamos iniciativas enfocadas en el cuidado ambiental, asegurando que nuestro impacto social sea positivo y contribuya al desarrollo sostenible.
+                    </h2>
+                </div>
+                <div class="col-md-4  d-flex justify-content-center align-items-center "
+                     style="background-image: url({% static 'images/social/cydsa_recibio.png' %});">
+                    <div class="layer"></div>
+                        <h2 class="text-center text-white font-weight-bold">Mantenemos una comunicación constante con autoridades para identificar necesidades y oportunidades de cooperación que beneficien tanto a la comunidad como a nuestra operación.
+                    </h2>
+                </div>
+            </div>
+        </section>
+        
+    
+    
+    
+    
+
+
 {% endblock %}
 
 {% block otherscripts %}
-    <script src="{% static 'javascripts/amcharts/amcharts.js' %}"></script>
-    <script src="{% static 'javascripts/amcharts/serial.js' %}"></script>
-    <script src="{% static 'javascripts/amcharts/pie.js' %}"></script>
-    <script src="{% static 'javascripts/amcharts/contenido/responsabilidad-social.js' %}"></script>
+    <script src="{% static 'javascripts/js/jquery.js' %}"></script>
+    <script src="{% static 'javascripts/js/plugins.js' %}"></script>
+    <script src="{% static 'javascripts/js/functions.min.js' %}"></script>
+    <script src="{% static 'javascripts/jquery.waypoints.min.js' %}"></script>
+    <script src="{% static 'javascripts/countTo.js' %}"></script>
     <script src="{% static 'javascripts/owl.carousel.min.js' %}"></script>
+    
     <script>
-        $(function () {
+        document.addEventListener("DOMContentLoaded", function () {
+            const fragment = window.location.hash;
 
-            $('.owl-carousel').owlCarousel({
-                loop: true,
-                margin: 30,
-                nav: false,
-                autoplay: true,
-                autoplayTimeout: 5000,
-                autoplayHoverPause: true,
-                items: 1,
+            if (fragment.includes("tab=")) {
+                const tabId = fragment.split("tab=")[1];
+
+                $('#myTab a[href="#' + tabId + '"]').tab('show');
+
+                $('html, body').animate({
+                    scrollTop: $("#ppropiedades").offset().top
+                }, 500, function () {
+                    setTimeout(function () {
+                        $('#myTab a[href="#' + tabId + '"]').tab('show');
+                    }, 100);
+                });
+            }
+        });
+
+        $(".owl-carousel1").owlCarousel({
+            loop: false, // Deshabilita el bucle
+            center: false,
+            margin: 0,
+            responsiveClass: true,
+            nav: false, 
+            drag: false,
+            touchDrag: false, 
+            mouseDrag: false, 
+            pullDrag: false, 
+            freeDrag: false, 
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: false
+                },
+                680: {
+                    items: 1,
+                    nav: false,
+                    loop: false 
+                },
+                1000: {
+                    items: 3,
+                    nav: false 
+                }
+            },
+            onInitialized: removeBlurEffect,
+            onTranslated: removeBlurEffect
+        });
+
+        // Deshabilitar el desplazamiento manual
+        $(".owl-carousel1").on('drag.owl.carousel', function (e) {
+            e.preventDefault();
+        });
+        $(".owl-carousel1").on('mousewheel.owl.carousel', function (e) {
+            e.preventDefault();
+        });
+
+        function removeBlurEffect() {
+            // Remueve cualquier clase que aplique opacidad
+            $(".owl-item").removeClass("blurred");
+            $(".owl-item").css("opacity", "1");
+            $(".owl-item").css("transform", "scale(1)");
+        }
+
+        var counter = 1,
+            interval = setInterval(function () {
+                var elemento = $("#n-estrategia").find(".estra-link ")[counter];
+                $(elemento).click();
+                if (counter === 3) {
+                    counter = 0;
+                } else {
+                    counter++;
+                }
+            }, 20000);
+        $('#n-estrategia .outside-box-right').mouseover(function () {
+            clearInterval(interval)
+        });
+
+        $('#n-estrategia .outside-box-right').mouseleave(function () {
+            interval = setInterval(function () {
+                var elemento = $("#n-estrategia").find(".estra-link")[counter];
+                $(elemento).click();
+                if (counter === 3) {
+                    counter = 0;
+                } else {
+                    counter++;
+                }
+            }, 20000)
+        });
+
+        $(".estra-link").on('click', function (event) {
+            var $this = $(this);
+            var item = $this.data('item');
+            $(".estra-item").addClass('d-none');
+            $(".estra-link").removeClass('active');
+            $this.addClass('active');
+            $('.estra-item.' + item).removeClass("d-none");
+        });
+        
+        $(window).on('load', function () {
+            new WOW().init();
+            $('.finn-counto').each(function () {
+                finn_waypoint('#' + $(this).attr('id'));
+                finn_counto('#' + $(this).attr('id'));
             });
-        })
+            
+        });
+
+        function finn_waypoint(elemento) {
+            var waypoint = new Waypoint({
+                element: $(elemento),
+                handler: function (direction) {
+                    $(elemento + ' .count').trigger('on-appear');
+                },
+                offset: '75%',
+                triggerOnce: true
+            })
+        }
+
+        function finn_counto(elemento) {
+            if ($().countTo) {
+                $(elemento + ' .count').on('on-appear', function () {
+                    $(elemento + ' .honeycomb-path.honeycomb-1').addClass('honeycomb-animated');
+
+                    $(this).each(function () {
+                        var to = parseFloat($(this).data('to')),
+                            speed = parseInt($(this).data('speed')),
+                            decimals = parseInt($(this).data('decimals'));
+
+                        $(this).countTo({
+                            to: to,
+                            speen: speed,
+                            decimals: decimals,
+                            formatter: function (value, options) {
+                                return value.toFixed(options.decimals).replace(/\B(?=(?:\d{3})+(?!\d))/g, ',');
+                            },
+                            onComplete: function (value) {
+                                
+                                
+                                return this.innerHTML;
+                            }
+
+                        });
+                    });
+                }); //counter
+            }
+        }
     </script>
 {% endblock %}

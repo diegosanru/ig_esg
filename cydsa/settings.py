@@ -154,7 +154,7 @@ LOCALE_PATHS = (
 )
 
 LANGUAGES = [
-    # ('en', _('English')),
+    ('en', _('English')),
     ('es', _('Spanish')),
 ]
 LANGUAGE_CODE = 'es'
