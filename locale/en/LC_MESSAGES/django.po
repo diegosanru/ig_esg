@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-12 12:10-0600\n"
+"POT-Creation-Date: 2026-02-12 17:48-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1276,96 +1276,96 @@ msgstr ""
 
 #: .\frontend\templates\partials\menu.html:13 .\frontend\views.py:109
 msgid "Modelo ASG"
-msgstr ""
+msgstr "ESG Model"
 
 #: .\frontend\templates\partials\menu.html:18
 msgid "Materialidad"
-msgstr ""
+msgstr "Materiality"
 
 #: .\frontend\templates\partials\menu.html:23
 msgid "Estrategia ASG"
-msgstr ""
+msgstr "ASG Strategy"
 
 #: .\frontend\templates\partials\menu.html:28
 msgid "Objetivos de Desarrollo Sostenible"
-msgstr ""
+msgstr "Sustainable Development Goals"
 
 #: .\frontend\templates\partials\menu.html:33
 msgid "Afiliaciones"
-msgstr ""
+msgstr "Affiliations"
 
 #: .\frontend\templates\partials\menu.html:38
 msgid "Certificaciones"
-msgstr ""
+msgstr "Certifications"
 
 #: .\frontend\templates\partials\menu.html:43
 msgid "Centro de Reportes"
-msgstr ""
+msgstr "Reporting Center"
 
 #: .\frontend\templates\partials\menu.html:51 .\frontend\views.py:76
 #: .\frontend\views.py:85
 msgid "Ambiental"
-msgstr ""
+msgstr "Environmental"
 
 #: .\frontend\templates\partials\menu.html:56
 msgid "Desempeño Energético"
-msgstr ""
+msgstr "Energy Performance"
 
 #: .\frontend\templates\partials\menu.html:61
 msgid "Desempeño Hídrico"
-msgstr ""
+msgstr "Hydraulic Performance"
 
 #: .\frontend\templates\partials\menu.html:66
 msgid "Emisiones"
-msgstr ""
+msgstr "Emissions"
 
 #: .\frontend\templates\partials\menu.html:73 .\frontend\views.py:164
 msgid "Social"
-msgstr ""
+msgstr "Social"
 
 #: .\frontend\templates\partials\menu.html:78
 msgid "Nuestra Gente"
-msgstr ""
+msgstr "Our People"
 
 #: .\frontend\templates\partials\menu.html:83
 msgid "Diversidad, Equidad e Igualdad"
-msgstr ""
+msgstr "Diversity, Equity and Inclusion"
 
 #: .\frontend\templates\partials\menu.html:88
 msgid "Capacitación y Desarrollo"
-msgstr ""
+msgstr "Training and Development"
 
 #: .\frontend\templates\partials\menu.html:93
 msgid "Salud y Seguridad"
-msgstr ""
+msgstr "Health and Safety"
 
 #: .\frontend\templates\partials\menu.html:98
 msgid "Impacto en COmunidades Locales"
-msgstr ""
+msgstr "Impact on Local Communities"
 
 #: .\frontend\templates\partials\menu.html:105 .\frontend\views.py:137
 msgid "Gobierno Corporativo"
-msgstr ""
+msgstr "Corporate Governance"
 
 #: .\frontend\templates\partials\menu.html:110
 msgid "Equipo Directivo"
-msgstr ""
+msgstr "Executive Team"
 
 #: .\frontend\templates\partials\menu.html:115
 msgid "Comités"
-msgstr ""
+msgstr "Committees"
 
 #: .\frontend\templates\partials\menu.html:120
 msgid "Ética de Negocios"
-msgstr ""
+msgstr "Business Ethics"
 
 #: .\frontend\templates\partials\menu.html:125
 msgid "Ciberseguridad"
-msgstr ""
+msgstr "Cybersecurity"
 
 #: .\frontend\templates\partials\menu.html:130
 msgid "Políticas que Rigen Nuestra Operación"
-msgstr ""
+msgstr "Policies Governing Our Operations"
 
 #: .\frontend\templates\partials\slider_index.html:37
 msgid ""
@@ -1377,7 +1377,7 @@ msgstr ""
 
 #: .\frontend\templates\partials\slider_index.html:39
 msgid "Conoce nuestro compromiso ambiental"
-msgstr ""
+msgstr "Discover our environmental commitment"
 
 #: .\frontend\templates\partials\slider_index.html:63
 msgid ""
@@ -1389,7 +1389,7 @@ msgstr ""
 
 #: .\frontend\templates\partials\slider_index.html:66
 msgid "Descubre nuestro impacto social"
-msgstr ""
+msgstr "Discover our social impact"
 
 #: .\frontend\templates\partials\slider_index.html:90
 msgid ""
@@ -1401,11 +1401,11 @@ msgstr ""
 
 #: .\frontend\templates\partials\slider_index.html:93
 msgid "Consulta nuestro modelo de gobierno"
-msgstr ""
+msgstr "Consult our governance model"
 
 #: .\frontend\templates\registration\login.html:8
 msgid "Cifras Principales"
-msgstr ""
+msgstr "Main Figures"
 
 #: .\frontend\templates\registration\login.html:18
 msgid "login5"
