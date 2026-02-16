@@ -1385,7 +1385,7 @@ msgid ""
 "inclusión y bienestar para todos."
 msgstr ""
 "We believe in the value of people. We foster strong communities, inclusion, "
-"and wellbeing for everyone."
+"and well-being for all."
 
 #: .\frontend\templates\partials\slider_index.html:66
 msgid "Descubre nuestro impacto social"

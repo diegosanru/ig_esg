@@ -28,7 +28,7 @@ if (typeof AmCharts !== 'undefined') {
                 "color": "#F5BA3D"
             },
             {
-                "year": "Entregas 2024",
+                "year": "Deliveries 2024",
                 "alcance1": 18106,
                 "color": "#2B2B2B"
             }
@@ -97,7 +97,7 @@ if (typeof AmCharts !== 'undefined') {
                 "color": "#3DB7B0"
             },
             {
-                "year": "Entregas 2024",
+                "year": "Deliveries 2024",
                 "alcance1": 15000,
                 "color": "#2B2B2B"
             }
@@ -163,7 +163,7 @@ if (typeof AmCharts !== 'undefined') {
                 "color": "#13406B",
             },
             {
-                "year": "Entregas 2024",
+                "year": "Deliveries 2024",
                 "alcance1": 329,
                 "color": "#2B2B2B",
             }
@@ -229,7 +229,7 @@ if (typeof AmCharts !== 'undefined') {
                 "color": "#13406B",
             },
             {
-                "year": "Entregas 2024",
+                "year": "Deliveries 2024",
                 "alcance1": 7037,
                 "color": "#2B2B2B",
             }
