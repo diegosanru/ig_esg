@@ -1,1 +1,1 @@
-web: gunicorn cydsa.wsgi
+web: gunicorn ig_esg.wsgi

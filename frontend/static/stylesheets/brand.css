@@ -1,0 +1,348 @@
+/* ============================================================
+   brand.css — Alineación visual con el sitio corporativo
+   industrialgate.mx. Se carga al final para sobreescribir el
+   tema base. Recomendaciones aplicadas:
+     1) Tipografía de marca (RadioGrotesk + Flama)
+     2) Encabezados de sección (h1) en mayúsculas con tracking
+     5) Botones CTA minimalistas con flecha
+   La sección de ODS conserva los colores oficiales de cada
+   objetivo y queda excluida de estos ajustes.
+   ============================================================ */
+
+/* ---- Botón "Informe Anual" en el header -------------------- */
+.ig-report-btn{ display:inline-flex; align-items:center; gap:8px; background:var(--ig-teal); color:var(--ig-navy-2); font-family:'RadioGrotesk',sans-serif; font-weight:700; font-size:.78rem; letter-spacing:.03em; text-transform:uppercase; padding:9px 16px; border-radius:999px; text-decoration:none; line-height:1; white-space:nowrap; transition:background .18s ease, color .18s ease; }
+.ig-report-btn:hover, .ig-report-btn:focus{ background:#fff; color:var(--ig-navy-2); text-decoration:none; }
+.ig-report-btn i{ font-size:.95rem; }
+@media (max-width:768px){
+  .ig-report-btn span{ display:none; }
+  .ig-report-btn{ padding:9px 11px; }
+}
+
+/* ---- 1) Tipografía de marca -------------------------------- */
+@font-face{
+  font-family:'RadioGrotesk';
+  src:url('fonts/RadioGrotesk-Light.otf') format('opentype');
+  font-weight:300; font-style:normal; font-display:swap;
+}
+@font-face{
+  font-family:'RadioGrotesk';
+  src:url('fonts/RadioGrotesk-Regular.otf') format('opentype');
+  font-weight:400; font-style:normal; font-display:swap;
+}
+@font-face{
+  font-family:'RadioGrotesk';
+  src:url('fonts/RadioGrotesk-Bold.otf') format('opentype');
+  font-weight:700; font-style:normal; font-display:swap;
+}
+@font-face{
+  font-family:'Flama';
+  src:url('fonts/Flama Regular.woff') format('woff');
+  font-weight:400; font-style:normal; font-display:swap;
+}
+@font-face{
+  font-family:'Flama';
+  src:url('fonts/Flama-Bold.woff') format('woff');
+  font-weight:700; font-style:normal; font-display:swap;
+}
+
+/* ---- Paleta de marca 2025 (Informe Anual / corporativo) ---- */
+:root{
+  --ig-teal:#17C3B2;         /* acento principal de marca */
+  --ig-teal-dark:#0FA192;    /* teal hover / detalle */
+  --ig-teal-soft:#E6F8F5;    /* fondo teal muy claro */
+  --ig-navy:#0E2E52;         /* azul marino profundo (bandas) */
+  --ig-navy-2:#0A2440;       /* navy más oscuro (degradado) */
+  --ig-charcoal:#2B2B2B;     /* gris carbón (barra 2024) */
+  --ig-ink:#1A2440;          /* tinta de texto */
+  --ig-muted:#6B7488;        /* gris neutro */
+  --ig-hair:#E3E6EC;         /* líneas */
+}
+
+/* Redefine la variable global del tema (cuerpo de texto) */
+:root{ --font-family-elementia:'Flama','Raleway',sans-serif; }
+
+/* Cuerpo -> Flama; se hereda al resto del contenido */
+body{ font-family:'Flama','Raleway',system-ui,sans-serif; }
+
+/* Encabezados -> RadioGrotesk (display de marca) */
+h1, h2, h3, h4, h5, h6,
+.display, #page-title h1, #primary-menu ul li > a{
+  font-family:'RadioGrotesk','Flama',system-ui,sans-serif;
+}
+
+/* RadioGrotesk tiene caja/acentos más altos que Raleway: asegura
+   interlínea suficiente donde el tema la fija en 1, para evitar el
+   recorte vertical de los títulos (Á, É, Í, Ó, Ñ...). */
+#page-title h1{ line-height:1.2; }
+.page_footer h4.widget-title{ line-height:1.3; }
+
+/* ---- 2) Títulos de sección en mayúsculas con tracking ------ */
+/* Solo h1: en este sitio los h1 son títulos cortos de sección.
+   Los h2 incluyen frases largas de banner y se dejan tal cual.
+   La sección de ODS conserva sus colores oficiales (definidos
+   inline en el markup), pero sí adopta este tratamiento de título. */
+h1{
+  text-transform:uppercase;
+  letter-spacing:.05em;
+}
+
+/* ---- 5) Botones CTA minimalistas con flecha ---------------- */
+.btn-primary,
+.btn-default.btn-primary{
+  background-color:var(--ig-navy);
+  border:1.5px solid var(--ig-navy);
+  color:#fff;
+  border-radius:2px;
+  text-transform:uppercase;
+  letter-spacing:.06em;
+  font-family:'RadioGrotesk','Flama',sans-serif;
+  font-weight:400;
+  transition:background-color .2s ease, border-color .2s ease,
+             color .2s ease, transform .2s ease;
+}
+.btn-primary:hover, .btn-primary:focus,
+.btn-default.btn-primary:hover, .btn-default.btn-primary:focus{
+  background-color:var(--ig-teal);
+  border-color:var(--ig-teal);
+  color:var(--ig-navy-2);
+}
+
+/* Flecha solo en CTAs "hacia adelante" (no en Cerrar/toggles) */
+.btn-cta::after{
+  content:" \2192";           /* → */
+  display:inline-block;
+  margin-left:.5em;
+  transition:transform .2s ease;
+}
+.btn-cta:hover::after{ transform:translateX(3px); }
+
+/* ---- 3) Bandas oscuras (ritmo corporativo) ---------------- */
+/* Utilidad reutilizable: fondo navy corporativo + texto claro.
+   Aplicar a una <section> para crear una banda oscura.
+   (No usar en la sección de ODS: sus colores son propios.) */
+.brand-dark{ background:var(--ig-navy); color:#fff; }
+.brand-dark h1, .brand-dark h2, .brand-dark h3, .brand-dark h4,
+.brand-dark h5, .brand-dark h6, .brand-dark p, .brand-dark li,
+.brand-dark .tc-blue{ color:#fff; }
+
+/* Acento de marca en títulos de sección (clase del tema) */
+.tc-blue, h1.tc-blue, h2.tc-blue, h3.tc-blue{ color:var(--ig-navy); }
+/* El acento teal se reserva para detalles/realces */
+.title-effect{ color:var(--ig-navy); }
+
+/* Banda de cifras del home: navy limpio en lugar de la foto
+   con overlay negro (el degradado inline sustituye ese overlay). */
+#consumo .title-effect{ color:#fff; }
+
+/* ---- 4) Cifras destacadas ("En números") ------------------ */
+.count-index{
+  font-family:'RadioGrotesk','Flama',sans-serif;
+  font-weight:700;
+  font-size:clamp(2.6rem, 6vw, 4.25rem);
+  line-height:1.06;
+  letter-spacing:-.02em;
+  color:#fff;
+}
+#consumo .honeycomb h4{
+  font-family:'Flama','Raleway',sans-serif;
+  font-weight:400;
+  font-size:.92rem;
+  line-height:1.45;
+  letter-spacing:.015em;
+  color:#C9D0DE;                 /* etiqueta más tenue, jerarquía */
+  text-transform:none;
+}
+
+@media (prefers-reduced-motion: reduce){
+  .btn-primary, .btn-default.btn-primary,
+  .btn-cta::after{ transition:none; }
+}
+
+/* ============================================================
+   Librería de componentes gráficos 2025 (estilo Informe Anual)
+   Paleta: teal 2023 · carbón 2024 · navy 2025
+   ============================================================ */
+
+/* --- Banda / sección --- */
+.ig-band{ padding:64px 0; }
+.ig-band .container{ max-width:1140px; }
+.ig-band--dark{ background:linear-gradient(160deg, var(--ig-navy) 0%, var(--ig-navy-2) 100%); color:#fff; }
+.ig-band--soft{ background:#F5F7F9; }
+.ig-eyebrow{ font-family:'RadioGrotesk',sans-serif; text-transform:uppercase; letter-spacing:.2em; font-size:12px; color:var(--ig-teal); margin:0 0 10px; }
+.ig-band--dark .ig-eyebrow{ color:var(--ig-teal); }
+.ig-h2{ font-family:'RadioGrotesk',sans-serif; text-transform:uppercase; letter-spacing:.04em; color:var(--ig-navy); font-size:clamp(22px,3.4vw,30px); margin:0 0 6px; font-weight:700; }
+.ig-band--dark .ig-h2{ color:#fff; }
+.ig-lead{ color:var(--ig-muted); max-width:64ch; margin:0 auto 34px; }
+.ig-band--dark .ig-lead{ color:#AEB6C6; }
+
+/* --- Gráfica de barras (serie por año) --- */
+.ig-chart{ display:flex; align-items:flex-end; justify-content:center; gap:clamp(22px,7vw,80px); flex-wrap:wrap; }
+.ig-chart-head{ margin-bottom:26px; }
+.ig-chart-title{ font-family:'RadioGrotesk',sans-serif; text-transform:uppercase; letter-spacing:.05em; color:var(--ig-navy); font-size:1.05rem; font-weight:700; margin:0; }
+.ig-chart-title small{ display:block; color:var(--ig-muted); font-size:.78rem; font-weight:400; letter-spacing:.02em; text-transform:none; margin-top:2px; }
+.ig-bar{ display:flex; flex-direction:column; align-items:center; }
+.ig-bar__val{ font-family:'RadioGrotesk',sans-serif; font-weight:700; font-size:clamp(1.05rem,2.3vw,1.45rem); color:var(--ig-ink); margin-bottom:10px; font-variant-numeric:tabular-nums; letter-spacing:-.01em; }
+.ig-band--dark .ig-bar__val{ color:#fff; }
+.ig-bar__track{ height:240px; display:flex; align-items:flex-end; }
+.ig-bar__col{ width:clamp(34px,7vw,50px); border-radius:16px 16px 0 0; background:var(--ig-navy); min-height:6px; }
+.ig-bar--y23 .ig-bar__col{ background:var(--ig-teal); }
+.ig-bar--y24 .ig-bar__col{ background:var(--ig-charcoal); }
+.ig-bar--y25 .ig-bar__col{ background:var(--ig-navy); }
+.ig-band--dark .ig-bar--y24 .ig-bar__col{ background:#5A6A86; }
+.ig-band--dark .ig-bar--y25 .ig-bar__col{ background:var(--ig-teal); }
+.ig-bar__yr{ margin-top:12px; font-size:1rem; color:var(--ig-muted); font-family:'Flama',sans-serif; }
+.ig-band--dark .ig-bar__yr{ color:#AEB6C6; }
+.ig-chart-note{ font-size:12.5px; color:var(--ig-muted); margin-top:18px; }
+
+/* --- Grid de gráficas --- */
+.ig-charts-grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:40px 32px; }
+
+/* --- Layout dos columnas texto/gráfico (Ambiental) --- */
+.ig-split{ display:grid; grid-template-columns:1fr 1fr; gap:clamp(24px,5vw,56px); align-items:center; }
+.ig-split .ig-band{ padding:24px 0; }
+.ig-split .ig-chart{ gap:clamp(14px,3vw,44px); }
+.ig-split--rev .ig-split__text{ order:2; }
+.ig-split--emis{ grid-template-columns:2fr 1fr; }
+@media (max-width:860px){
+  .ig-split{ grid-template-columns:1fr; gap:8px; }
+  .ig-split--rev .ig-split__text{ order:0; }
+  .ig-split--emis{ grid-template-columns:1fr; }
+}
+
+/* --- Sección Capacitación y Desarrollo (fondo + overlay) --- */
+.ig-cap-bg{ position:relative; background-size:cover; background-position:center; background-repeat:no-repeat; isolation:isolate; }
+.ig-cap-bg::before{ content:""; position:absolute; inset:0; z-index:0; background:linear-gradient(150deg, rgba(14,46,82,.93) 0%, rgba(10,36,64,.86) 55%, rgba(15,161,146,.72) 100%); }
+.ig-cap-bg > *{ position:relative; z-index:1; }
+.ig-cap-bg .ig-kpi__num{ color:#fff; }
+.ig-cap-bg .ig-kpi__num.is-teal{ color:var(--ig-teal); }
+.ig-cap-bg .ig-kpi__lbl{ color:#DDE3EC; }
+
+/* --- Acordeón ODS (Modelo ASG) --- */
+.ig-ods-accordion{ display:grid; grid-template-columns:1fr 1fr; gap:0 24px; align-items:start; max-width:980px; margin:0 auto 20px; }
+.ig-ods-col{ display:flex; flex-direction:column; }
+@media (max-width:768px){ .ig-ods-accordion{ grid-template-columns:1fr; } }
+.ig-ods-item{ background:#fff; border:1px solid var(--ig-hair); margin-bottom:12px; }
+.ig-ods-head{ display:flex; align-items:center; gap:16px; padding:12px 18px; cursor:pointer; border-left:5px solid var(--ods,var(--ig-navy)); transition:background .15s ease; }
+.ig-ods-head:hover{ background:#F5F7F9; }
+.ig-ods-head img{ width:52px; height:52px; object-fit:contain; flex:0 0 auto; }
+.ig-ods-head h4{ margin:0; flex:1; font-family:'RadioGrotesk',sans-serif; color:var(--ig-navy); font-size:1rem; font-weight:700; text-transform:none; letter-spacing:0; }
+.ig-ods-chev{ flex:0 0 auto; color:var(--ig-muted); transition:transform .25s ease; }
+.ig-ods-item.is-open .ig-ods-chev{ transform:rotate(90deg); }
+.ig-ods-body{ max-height:0; overflow:hidden; transition:max-height .3s ease; }
+.ig-ods-body p{ margin:0; padding:4px 20px 18px 75px; color:var(--ig-muted); font-size:.92rem; line-height:1.6; text-align:justify; }
+.ig-ods-item.is-open .ig-ods-body{ max-height:320px; }
+
+/* --- Menú general: sin submenús en hover + panel angosto a la derecha --- */
+#main_menu li.sub > ul{ display:none !important; }              /* las subsecciones no se despliegan */
+#header-wrap{ position:relative; }
+#main_menu.d-block{
+  position:absolute; top:100%; right:20px; left:auto;
+  width:260px; max-width:88vw; margin:0; padding:8px 0;
+  background:#fff; border:1px solid #E3E6EC; border-radius:0;
+  box-shadow:0 16px 40px rgba(14,46,82,.16); z-index:600;
+}
+#main_menu.d-block > li{ float:none !important; display:block; margin:0 !important; }
+#main_menu.d-block > li > a{ display:block; padding:11px 20px !important; }
+#main_menu.d-block > li > a, #main_menu.d-block > li > a div{ color:var(--ig-navy) !important; }
+#main_menu.d-block > li > a:hover{ background:#F5F7F9; }
+
+/* --- Ciberseguridad (pilares) --- */
+.ig-cyber-grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:22px; max-width:1120px; margin:0 auto; }
+.ig-cyber-grid .ig-hs-card{ text-align:left; }
+.ig-cyber-grid .ig-hs-card__ic{ margin:0 0 16px; }
+.ig-cyber-grid .ig-hs-card h4{ text-align:left; }
+.ig-cyber-grid .ig-hs-card p{ text-align:justify; font-size:.86rem; }
+.ig-cyber-list{ margin:6px 0 0; padding-left:18px; }
+.ig-cyber-list li{ color:var(--ig-muted); font-size:.84rem; line-height:1.5; margin-bottom:6px; }
+.ig-cyber-list li strong{ color:var(--ig-navy); font-weight:700; }
+.ig-cyber-kpis{ max-width:820px; margin:0 auto 44px; }
+.ig-cyber-kpis .ig-kpi__num{ font-size:clamp(1.5rem,3vw,2.1rem); text-transform:uppercase; letter-spacing:.03em; }
+.ig-band--dark .ig-cyber-kpis .ig-kpi__num{ color:var(--ig-teal); }
+
+/* --- Tarjetas de Comités --- */
+.ig-committee-grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:26px; max-width:900px; margin:0 auto; }
+.ig-committee-grid .ig-hs-card{ text-align:left; }
+.ig-committee-grid .ig-hs-card__ic{ width:120px; height:92px; background:none; border-radius:0; overflow:hidden; margin:0 0 14px; display:block; }
+.ig-committee-grid .ig-hs-card__ic img{ width:120px; height:auto; display:block; }
+.ig-committee-grid .ig-hs-card h4{ text-align:left; }
+.ig-committee-grid .ig-hs-card p{ text-align:justify; }
+
+/* --- Tarjetas de Salud y Seguridad (carrusel) --- */
+.ig-hs-carousel-wrap{ position:relative; max-width:1140px; margin:0 auto; padding:0 10px; }
+.ig-hs-carousel{ display:flex; gap:22px; overflow-x:auto; scroll-snap-type:x mandatory; scroll-behavior:smooth; padding:6px 4px 24px; scrollbar-width:none; -webkit-overflow-scrolling:touch; }
+.ig-hs-carousel::-webkit-scrollbar{ display:none; }
+.ig-hs-carousel .ig-hs-card{ flex:0 0 clamp(240px,30%,300px); scroll-snap-align:start; }
+.ig-hs-nav{ position:absolute; top:calc(50% - 12px); transform:translateY(-50%); z-index:3; width:44px; height:44px; border-radius:50%; border:1px solid var(--ig-hair); background:#fff; color:var(--ig-navy); font-size:1.6rem; line-height:1; cursor:pointer; box-shadow:0 6px 18px rgba(14,46,82,.14); display:flex; align-items:center; justify-content:center; transition:background .15s ease, color .15s ease, border-color .15s ease; }
+.ig-hs-nav:hover{ background:var(--ig-teal); color:#fff; border-color:var(--ig-teal); }
+.ig-hs-nav--prev{ left:-8px; } .ig-hs-nav--next{ right:-8px; }
+.ig-hs-card{ background:#fff; border:1px solid var(--ig-hair); border-top:3px solid var(--ig-teal); border-radius:16px; padding:30px 24px; text-align:center; transition:transform .18s ease, box-shadow .18s ease; }
+.ig-hs-card:hover{ transform:translateY(-5px); box-shadow:0 14px 30px rgba(14,46,82,.12); }
+.ig-hs-card__ic{ width:56px; height:56px; margin:0 auto 18px; display:flex; align-items:center; justify-content:center; border-radius:50%; background:var(--ig-teal-soft); color:var(--ig-teal-dark); }
+.ig-hs-card__ic svg{ width:27px; height:27px; }
+.ig-hs-card h4{ font-family:'RadioGrotesk',sans-serif; color:var(--ig-navy); font-size:1.02rem; margin:0 0 10px; text-transform:none; letter-spacing:0; }
+.ig-hs-card p{ color:var(--ig-muted); font-size:.9rem; line-height:1.55; margin:0; text-align:center; }
+.ig-card{ background:#fff; border:1px solid var(--ig-hair); border-radius:16px; padding:28px 26px; }
+
+/* --- KPI (número grande) --- */
+.ig-kpis{ display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:22px; }
+.ig-kpi{ text-align:center; }
+.ig-kpi__num{ font-family:'RadioGrotesk',sans-serif; font-weight:700; font-size:clamp(2.4rem,5vw,3.6rem); line-height:1; color:var(--ig-teal); letter-spacing:-.02em; font-variant-numeric:tabular-nums; }
+.ig-kpi__num.is-navy{ color:var(--ig-navy); }
+.ig-band--dark .ig-kpi__num{ color:#fff; }
+.ig-band--dark .ig-kpi__num.is-teal{ color:var(--ig-teal); }
+.ig-kpi__lbl{ margin-top:10px; color:var(--ig-muted); font-size:.92rem; line-height:1.4; }
+.ig-band--dark .ig-kpi__lbl{ color:#C9D0DE; }
+.ig-kpi__delta{ display:inline-block; margin-top:8px; font-size:.8rem; font-weight:700; color:var(--ig-teal); font-family:'RadioGrotesk',sans-serif; letter-spacing:.03em; }
+
+/* --- Gauge / benchmark GRESB --- */
+.ig-gresb{ display:grid; grid-template-columns:minmax(220px,320px) 1fr; gap:44px; align-items:center; }
+@media(max-width:760px){ .ig-gresb{ grid-template-columns:1fr; gap:30px; } }
+.ig-gauge{ position:relative; width:100%; max-width:300px; aspect-ratio:1; margin:0 auto; border-radius:50%;
+  background:conic-gradient(var(--ig-teal) 0turn calc(var(--p,.55)*1turn), rgba(255,255,255,.12) calc(var(--p,.55)*1turn) 1turn); }
+.ig-gauge::before{ content:""; position:absolute; inset:16%; border-radius:50%; background:var(--ig-navy-2); }
+.ig-gauge__val{ position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; z-index:1; }
+.ig-gauge__num{ font-family:'RadioGrotesk',sans-serif; font-weight:700; font-size:3.6rem; color:#fff; line-height:1; }
+.ig-gauge__cap{ color:var(--ig-teal); font-size:.85rem; letter-spacing:.08em; text-transform:uppercase; margin-top:4px; }
+.ig-progress{ height:10px; border-radius:6px; background:rgba(255,255,255,.14); position:relative; margin:14px 0 6px; }
+.ig-progress__fill{ position:absolute; left:0; top:0; bottom:0; border-radius:6px; background:var(--ig-teal); }
+
+/* --- Tarjetas de ubicación (presencia) --- */
+.ig-loc-grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); gap:16px; }
+.ig-loc{ background:#fff; border:1px solid var(--ig-hair); border-radius:14px; padding:18px 20px; border-top:3px solid var(--ig-teal); }
+.ig-loc h4{ font-family:'RadioGrotesk',sans-serif; color:var(--ig-navy); font-size:1rem; margin:0 0 2px; text-transform:none; letter-spacing:0; }
+.ig-loc .ig-loc__st{ color:var(--ig-muted); font-size:.8rem; margin-bottom:12px; }
+.ig-loc__row{ display:flex; justify-content:space-between; font-size:.85rem; padding:4px 0; border-top:1px solid var(--ig-hair); }
+.ig-loc__row b{ color:var(--ig-navy); font-variant-numeric:tabular-nums; }
+.ig-loc__cert{ display:inline-block; margin-top:8px; font-size:.72rem; font-weight:700; color:var(--ig-teal-dark); text-transform:uppercase; letter-spacing:.04em; }
+.ig-loc__certs{ display:flex; flex-direction:column; align-items:flex-start; gap:3px; margin-top:8px; }
+.ig-loc__certs .ig-loc__cert{ margin-top:0; }
+
+/* --- Mapa interactivo de presencia geográfica --- */
+.ig-map-wrap{ display:grid; grid-template-columns:minmax(0,1.15fr) minmax(300px,1fr); gap:32px; align-items:stretch; margin-top:8px; }
+.ig-map{ position:relative; background:#fff; border:1px solid var(--ig-hair); border-radius:18px; padding:22px; display:flex; flex-direction:column; }
+.ig-map svg{ width:100%; height:auto; display:block; flex:1; }
+.ig-map svg path{ fill:#E7EBF0; stroke:#fff; stroke-width:.6; transition:fill .18s ease, transform .18s ease; transform-origin:center; }
+.ig-map svg path.is-present{ fill:var(--ig-teal); cursor:pointer; }
+.ig-map svg path.is-present:hover{ fill:var(--ig-teal-dark); }
+.ig-map svg path.is-active{ fill:var(--ig-navy); }
+.ig-map svg path:focus{ outline:none; }
+.ig-map svg path:focus-visible{ outline:2px solid var(--ig-navy); outline-offset:1px; }
+
+.ig-map__panel{ background:#fff; border:1px solid var(--ig-hair); border-radius:18px; padding:26px 26px 28px; display:flex; flex-direction:column; }
+.ig-map__panel:empty{ background:transparent; border:none; padding:0; }
+.ig-map__panel-state{ font-family:'RadioGrotesk',sans-serif; text-transform:uppercase; letter-spacing:.06em; color:var(--ig-navy); font-size:1.15rem; font-weight:700; margin:0; }
+.ig-map__panel-meta{ color:var(--ig-teal-dark); font-size:.82rem; font-weight:700; text-transform:uppercase; letter-spacing:.04em; margin:4px 0 20px; }
+.ig-map__panel .ig-loc + .ig-loc{ margin-top:14px; }
+@media (max-width:860px){
+  .ig-map-wrap{ grid-template-columns:1fr; }
+  .ig-map__panel:empty{ display:none; }
+}
+
+/* --- Badges de certificación --- */
+.ig-certs{ display:flex; flex-wrap:wrap; gap:12px; justify-content:center; }
+.ig-cert{ display:flex; align-items:center; gap:10px; background:#fff; border:1px solid var(--ig-hair); border-radius:999px; padding:8px 16px 8px 10px; }
+.ig-cert__tag{ font-family:'RadioGrotesk',sans-serif; font-weight:700; font-size:.72rem; letter-spacing:.03em; color:#fff; background:var(--ig-navy); border-radius:999px; padding:4px 10px; text-transform:uppercase; }
+.ig-cert__tag.is-gold{ background:#B9992E; }
+.ig-cert__tag.is-silver{ background:#8A8D91; }
+.ig-cert__tag.is-teal{ background:var(--ig-teal); color:var(--ig-navy-2); }
+.ig-cert__name{ font-size:.86rem; color:var(--ig-ink); }

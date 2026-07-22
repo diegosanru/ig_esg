@@ -3,28 +3,23 @@
 <header id="header" class="transparent-header sticky-header">
     <div id="header-wrap" class="not-dark">
         <div class="container clearfix">
-            <div id="primary-menu-trigger" style="margin-left: 30px; top: 15px !important; display: flex;"><i role="presentation" class="icon-reorder" style="scale: 2; "></i>
-            </div>
-            <div id="menu-right" class="d-flex align-items-center" style="position: absolute; top: 15px; right: 50px;">
+            <div id="menu-right" class="d-flex align-items-center" style="position: absolute; top: 15px; right: 40px; gap: 20px;">
+                {% get_current_language as LANGUAGE_CODE %}
+                {% get_current_language_bidi as LANGUAGE_BIDI %}
+                <a href="https://investorcloud.s3.amazonaws.com/IndustrialGate/InformesAnuales/IAS_2025_IG_VF_SN.pdf"
+                   target="_blank" rel="noopener" class="ig-report-btn">
+                    <i class="fa fa-file-text-o"></i>
+                    <span>{% if LANGUAGE_CODE == 'en' %}2025 Annual Report{% else %}Informe Anual 2025{% endif %}</span>
+                </a>
                 <div class="position-relative change-languages">
-
-                    {% get_current_language as LANGUAGE_CODE %}
-                    {% get_current_language_bidi as LANGUAGE_BIDI %}
-
-                    <div class="language-links" style="margin-left: 10px; display: flex; margin-top: 15px; margin-left: 15px; gap: 15px;">
-                    <!-- Modificaciones para poder cambiar de idioma con urls con query parameters -->
-                    <a href="{% change_lang 'es' %}">
-                    <!-- <a href="/es{{ request.path|slice:'3:' }}{{ request.META.QUERY_STRING|yesno:'?%s,' }}"> -->
-                        <!-- <img src="{% static 'images/icons/flags/flag-mexico.png' %}" alt="Español" style="height: 20px;" /> -->
-                        ES
-                    </a>
-                    <a href="{% change_lang 'en' %}">
-                    <!-- <a href="#"> -->
-                    <!-- <a href="/en{{ request.path|slice:'3:' }}{{ request.META.QUERY_STRING|yesno:'?%s,' }}" > -->
-                        <!-- <img src="{% static 'images/icons/flags/flag-usa.png' %}" alt="English" style="height: 20px;" /> -->
-                        EN
-                    </a>
+                    <div class="language-links" style="display: flex; align-items: center; gap: 15px;">
+                        <!-- Modificaciones para poder cambiar de idioma con urls con query parameters -->
+                        <a href="{% change_lang 'es' %}">ES</a>
+                        <a href="{% change_lang 'en' %}">EN</a>
                     </div>
+                </div>
+                <div id="primary-menu-trigger" style="position: static !important; float: none !important; top: auto !important; right: auto !important; left: auto !important; margin: 0 0 0 18px !important; width: auto !important; height: 34px !important; line-height: 1 !important; display: inline-flex !important; align-items: center !important; justify-content: center !important; opacity: 1 !important; pointer-events: auto !important;">
+                    <i role="presentation" class="icon-reorder" style="font-size: 24px; line-height: 1; display: block;"></i>
                 </div>
             </div>
             <div class="top-header" style="z-index: 9999;">
@@ -33,7 +28,7 @@
             <div id="logo" style="max-width: 250px;">
                 <h1 style="margin-bottom: 10px; margin-top: 10px;">
                     <a href="https://www.industrialgate.mx/es" class="" data-dark-logo="{% static 'images/logo-blanco.png' %}"
-                       title="cydsa">
+                       title="Industrial Gate">
                         <img src="{% static 'images/logo-blanco.png' %}" alt="Logo"></a>
                 </h1>
             </div>

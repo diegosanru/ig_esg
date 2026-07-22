@@ -12,3 +12,5 @@ env
 *.icloud
 *.icloud/
 __pycache__
+.venv/
+docs/

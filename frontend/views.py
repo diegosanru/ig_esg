@@ -202,10 +202,10 @@ def send_subscription(request):
     )
 
     send_mail(
-        'Usuario ' + email + ' desea subscribirse al  sitio Cydsa ESG',
+        'Usuario ' + email + ' desea subscribirse al  sitio Industrial Gate ESG',
         'Usuario con email ' + email + " desea subscribirse",
         'it@investorcloud.net',
-        ['sustentabilidad@cydsa.com'],
+        ['admon@industrialgate.mx', 'it@investorcloud.net'],
         html_message=html_message
     )
 
@@ -238,19 +238,11 @@ def send_mail_contact(request):
         }
     )
 
-    # send_mail(
-    #     'Usuario anónimo desea contactar con admin del sitio Fortaleza',
-    #     '',
-    #     'it@investorcloud.net',
-    #     [theme, ],  # ['info@murano.com.mx',],
-    #     html_message=html_message
-    # )
-
     send_mail(
         'Usuario anónimo desea contactar con admin del sitio Industrial Gate ESG',
         '',
         'it@investorcloud.net',
-        ['it@investorcloud.net'],
+        ['admon@industrialgate.mx', 'it@investorcloud.net'],
         html_message=html_message
     )
     return JsonResponse({"success": "true"}, safe=False)
@@ -275,7 +267,7 @@ def send_cuestionario(request):
         'Cuestionario Industrial Gate ESG',
         'Cuestionario Industrial Gate ESG',
         'it@investorcloud.net',
-        ['it@investorcloud.net'],
+        ['admon@industrialgate.mx', 'it@investorcloud.net'],
         html_message=html_message
     )
 
@@ -306,7 +298,7 @@ def send_buzon_quejas(request):
         'Buzón de Quejas Industrial Gate ESG',
         'Buzón de Quejas Industrial Gate ESG',
         'it@investorcloud.net',
-        ['it@investorcloud.net'],
+        ['admon@industrialgate.mx', 'it@investorcloud.net'],
         html_message=html_message
     )
 

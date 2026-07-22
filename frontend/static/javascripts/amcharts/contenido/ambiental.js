@@ -6,12 +6,12 @@ if (typeof AmCharts !== 'undefined') {
         "theme": "none",
         "titles": [
             {
-                "text": "Consumo Energético (kWhs)",
+                "text": "Consumo Energético (MWh)",
                 "size": 15,
                 "useHTML": true
             },
             {
-                "text": "(miles)",
+                "text": "",
                 "size": 13
             }
         ],
@@ -20,17 +20,17 @@ if (typeof AmCharts !== 'undefined') {
             {
                 "year": "2023",
                 "alcance1": 2465,
-                "color": "#F5BA3D"
+                "color": "#17C3B2"
             },
             {
                 "year": "2024",
-                "alcance1": 2566,
-                "color": "#F5BA3D"
+                "alcance1": 21412,
+                "color": "#2B2B2B"
             },
             {
-                "year": "Entregas 2024",
-                "alcance1": 18106,
-                "color": "#2B2B2B"
+                "year": "2025",
+                "alcance1": 36691,
+                "color": "#0E2E52"
             }
         ],
         "valueAxes": [
@@ -80,7 +80,7 @@ if (typeof AmCharts !== 'undefined') {
                 "useHTML": true
             },
             {
-                "text": "(miles)",
+                "text": "",
                 "size": 13
             }
         ],
@@ -88,18 +88,18 @@ if (typeof AmCharts !== 'undefined') {
             
             {
                 "year": "2023",
-                "alcance1": 3000,
-                "color": "#3DB7B0"
+                "alcance1": 2942,
+                "color": "#17C3B2"
             },
             {
                 "year": "2024",
-                "alcance1": 3000,
-                "color": "#3DB7B0"
+                "alcance1": 34807,
+                "color": "#2B2B2B"
             },
             {
-                "year": "Entregas 2024",
-                "alcance1": 15000,
-                "color": "#2B2B2B"
+                "year": "2025",
+                "alcance1": 118750,
+                "color": "#0E2E52"
             }
         ],
         "valueAxes": [
@@ -155,17 +155,17 @@ if (typeof AmCharts !== 'undefined') {
             {
                 "year": "2023",
                 "alcance1": 697,
-                "color": "#13406B",
+                "color": "#17C3B2",
             },
             {
                 "year": "2024",
-                "alcance1": 752,
-                "color": "#13406B",
+                "alcance1": 1081,
+                "color": "#2B2B2B",
             },
             {
-                "year": "Entregas 2024",
-                "alcance1": 329,
-                "color": "#2B2B2B",
+                "year": "2025",
+                "alcance1": 1216,
+                "color": "#0E2E52",
             }
         ],
         "valueAxes": [
@@ -221,17 +221,17 @@ if (typeof AmCharts !== 'undefined') {
             {
                 "year": "2023",
                 "alcance1": 282,
-                "color": "#13406B",
+                "color": "#17C3B2",
             },
             {
                 "year": "2024",
-                "alcance1": 347,
-                "color": "#13406B",
+                "alcance1": 7384,
+                "color": "#2B2B2B",
             },
             {
-                "year": "Entregas 2024",
-                "alcance1": 7037,
-                "color": "#2B2B2B",
+                "year": "2025",
+                "alcance1": 16307,
+                "color": "#0E2E52",
             }
         ],
         "valueAxes": [
@@ -271,213 +271,5 @@ if (typeof AmCharts !== 'undefined') {
 
     });
 
-    if (locale == "es") {
-        var peso_total_de_residuos = ['2022', '2023'];
-        var residuos_peligrosos = ['2022', '2023'];
-        var residuos_de_reciclaje = ['2022', '2023'];
-        var residuos_a_eliminar = ['2022', '2023'];
-    } else {
-        var peso_total_de_residuos = ['2022', '2023'];
-        var residuos_peligrosos = ['2022', '2023'];
-        var residuos_de_reciclaje = ['2022', '2023'];
-        var residuos_a_eliminar = ['2022', '2023'];
-    }
-
-    var chart2 = AmCharts.makeChart("chart2", {
-        "titles": [
-            {
-                "text": "Peso total de residuos",
-                "size": 15,
-                "color": "#000000",
-                "marginBottom": 10
-            },
-        ],
-        "colors": ["#F5BA3D", "#79B928"],
-        "fontSize": 14,
-        "balloonText": "[[activo]] <br> <b>[[value]] toneladas</b>",
-        "color": "#000000",
-        "legend": {
-            "align": "center",
-            "markerType": "circle",
-            "labelText": "",
-            "valueText": "[[activo]]",
-            "maxColumns": 2,
-            "spacing": 10,
-            "markerLabelGap": -6,
-
-        },
-        "dataProvider": [
-            {
-                "activo": peso_total_de_residuos[0],
-                "valor": 7013,
-                "valorFormatted": "7,013"
-
-            }, {
-                "activo": peso_total_de_residuos[1],
-                "valor": 6785,
-                "valorFormatted": "6,785"
-
-            }
-        ],
-        "labelText": "[[valorFormatted]]",
-        "labelFunction": function (data) {
-            // Formatea el valor con comas
-            return data.value.toLocaleString("en-US");
-        },
-        "labelRadius": -30,
-        "outlineAlpha": 0.8,
-        "outlineThickness": 2,
-        "theme": "light",
-        "titleField": "activo",
-        "type": "pie",
-        "valueField": "valor"
-    });
-
-    var chart3 = AmCharts.makeChart("chart3", {
-        "titles": [
-            {
-                "text": "Residuos peligrosos",
-                "size": 15,
-                "color": "#000000"
-            },
-        ],
-        "colors": ["#F5BA3D", "#79B928"],
-        "fontSize": 14,
-        "balloonText": "[[activo]] <br> <b>[[value]] toneladas</b>",
-        "color": "#000000",
-        "legend": {
-            "align": "center",
-            "markerType": "circle",
-            "labelText": "",
-            "valueText": "[[activo]]",
-            "maxColumns": 2,
-            "spacing": 10,
-            "markerLabelGap": -6,
-
-        },
-        "dataProvider": [
-            {
-                "activo": residuos_peligrosos[0],
-                "valor": 1077,
-                "valorFormatted": "1,077"
-
-            }, {
-                "activo": residuos_peligrosos[1],
-                "valor": 1069,
-                "valorFormatted": "1,069"
-
-            }
-        ],
-        "labelText": "[[valorFormatted]]",
-        "labelFunction": function (data) {
-            // Formatea el valor con comas
-            return data.value.toLocaleString("en-US");
-        },
-        "labelRadius": -30,
-        "outlineAlpha": 0.8,
-        "outlineThickness": 2,
-        "theme": "light",
-        "titleField": "activo",
-        "type": "pie",
-        "valueField": "valor"
-    });
-
-    var chart4 = AmCharts.makeChart("chart4", {
-        "titles": [
-            {
-                "text": "Residuos de reciclaje",
-                "size": 15,
-                "color": "#000000"
-            },
-        ],
-        "colors": ["#F5BA3D", "#79B928"],
-        "fontSize": 14,
-        "balloonText": "[[activo]] <br> <b>[[value]] toneladas</b>",
-        "color": "#000000",
-        "legend": {
-            "align": "center",
-            "markerType": "circle",
-            "labelText": "",
-            "valueText": "[[activo]]",
-            "maxColumns": 2,
-            "spacing": 10,
-            "markerLabelGap": -6,
-
-        },
-        "dataProvider": [
-            {
-                "activo": residuos_de_reciclaje[0],
-                "valor": 2105,
-                "valorFormatted": "2,105"
-
-            }, {
-                "activo": residuos_de_reciclaje[1],
-                "valor": 2525,
-                "valorFormatted": "2,525"
-            }
-        ],
-        "labelText": "[[valorFormatted]]",
-        "labelFunction": function (data) {
-            // Formatea el valor con comas
-            return data.value.toLocaleString("en-US");
-        },
-        "labelRadius": -30,
-        "outlineAlpha": 0.8,
-        "outlineThickness": 2,
-        "theme": "light",
-        "titleField": "activo",
-        "type": "pie",
-        "valueField": "valor"
-    });
-
-
-    var chart5 = AmCharts.makeChart("chart5", {
-        "titles": [
-            {
-                "text": "Residuos a eliminar",
-                "size": 15,
-                "color": "#000000"
-            },
-        ],
-        "colors": ["#F5BA3D", "#79B928"],
-        "fontSize": 14,
-        "balloonText": "[[activo]] <b>[[value]] toneladas</b>",
-        "color": "#000000",
-        "legend": {
-            "align": "center",
-            "markerType": "circle",
-            "labelText": "",
-            "valueText": "[[activo]]",
-            "maxColumns": 2,
-            "spacing": 10,
-            "markerLabelGap": -6,
-
-        },
-        "dataProvider": [
-            {
-                "activo": residuos_a_eliminar[0],
-                "valor": 4908,
-                "valorFormatted": "4,908"
-
-            }, {
-                "activo": residuos_a_eliminar[1],
-                "valor": 4005,
-                "valorFormatted": "4,005"
-
-            }
-        ],
-        "labelText": "[[valorFormatted]]",
-        "labelFunction": function (data) {
-            // Formatea el valor con comas
-            return data.value.toLocaleString("en-US");
-        },
-        "labelRadius": -30,
-        "outlineAlpha": 0.8,
-        "outlineThickness": 2,
-        "theme": "light",
-        "titleField": "activo",
-        "type": "pie",
-        "valueField": "valor"
-    });
 }
 

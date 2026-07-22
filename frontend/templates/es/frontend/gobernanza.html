@@ -102,19 +102,19 @@
                     <tr>
                         <td class="name-green">Antonio Báez</td>
                         <td class="cargo-orange">CEO</td>
-                        <td>4 años</td>
+                        <td>5 años</td>
                         <td>Director Ejecutivo de TC Latin America Partners en México</td>
                     </tr>
                     <tr>
                         <td class="name-green">Raúl Arroyo</td>
                         <td class="cargo-orange">CIO</td>
-                        <td>4 años</td>
+                        <td>5 años</td>
                         <td>Socio Fundador REi – Real Estate Investments</td>
                     </tr>
                     <tr>
                         <td class="name-green">Miguel Delgado</td>
                         <td class="cargo-orange">CFO / COO</td>
-                        <td>4 años</td>
+                        <td>5 años</td>
                         <td>Socio Fundador REi – Real Estate Investments</td>
                     </tr>
                 </tbody>
@@ -265,66 +265,26 @@
             </div>
         </div>
     </div>-->
-    <section id="comite" class="py-5" data-wow-duration="2s" data-wow-delay="2s"
-             style="background-image: url({% static 'images/gobernanza/fondo_comites.png' %}); background-size: cover; background-repeat: no-repeat; background-position: center;">
-        <h1 class="text-center mt-5" style="color: white;">Comités</h1>
-        <p class="text-justify wow fadeInUp" data-wow-duration="2s" style="color: #ddd; margin:0 100px;">En Industrial Gate contamos con un equipo directivo con amplia experiencia en el sector inmobiliario industrial y en la gestión sostenible de proyectos. Su liderazgo impulsa la implementación de prácticas de excelencia, fomenta la innovación y asegura que las decisiones estratégicas estén alineadas con nuestra visión de largo plazo y con el compromiso de generar valor económico, social y ambiental.
-        </p>
-        <div class="col-md-8 offset-md-2 pb-5">
-            <div id="oc-clients"
-                 class="nobgcolor notopmargin owl-carousel owl-carousel-full image-carousel carousel-widget owl-loaded owl-drag"
-                 data-margin="" data-loop="true" data-nav="true" data-autoplay="4000" data-items="1" data-pagi="false"
-                 data-items-xs="1" data-items-sm="1" data-items-md="1" data-items-lg="1" data-items-xl="1">
-                <div class="owl-stage-outer">
-                    <div class="owl-stage"
-                         style="transform: translate3d(-6694px, 0px, 0px); transition: 0.25s; width: 14729px;">
-                        <div class="owl-item cloned" style="width: 1318.99px; margin-right: 20px;">
-                            <div class="oc-item">
-                                <div class="row d-flex flex-row justify-content-center align-items-center">
-                                    <div class="text-align: center">
-                                        <img src="/static/images/gobernanza/comite-inversion.png"
-                                             style="width:100%; height: 100%;"
-                                             alt="Comité de Inversión"
-                                             onclick="openModal('Comité de Inversión', 'Aprueba nuevas transacciones y ajustes clave en el plan de negocios de nuestras inversiones. Integrado por expertos inmobiliarios en América Latina, aporta una visión estratégica independiente para evaluar oportunidades y riesgos, velando siempre por los intereses de los inversionistas y el cumplimiento de nuestro deber fiduciario.', '/static/images/gobernanza/imagen_comite_inversion.png')">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="owl-item" style="width: 1318.99px; margin-right: 20px;">
-                            <div class="oc-item text-align:center">
-                                <div class="row d-flex flex-row justify-content-center align-items-center">
-                                    <div class="text-center">
-                                        <img src="/static/images/gobernanza/comite-asg.png"
-                                             style="width:100%; height: 100%;"
-                                             alt="Comité ASG"
-                                             onclick="openModal('Comité ASG', 'Supervisa la implementación de nuestra estrategia de sostenibilidad, asegurando su alineación con los objetivos estratégicos. Conformado por representantes de áreas clave, coordina decisiones sobre políticas internas, riesgos emergentes, iniciativas prioritarias y validación de información para reportes y rendición de cuentas.', '/static/images/gobernanza/imagen_comite_asg.png')">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    <section id="comite" class="ig-cap-bg pt-5 pb-5" style="background-image: url({% static 'images/gobernanza/fondo_comites.png' %})">
+        <div class="container">
+            <h1 class="text-center text-white mb-3">Comités</h1>
+            <p class="text-center" style="max-width:80ch;margin:0 auto 44px;color:#EAF0F7;">
+                Nuestra estructura de gobierno corporativo se apoya en comités especializados que fortalecen la toma de decisiones y el seguimiento de nuestras estrategias, supervisando temas clave como la gestión financiera, el cumplimiento normativo, la sostenibilidad y los riesgos, con transparencia y rendición de cuentas.
+            </p>
+            <div class="ig-committee-grid">
+                <div class="ig-hs-card wow fadeInUp" data-wow-duration="1s">
+                    <div class="ig-hs-card__ic"><img src="{% static 'images/gobernanza/comite-inversion.png' %}" alt="Comité de Inversión"></div>
+                    <h4>Comité de Inversión</h4>
+                    <p>Aprueba nuevas transacciones y ajustes clave en el plan de negocios de nuestras inversiones. Integrado por expertos inmobiliarios en América Latina, aporta una visión estratégica independiente para evaluar oportunidades y riesgos, velando por los intereses de los inversionistas y el cumplimiento de nuestro deber fiduciario.</p>
+                </div>
+                <div class="ig-hs-card wow fadeInUp" data-wow-duration="1s">
+                    <div class="ig-hs-card__ic"><img src="{% static 'images/gobernanza/comite-asg.png' %}" alt="Comité ASG"></div>
+                    <h4>Comité ASG</h4>
+                    <p>Supervisa la implementación de nuestra estrategia de sostenibilidad, asegurando su alineación con los objetivos estratégicos. Conformado por representantes de áreas clave, coordina decisiones sobre políticas internas, riesgos emergentes, iniciativas prioritarias y validación de información para reportes y rendición de cuentas.</p>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Modal -->
-    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="modalTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h2 class="modal-title text-center w-100" id="modalTitle" style="font-weight: bold;"></h2>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"
-                            style="top: 10px; right: 5px">
-                        <span aria-hidden="true">×</span>
-                    </button>
-                </div>
-                <div class="modal-body text-center">
-                    <p id="modalText" style="font-size: 18px"></p>
-                    <img id="modalImage" src="" class="img-fluid mt-3" alt="Comité">
-                </div>
-            </div>
-        </div>
-    </div>
 
     <div class="container pt-5 pb-5">
         <h1 id="etica" class="text-center mb-5 wow fadeInUp" data-wow-duration="2s"
@@ -365,7 +325,7 @@
                         <p class="mostrar w-100 text-center"><strong>Conflictos de interés</strong></p>
                     </div>
                     <div class="card-body" style="background-color: #00447C !important; font-size: 20px;">
-                        <p class="text-center d-block">CYDSA promueve la honestidad y la transparencia en
+                        <p class="text-center d-block">Industrial Gate promueve la honestidad y la transparencia en
                             todas sus
                             operaciones. Para mitigar riesgos de fraude y corrupción, cuenta con una Política de
                             Conflictos de Interés y un programa anual de supervisión.
@@ -378,7 +338,7 @@
                             <p class="mostrar w-100 text-center"><strong>Cumplimiento Regulatorio</strong></p>
                         </div>
                         <div class="card-body" style="background-color: #0076C0 !important; font-size: 20px;">
-                            <p class="text-center d-block">CYDSA monitorea constantemente el entorno regulatorio mediante una matriz de cumplimiento y
+                            <p class="text-center d-block">Industrial Gate monitorea constantemente el entorno regulatorio mediante una matriz de cumplimiento y
                                 colabora con asociaciones del sector para anticiparse y adaptarse a nuevas normativas.
                             </p>
                         </div>
@@ -389,7 +349,7 @@
                             <p class="mostrar w-100 text-center"><strong>Anticorrupción</strong></p>
                         </div>
                         <div class="card-body" style="background-color: #80A1B6 !important; font-size: 20px;">
-                            <p class="text-center d-block text-black">CYDSA evalúa los
+                            <p class="text-center d-block text-black">Industrial Gate evalúa los
                                 riesgos de corrupción, incluyendo sobornos, conflictos de interés y fraude. Para
                                 prevenir estos riesgos, implementa diversas políticas, procedimientos y estrategias de
                                 comunicación.
@@ -401,31 +361,43 @@
         </div>
     </section>-->
 
-    <section id="riesgos" class="container-fluid">
-        <div class="row">
-            <div class="col-md-12 mb-12 p-5 position-relative" 
-                 style="background-image: url({% static 'images/gobernanza/parallax_gestion.jpg' %});
-                        background-size: cover;
-                        background-position: center;
-                        color: white;">
-                
-                <!-- Capa semitransparente -->
-                <div style="position: absolute; 
-                            top: 0; 
-                            left: 0; 
-                            width: 100%; 
-                            height: 100%; 
-                            background-color: rgba(0, 0, 0, 0.4); 
-                            z-index: 1; 
-                            border-radius: 10px;">
+    <section id="riesgos" class="ig-band ig-band--dark">
+        <div class="container">
+            <h2 class="ig-h2 text-center">Ciberseguridad</h2>
+            <p class="ig-lead text-center">
+                La protección de la información y la ciberseguridad son fundamentales para preservar la continuidad de nuestras operaciones y mantener la confianza de colaboradores, inquilinos y socios comerciales. La seguridad digital forma parte esencial de nuestra estrategia de gobernanza y se desarrolla tomando como referencia las recomendaciones de la U.S. Securities and Exchange Commission (SEC).
+            </p>
+            <div class="ig-kpis ig-cyber-kpis">
+                <div class="ig-kpi"><div class="ig-kpi__num">Trimestral</div><div class="ig-kpi__lbl">capacitación en ciberseguridad</div></div>
+                <div class="ig-kpi"><div class="ig-kpi__num">Semestral</div><div class="ig-kpi__lbl">simulacros de phishing</div></div>
+                <div class="ig-kpi"><div class="ig-kpi__num">Mensual</div><div class="ig-kpi__lbl">boletines de amenazas emergentes</div></div>
+            </div>
+            <div class="ig-cyber-grid">
+                <div class="ig-hs-card wow fadeInUp" data-wow-duration="1s">
+                    <div class="ig-hs-card__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><path d="m9 12 2 2 4-4"></path></svg></div>
+                    <h4>Marco integral de herramientas</h4>
+                    <p>Contamos con un marco integral de políticas y herramientas de seguridad:</p>
+                    <ul class="ig-cyber-list">
+                        <li><strong>Microsoft 365</strong> — Defender for Office 365, Defender for Identity, Cloud App Security y Defender XDR.</li>
+                        <li><strong>Microsoft Sentinel</strong> — plataforma SIEM/SOAR nativa en la nube.</li>
+                        <li><strong>Box</strong> — cifrado en reposo y en tránsito, control de accesos y retención.</li>
+                        <li><strong>Firewall de próxima generación</strong> — IDS/IPS, segmentación VLAN y VPN.</li>
+                    </ul>
                 </div>
-    
-                <!-- Contenido -->
-                <div style="position: relative; z-index: 2;">
-                    <h1 class="text-center" style="color: #f5f5f5;">Ciberseguridad</h1>
-                    <p class="text-justify">
-                        La protección de la información es una prioridad estratégica para Industrial Gate. Implementamos protocolos y herramientas tecnológicas que garantizan la confidencialidad, integridad y disponibilidad de nuestros datos y sistemas. Nuestra estrategia de ciberseguridad incluye monitoreo constante, controles de acceso, copias de seguridad y capacitación a nuestro personal para prevenir incidentes y responder de forma eficaz ante amenazas digitales.
-                    </p>
+                <div class="ig-hs-card wow fadeInUp" data-wow-duration="1s">
+                    <div class="ig-hs-card__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg></div>
+                    <h4>Monitoreo, evaluación y respuesta</h4>
+                    <p>Centralizamos los eventos de seguridad para una detección proactiva y respuesta automatizada ante incidentes. Realizamos análisis de vulnerabilidades y pruebas de intrusión de manera periódica, documentando las acciones de remediación.</p>
+                </div>
+                <div class="ig-hs-card wow fadeInUp" data-wow-duration="1s">
+                    <div class="ig-hs-card__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5z"></path><path d="M6 12v5c0 1 3 3 6 3s6-2 6-3v-5"></path></svg></div>
+                    <h4>Cultura y capacitación</h4>
+                    <p>Capacitación trimestral en phishing, ingeniería social y manejo seguro de credenciales, con simulacros semestrales de phishing, boletines mensuales sobre amenazas emergentes y talleres de respuesta a incidentes y recuperación ante desastres.</p>
+                </div>
+                <div class="ig-hs-card wow fadeInUp" data-wow-duration="1s">
+                    <div class="ig-hs-card__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg></div>
+                    <h4>Privacidad y protección de datos</h4>
+                    <p>Aplicamos políticas y controles administrativos y tecnológicos para el manejo, resguardo y uso adecuado de la información de colaboradores, inquilinos y proveedores, en apego a la legislación aplicable y a las recomendaciones de la SEC (GRI 418-1).</p>
                 </div>
             </div>
         </div>
