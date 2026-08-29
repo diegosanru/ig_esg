@@ -194,6 +194,39 @@ h1{
 .ig-band--dark .ig-bar__yr{ color:#AEB6C6; }
 .ig-chart-note{ font-size:12.5px; color:var(--ig-muted); margin-top:18px; }
 
+/* --- Control Anual / Trimestral --- */
+.ig-per{ display:flex; justify-content:center; margin-bottom:18px; }
+.ig-per__set{ display:inline-flex; border:1px solid var(--ig-hair); border-radius:999px; padding:3px; }
+.ig-per__btn{
+  font-family:'RadioGrotesk',sans-serif; font-size:.7rem; letter-spacing:.12em;
+  text-transform:uppercase; font-weight:700; border:0; background:transparent;
+  color:var(--ig-muted); padding:7px 18px; border-radius:999px; cursor:pointer;
+  white-space:nowrap; transition:background .16s ease, color .16s ease;
+}
+.ig-per__btn:hover{ color:var(--ig-ink); }
+.ig-per__btn[aria-selected="true"]{ background:var(--ig-navy); color:#fff; }
+.ig-per__btn:focus-visible{ outline:2px solid var(--ig-teal); outline-offset:2px; }
+.ig-band--dark .ig-per__set{ border-color:#2C4159; }
+.ig-band--dark .ig-per__btn[aria-selected="true"]{ background:var(--ig-teal); color:var(--ig-navy-2); }
+[role="tabpanel"][hidden]{ display:none !important; }
+@media (prefers-reduced-motion: reduce){ .ig-per__btn{ transition:none; } }
+
+/* --- Serie trimestral (1Q–4Q, un solo tono) --- */
+.ig-chart--q{ gap:clamp(10px,2.4vw,30px); flex-wrap:nowrap; }
+.ig-chart--q .ig-bar{ flex:1 1 0; min-width:0; }
+.ig-chart--q .ig-bar__val{ font-size:clamp(.88rem,1.9vw,1.2rem); white-space:nowrap; }
+.ig-chart--q .ig-bar__col{ width:clamp(24px,5vw,42px); }
+.ig-bar--q .ig-bar__col{ background:var(--ig-navy); }
+.ig-band--dark .ig-bar--q .ig-bar__col{ background:var(--ig-teal); }
+/* trimestre aún no reportado */
+.ig-bar--qpend .ig-bar__val{ color:var(--ig-muted); font-weight:400; }
+.ig-bar--qpend .ig-bar__col{ background:transparent; border:1px dashed #C3CBD6; border-bottom:0; height:38px; }
+.ig-bar--qpend .ig-bar__yr{ opacity:.6; }
+.ig-qfoot{ margin:20px 0 0; padding-top:14px; border-top:1px solid var(--ig-hair); font-size:.78rem; color:var(--ig-muted); text-align:center; }
+.ig-qfoot b{ font-family:'RadioGrotesk',sans-serif; color:var(--ig-ink); font-size:.94rem; font-variant-numeric:tabular-nums; }
+.ig-band--dark .ig-qfoot{ color:#AEB6C6; }
+.ig-band--dark .ig-qfoot b{ color:#fff; }
+
 /* --- Grid de gráficas --- */
 .ig-charts-grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:40px 32px; }
 
@@ -201,6 +234,7 @@ h1{
 .ig-split{ display:grid; grid-template-columns:1fr 1fr; gap:clamp(24px,5vw,56px); align-items:center; }
 .ig-split .ig-band{ padding:24px 0; }
 .ig-split .ig-chart{ gap:clamp(14px,3vw,44px); }
+.ig-split .ig-chart--q{ gap:clamp(10px,2.4vw,30px); }   /* 4 columnas: gap más estrecho que el anual */
 .ig-split--rev .ig-split__text{ order:2; }
 .ig-split--emis{ grid-template-columns:2fr 1fr; }
 @media (max-width:860px){
