@@ -27,7 +27,7 @@
             </div>
             <div id="logo" style="max-width: 250px;">
                 <h1 style="margin-bottom: 10px; margin-top: 10px;">
-                    <a href="https://www.industrialgate.mx/es" class="" data-dark-logo="{% static 'images/logo-blanco.png' %}"
+                    <a href="{% if LANGUAGE_CODE == 'en' %}https://www.industrialgate.mx/en{% else %}https://www.industrialgate.mx/es{% endif %}" target="_blank" rel="noopener noreferrer" class="" data-dark-logo="{% static 'images/logo-blanco.png' %}"
                        title="Industrial Gate">
                         <img src="{% static 'images/logo-blanco.png' %}" alt="Logo"></a>
                 </h1>

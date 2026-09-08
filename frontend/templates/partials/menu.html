@@ -135,7 +135,7 @@
 
     <li class="sub">
         {% get_current_language as LANGUAGE_CODE %}
-        <a href="{% if LANGUAGE_CODE == 'en' %}https://www.industrialgate.mx/en/complaints{% else %}https://www.industrialgate.mx/es/complaints{% endif %}">
+        <a href="{% if LANGUAGE_CODE == 'en' %}https://www.industrialgate.mx/en/complaints{% else %}https://www.industrialgate.mx/es/complaints{% endif %}" target="_blank" rel="noopener noreferrer">
             <div>{% trans 'Quejas y sugerencias' %}</div>
         </a>
     </li>

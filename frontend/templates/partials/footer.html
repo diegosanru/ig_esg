@@ -1,5 +1,6 @@
 {% load i18n %}
 {% load static %}
+{% get_current_language as LANGUAGE_CODE %}
 <style>
     .fondo {
         background-image: url({% static 'images/world-map.png' %});
@@ -16,7 +17,7 @@
                 <div class="about-widget text-white">
                     <h3 class="footer-title">{% trans 'Acerca de Industrial Gate' %}</h3>
                     <div class="ml-1 mb-1 text-justify d-flex flex-column justify-content-between align-items-baseline">
-                        <a href="https://www.industrialgate.mx/es" target="_blank" rel="noopener noreferrer">
+                        <a href="{% if LANGUAGE_CODE == 'en' %}https://www.industrialgate.mx/en{% else %}https://www.industrialgate.mx/es{% endif %}" target="_blank" rel="noopener noreferrer">
                             <img src="{% static 'images/logo-blanco.png' %}" alt="Logo"
                                  style="padding-bottom: 0; width: 200px; height: 30%">
                         </a>
@@ -49,7 +50,7 @@
                         {% trans 'Servicio y atención personalizada para nuestros inquilinos.' %}
                     </p>
                     <br>
-                    <a href="https://www.industrialgate.mx/es/complaints" class="btn btn-outline-light btn-sm mt-2" style="border-radius: 20px;">
+                    <a href="{% if LANGUAGE_CODE == 'en' %}https://www.industrialgate.mx/en/complaints{% else %}https://www.industrialgate.mx/es/complaints{% endif %}" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light btn-sm mt-2" style="border-radius: 20px;">
                         {% trans 'Ir a la sección' %}
                     </a>
                     
